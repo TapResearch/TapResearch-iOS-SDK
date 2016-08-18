@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol TapResearchDelegate;
+@protocol TapResearchSurveyDelegate;
 
 /**
  Main interface for you to communicate with the TapResearch service.
@@ -36,11 +37,11 @@
 + (void)showSurvey;
 
 /**
- @method: showSurveyWithCompletionHandler:
+ @method: showSurveyWithDelegate:
  @abstract: Takes the user into a survey. Shows an alert modal asking if the user would like to "cancel" or "continue".
- @param: handler: notifies your app which button was selected in the alert modal.
+ @param: delegate: notifies your app which button was selected in the alert modal.
  */
-+ (void)showSurveyWithCompletionHandler:(void (^)(BOOL cancelled))handler;
++ (void)showSurveyWithDelegate:(id<TapResearchSurveyDelegate>)delegate;
 
 /**
  @method: setUniqueUserIdentifier
@@ -60,6 +61,17 @@
  @abstract: Notifies the delegate that a user has earned an in-app reward.
  */
 - (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier;
+
+@end
+
+@protocol TapResearchSurveyDelegate <NSObject>
+
+/**
+ @method: tapResearchSurveyModalDismissed:
+ @abstract: Notifies the delegate if the user pressed the "cancel" or "continue" button.
+ @param: cancelled: true = "cancel", false = "continue"
+ */
+- (void)tapResearchSurveyModalDismissed:(BOOL)cancelled;
 
 @end
 
