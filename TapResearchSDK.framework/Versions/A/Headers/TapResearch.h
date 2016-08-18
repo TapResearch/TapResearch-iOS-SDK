@@ -31,9 +31,16 @@
 
 /**
  @method: showSurvey
- @abstract: Takes the user into a survey.
+ @abstract: Takes the user into a survey. Shows an alert modal asking if the user would like to "cancel" or "continue".
  */
 + (void)showSurvey;
+
+/**
+ @method: showSurveyWithCompletionHandler:
+ @abstract: Takes the user into a survey. Shows an alert modal asking if the user would like to "cancel" or "continue".
+ @param: handler: notifies your app which button was selected in the alert modal.
+ */
++ (void)showSurveyWithCompletionHandler:(void (^)(BOOL cancelled))handler;
 
 /**
  @method: setUniqueUserIdentifier
@@ -55,3 +62,4 @@
 - (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier;
 
 @end
+
