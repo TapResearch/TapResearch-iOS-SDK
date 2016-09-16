@@ -8,7 +8,7 @@ For additional information, please see the [TapResearch iOS SDK integration guid
 - Multi-language support
 - Bug fixes
 
-Other platforms:
+## Other platforms:
 
 [TapResearch Android SDK](https://github.com/TapResearch/TapResearch-Android-SDK)  
 [TapResearch Android SDK integration guide](https://www.tapresearch.com/docs/android-integration-guide)
