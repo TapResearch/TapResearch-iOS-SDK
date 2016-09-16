@@ -66,12 +66,18 @@
 
 @protocol TapResearchSurveyDelegate <NSObject>
 
+@optional
 /**
- @method: tapResearchSurveyModalDismissed:
- @abstract: Notifies the delegate if the user pressed the "cancel" or "continue" button.
- @param: cancelled: true = "cancel", false = "continue"
+ method: tapResearchSurveyModalOpened
+ abstract: Notifies the delegate when a user opens the survey modal.
  */
-- (void)tapResearchSurveyModalDismissed:(BOOL)cancelled;
+- (void)tapResearchSurveyModalOpened;
+
+/**
+ @method: tapResearchSurveyModalDismissed
+ @abstract: Notifies the delegate when a user dismisses the survey modal.
+ */
+- (void)tapResearchSurveyModalDismissed;
 
 @end
 
