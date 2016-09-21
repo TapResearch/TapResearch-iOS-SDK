@@ -1,7 +1,10 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v1.2.0
+TapResearch iOS SDK v1.2.1
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://www.tapresearch.com/docs/ios-integration-guide).
+
+## v1.2.1
+- Fixed bug that prevented users from abandoning a survey. 
 
 ## v1.2.0
 - In-app webviews! Your users will stay inside the app as they complete TapResearch surveys.
