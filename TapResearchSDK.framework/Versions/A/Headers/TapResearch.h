@@ -62,6 +62,20 @@
  */
 - (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier;
 
+@optional
+
+/**
+ method: tapResearchSurveyAvailable
+ abstract: Notifies the delegate when a survey is available.
+ */
+- (void)tapResearchOnSurveyAvailable;
+
+/**
+ method: tapResearchSurveyNotAvailable
+ abstract: Notifies the delegate when a survey is not available.
+ */
+- (void)tapResearchOnSurveyNotAvailable;
+
 @end
 
 @protocol TapResearchSurveyDelegate <NSObject>
