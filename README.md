@@ -1,7 +1,12 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v1.2.1
+TapResearch iOS SDK v1.2.2
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://www.tapresearch.com/docs/ios-integration-guide).
+
+## v1.2.2
+- Added two new TapResearchDelegate methods.
+ - tapResearchOnSurveyAvailable;
+ - tapResearchOnSurveyNotAvailable;
 
 ## v1.2.1
 - Fixed bug that prevented users from abandoning a survey. 
