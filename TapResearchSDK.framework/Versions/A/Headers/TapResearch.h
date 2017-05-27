@@ -7,6 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_OPTIONS(NSInteger, TRPayoutType) {
+    TRPayoutEventProfileComcplete=0,
+    TRPayoutDidntQualify = 1,
+    TRPayoutEventBonusPayout = 2,
+    TRPayoutEventCampaignComplete = 3
+};
+
 @protocol TapResearchDelegate;
 @protocol TapResearchSurveyDelegate;
 
@@ -44,6 +51,11 @@
 + (void)showSurveyWithDelegate:(id<TapResearchSurveyDelegate>)delegate;
 
 /**
+ 
+ */
++ (void)showSurveyWithIdentifier:(NSString *)identifier delegate:(id<TapResearchSurveyDelegate>)surveyDelegate;
+
+/**
  @method: setUniqueUserIdentifier
  @abstract: Store unique user identifier for re-identification purposes
  
@@ -57,10 +69,15 @@
 @protocol TapResearchDelegate <NSObject>
 
 /**
- @method: tapResearchDidReceiveRewardWithQuantity:transactionIdentifier:
+ @method: tapResearchDidReceiveRewardWithQuantity:transactionIdentifier:currenyName:payoutEvent
  @abstract: Notifies the delegate that a user has earned an in-app reward.
+ 
+ @param: quantity: Rewards quantity
+ @param: transactionIdentifier: Rewards unique transaction identifier
+ @param: currencyName: Currency name, depends on the payoutEvent
+ @param: payoutEvent: Payout event type
  */
-- (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier;
+- (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier currencyName:(NSString *)currencyName payoutEvent:(NSInteger)payoutEvent;
 
 @optional
 
