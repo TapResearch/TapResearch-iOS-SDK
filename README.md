@@ -1,10 +1,10 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v1.3.0
+TapResearch iOS SDK v1.3.1
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://www.tapresearch.com/docs/ios-integration-guide).
 
-## v1.3.0
-- CocoaPods support
+## v1.3.1
+- CocoaPods Integration
 - Multi currency
 - Multi offerings
 
