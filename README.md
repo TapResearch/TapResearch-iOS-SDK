@@ -1,29 +1,27 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v1.3.1
+TapResearch iOS SDK v1.3.
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://www.tapresearch.com/docs/ios-integration-guide).
 
-## v1.3.1
-- CocoaPods Integration
-- Multi currency
-- Multi offerings
+## Setup
 
-## v1.2.2
-- Added two new TapResearchDelegate methods.
- - tapResearchOnSurveyAvailable;
- - tapResearchOnSurveyNotAvailable;
+Create an [app](/supplier_dashboard/dashboard/apps/new) and grab your API Token.
 
-## v1.2.1
-- Fixed bug that prevented users from abandoning a survey.
 
-## v1.2.0
-- In-app webviews! Your users will stay inside the app as they complete TapResearch surveys.
-- Multi-language support
-- Bug fixes
+## Download
+
+Add the pod info to the app's Podfile
+ ```ruby
+ pod 'TapResearch', '1.3.1'
+ ```
+
+ Then run the following command:
+ ```bash
+ $ pod install
+ ```
 
 ## Other platforms:
 
-[TapResearch Android SDK](https://github.com/TapResearch/TapResearch-Android-SDK)  
 [TapResearch Android SDK integration guide](https://www.tapresearch.com/docs/android-integration-guide)
 
 [TapResearch Unity SDK integration guide](https://www.tapresearch.com/docs/unity-integration-guide)
