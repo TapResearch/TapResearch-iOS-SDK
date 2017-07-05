@@ -1,6 +1,10 @@
 # Change Log
 =============
 
+##v1.3.2
+--------
+- iOS 7.0 support
+
 ## v1.3.1
 ---------
 - CocoaPods Integration
