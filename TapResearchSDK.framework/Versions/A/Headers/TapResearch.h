@@ -38,6 +38,14 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 + (BOOL)isSurveyAvailable;
 
 /**
+ @method: isSurveyAvailable
+ @abstract: Check if there is a survey available for the user.
+ @param: identifier: offer identifier
+ */
+
++ (BOOL)isSurveyAvailableForIdentifier:(NSString *)identifier;
+
+/**
  @method: showSurvey
  @abstract: Takes the user into a survey. Shows an alert modal asking if the user would like to "cancel" or "continue".
  */
@@ -77,7 +85,8 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @param: currencyName: Currency name, depends on the payoutEvent
  @param: payoutEvent: Payout event type
  */
-- (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier currencyName:(NSString *)currencyName payoutEvent:(NSInteger)payoutEvent;
+- (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier
+                                   currencyName:(NSString *)currencyName payoutEvent:(NSInteger)payoutEvent offerIdentifier:(NSString *)offerIdentifier;
 
 @optional
 
