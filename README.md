@@ -24,6 +24,8 @@ Add the pod info to the app's Podfile
 
 [TapResearch Android SDK integration guide](https://www.tapresearch.com/docs/android-integration-guide)
 
+[TapResearch React Native SDK integration guide](https://www.tapresearch.com/docs/react-native-integration-guide)
+
 [TapResearch Unity SDK integration guide](https://www.tapresearch.com/docs/unity-integration-guide)
 
 [TapResearch JavaScript SDK integration guide](https://www.tapresearch.com/docs/javascript-integration-guide)
