@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.3.3
+- Multi offering enhancements
+
 ## v1.3.2
 - iOS 7.0 support
 - Bug fixes
