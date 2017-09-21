@@ -1,5 +1,8 @@
 # Change Log
 
+## v1.3.4
+- Critical deployment fix
+
 ## v1.3.3
 - Multi offering enhancements
 
