@@ -1,5 +1,16 @@
 # Change Log
 
+## v1.3.7
+- Refresh button in the survey wall
+- Missing api token handling
+- Bug fixes
+
+## v1.3.6
+- Version fix
+
+## v1.3.5
+- Bug fixes
+
 ## v1.3.4
 - Critical deployment fix
 
