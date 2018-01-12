@@ -1,4 +1,14 @@
 # Change Log
+## v1.3.8
+* New delegate methods that pass placement identifier
+  - `(void)tapResearchOnSurveyAvailableWithPlacement:(NSString *)placement`
+  - `(void)tapResearchOnSurveyNotAvailableWithPlacement:(NSString *)placement`
+  - `(void)tapResearchSurveyModalOpenedWithPlacement:(NSString *)placement`
+  - `(void)tapResearchSurveyModalDismissedWithPlacement:(NSString *)placement`
+* New methods to format the survey wall
+  - `(void)setNavigationBarColor:(UIColor *)color`
+  - `(void)setNavigationBarText:(NSString *)text`
+  - `(void)setNavigationBarTextColor:(UIColor *)color`
 
 ## v1.3.7
 - Refresh button in the survey wall
