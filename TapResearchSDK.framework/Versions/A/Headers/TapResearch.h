@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIColor.h>
 
 typedef NS_OPTIONS(NSInteger, TRPayoutType) {
     TRPayoutEventProfileComcplete=0,
@@ -66,11 +67,30 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 /**
  @method: setUniqueUserIdentifier
  @abstract: Store unique user identifier for re-identification purposes
- 
  @param: userIdentifier: Unique user identifier. Required if you have opted for server to server postback.
  */
-
 + (void)setUniqueUserIdentifier:(NSString *)userIdentifier;
+
+/**
+ @method: setNavigationBarColor
+ @abstract: Set the survey wall navigation bar color
+ @param: color: The navigation bar color
+ */
++ (void)setNavigationBarColor:(UIColor *)color;
+
+/**
+ @method: setNavigationBarText
+ @abstract: Set the survey wall navigation bar title
+ @param: text: Navigation bar title
+ */
++ (void)setNavigationBarText:(NSString *)text;
+
+/**
+ @method: setNavigationBarTextColor
+ @abstract: Set the navigation bar text color
+ @param: color: Navigation bar text color
+ */
++ (void)setNavigationBarTextColor:(UIColor *)color;
 
 @end
 
@@ -84,6 +104,7 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @param: transactionIdentifier: Rewards unique transaction identifier
  @param: currencyName: Currency name, depends on the payoutEvent
  @param: payoutEvent: Payout event type
+ @param: offerIdentifier: The offer identifier
  */
 - (void)tapResearchDidReceiveRewardWithQuantity:(NSInteger)quantity transactionIdentifier:(NSString *)transactionIdentifier
                                    currencyName:(NSString *)currencyName payoutEvent:(NSInteger)payoutEvent offerIdentifier:(NSString *)offerIdentifier;
@@ -91,16 +112,32 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 @optional
 
 /**
- method: tapResearchSurveyAvailable
- abstract: Notifies the delegate when a survey is available.
+ @method: tapResearchSurveyAvailable
+ @abstract: Notifies the delegate when a survey is available.
  */
 - (void)tapResearchOnSurveyAvailable;
 
 /**
- method: tapResearchSurveyNotAvailable
- abstract: Notifies the delegate when a survey is not available.
+ @method: tapResearchOnSurveyAvailableWithPlacement
+ @abstract: Notifies the delegate when a survey is available.
+ 
+ @param: placement: Placement identifier
+ */
+- (void)tapResearchOnSurveyAvailableWithPlacement:(NSString *)placement;
+
+/**
+ @method: tapResearchOnSurveyNotAvailable
+ @abstract: Notifies the delegate when a survey is not available.
  */
 - (void)tapResearchOnSurveyNotAvailable;
+
+/**
+ @method: tapResearchOnSurveyNotAvailableWithPlacement
+ @abstract: Notifies the delegate when a survey is not available.
+
+ @param: placement: Placement identifier
+*/
+- (void)tapResearchOnSurveyNotAvailableWithPlacement:(NSString *)placement;
 
 @end
 
@@ -108,16 +145,32 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 
 @optional
 /**
- method: tapResearchSurveyModalOpened
- abstract: Notifies the delegate when a user opens the survey modal.
+ @method: tapResearchSurveyModalOpened
+ @abstract: Notifies the delegate when a user opens the survey modal.
  */
 - (void)tapResearchSurveyModalOpened;
+
+/**
+ @method: tapResearchSurveyModalOpened
+ @abstract: Notifies the delegate when a user opens the survey modal.
+ 
+ @param: placement: Placement identifier
+ */
+- (void)tapResearchSurveyModalOpenedWithPlacement:(NSString *)placement;
 
 /**
  @method: tapResearchSurveyModalDismissed
  @abstract: Notifies the delegate when a user dismisses the survey modal.
  */
 - (void)tapResearchSurveyModalDismissed;
+
+/**
+ @method: tapResearchSurveyModalDismissed
+ @abstract: Notifies the delegate when a user dismisses the survey modal.
+ 
+ @param: placement: Placement identifier
+ */
+- (void)tapResearchSurveyModalDismissedWithPlacement:(NSString *)placement;
 
 @end
 
