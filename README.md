@@ -12,7 +12,7 @@ Create an [app](/supplier_dashboard/dashboard/apps/new) and grab your API Token.
 
 Add the pod info to the app's Podfile
  ```ruby
- pod 'TapResearch', '1.3.8'
+ pod 'TapResearch', '1.3.9'
  ```
 
  Then run the following command:

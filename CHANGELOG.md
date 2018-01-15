@@ -1,4 +1,7 @@
 # Change Log
+## v1.3.9
+- Bug fix - Fail to send user identifier in some circumstances.
+
 ## v1.3.8
 * New delegate methods that pass placement identifier
   - `(void)tapResearchOnSurveyAvailableWithPlacement:(NSString *)placement`
