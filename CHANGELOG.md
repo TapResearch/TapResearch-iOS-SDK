@@ -1,4 +1,7 @@
 # Change Log
+## v1.4.0
+- Bug Fix - fixing `isSurveyAvailableForIdentifier`
+
 ## v1.3.9
 - Bug fix - Fail to send user identifier in some circumstances.
 
