@@ -1,4 +1,7 @@
 # Change Log
+## v1.4.1
+- Handling an empty `idfa`
+
 ## v1.4.0
 - Bug Fix - fixing `isSurveyAvailableForIdentifier`
 
