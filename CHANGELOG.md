@@ -1,4 +1,28 @@
-# Change Log
+# Changelog
+
+## v2.0.0
+**Version v2.0.0 isn't backward compatiable and will require code changes from previous versions**
+
+- Introducing TRPlacement to evaluate availability and to display the survey wall
+- Introducing TRReward to handle in app rewards
+- Bug fixes
+
+### The following methods and protocols were removed from the SDK
+
+~~~obj-c
+
++ (BOOL)isSurveyAvailable;
++ (BOOL)isSurveyAvailableForIdentifier:(NSString *)identifier;
++ (void)showSurvey;
++ (void)showSurveyWithDelegate:(id<TapResearchSurveyDelegate>)delegate
++ (void)showSurveyWithIdentifier:(NSString *)identifier delegate:(id<TapResearchSurveyDelegate>)surveyDelegate;
+
+@protocol TapResearchDelegate <NSObject>
+@protocol TapResearchSurveyDelegate <NSObject>
+
+~~~
+
+Bug fixes
 ## v1.4.1
 - Handling an empty `idfa`
 
