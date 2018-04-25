@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.0.1
+- `hasHotSurvey` placement attribute
+
 ## v2.0.0
 **Version v2.0.0 isn't backward compatiable and will require code changes from previous versions**
 

@@ -15,6 +15,7 @@
 @property (nonatomic, copy, readonly) NSString *currencyName;
 @property (nonatomic, copy, readonly) NSString *placementErrorMessage;
 @property (nonatomic, assign, readonly) BOOL isSurveyWallAvailable;
+@property (nonatomic, assign, readonly) BOOL hasHotSurvey;
 @property (nonatomic, assign, readonly) NSInteger placementCode;
 @property (nonatomic, assign, readonly) NSInteger maxPayoutInCurrency;
 @property (nonatomic, assign, readonly) NSInteger minPayoutInCurrency;
