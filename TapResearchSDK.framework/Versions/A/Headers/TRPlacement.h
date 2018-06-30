@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "TapResearchSDK.h"
 
+#define PLACEMENT_CODE_SDK_NOT_READY -1
+
 @interface TRPlacement : NSObject
 
 @property (nonatomic, copy, readonly) NSString *placementIdentifier;

@@ -12,7 +12,7 @@
 @class TRReward;
 
 typedef NS_OPTIONS(NSInteger, TRPayoutType) {
-    TRPayoutEventProfileComcplete=0,
+    TRPayoutEventProfileComplete = 0,
     TRPayoutDidntQualify = 1,
     TRPayoutEventBonusPayout = 2,
     TRPayoutEventCampaignComplete = 3
