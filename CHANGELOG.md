@@ -1,4 +1,7 @@
 # Changelog
+## v2.0.2
+- Send a placement response when the SDK isn't ready
+- Bug fixes
 
 ## v2.0.1
 - `hasHotSurvey` placement attribute
