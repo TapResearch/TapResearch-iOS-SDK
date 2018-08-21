@@ -1,4 +1,7 @@
 # Changelog
+## v2.0.4
+ - Survey routers fixes
+
 ## v2.0.3
 - Support Pure Spectrum surveys
 
