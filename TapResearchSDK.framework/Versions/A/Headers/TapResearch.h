@@ -33,42 +33,42 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @param apiToken Your app's unique identifier.
  @param delegate The class that will implement the TapResearchRewardsDelegate protocol.
  */
-+ (void)initWithApiToken:(NSString *)apiToken delegate:(id<TapResearchRewardDelegate>)delegate;
++ (void)initWithApiToken:(nonnull NSString *)apiToken delegate:(nullable id<TapResearchRewardDelegate>)delegate;
 
 /**
  @method setUniqueUserIdentifier
  @abstract Store unique user identifier for re-identification purposes
  @param userIdentifier Unique user identifier. Required if you have opted for server to server postback.
  */
-+ (void)setUniqueUserIdentifier:(NSString *)userIdentifier;
++ (void)setUniqueUserIdentifier:(nonnull NSString *)userIdentifier;
 
 /**
  @method initPlacementWithIdentifier
  @abstract Initialize the TRPlacemnt
 */
-+ (void)initPlacementWithIdentifier:(NSString *)placementIdentifier placementBlock:(void(^)(TRPlacement *placement))block;
++ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementBlock:(nonnull void(^)(TRPlacement *placement))block;
 /**
  @method setNavigationBarColor
  @abstract Set the survey wall navigation bar color
  @param color The navigation bar color
  */
-+ (void)setNavigationBarColor:(UIColor *)color;
++ (void)setNavigationBarColor:(nonnull UIColor *)color;
 
 /**
  @method setNavigationBarText
  @abstract Set the survey wall navigation bar title
  @param text Navigation bar title
  */
-+ (void)setNavigationBarText:(NSString *)text;
++ (void)setNavigationBarText:(nonnull NSString *)text;
 
 /**
  @method setNavigationBarTextColor
  @abstract Set the navigation bar text color
  @param color Navigation bar text color
  */
-+ (void)setNavigationBarTextColor:(UIColor *)color;
++ (void)setNavigationBarTextColor:(nonnull UIColor *)color;
 
-+ (void)initWithApiToken:(NSString *)apiToken developmentPlatform:(NSString *)developmentPlatform developmentPlatformVersion:(NSString *)developmentPlatformVersion delegate:(id<TapResearchRewardDelegate>)delegate;
++ (void)initWithApiToken:(nonnull NSString *)apiToken developmentPlatform:(nullable NSString *)developmentPlatform developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion delegate:(nullable id<TapResearchRewardDelegate>)delegate;
 
 @end
 
@@ -79,7 +79,7 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @abstract Notifies the delegate that a user has earned an in-app reward.
  @param reward The new reward
  */
-- (void)tapResearchDidReceiveReward:(TRReward *)reward;
+- (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward;
 
 @end
 
@@ -92,14 +92,14 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @abstract Notifies the delegate when a user opens the survey modal.
  @param placement Placement identifier
  */
-- (void)tapResearchSurveyWallOpenedWithPlacement:(TRPlacement *)placement;
+- (void)tapResearchSurveyWallOpenedWithPlacement:(nonnull TRPlacement *)placement;
 
 /**
  @method tapResearchSurveyModalDismissed
  @abstract Notifies the delegate when a user dismisses the survey modal.
  @param placement Placement identifier
  */
-- (void)tapResearchSurveyWallDismissedWithPlacement:(TRPlacement *)placement;
+- (void)tapResearchSurveyWallDismissedWithPlacement:(nonnull TRPlacement *)placement;
 
 
 @end
