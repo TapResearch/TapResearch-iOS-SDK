@@ -1,4 +1,7 @@
 # Changelog
+## v2.0.6
+-  Display a close button before the wall is loaded 
+
 ## v2.0.5
 - Support more survey providers
 - Better exception reporting and handling
