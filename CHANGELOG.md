@@ -1,4 +1,7 @@
 # Changelog
+## v2.0.7
+- Fix a Swift compilation issue
+
 ## v2.0.6
 -  Display a close button before the wall is loaded 
 

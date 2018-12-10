@@ -46,7 +46,7 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @method initPlacementWithIdentifier
  @abstract Initialize the TRPlacemnt
 */
-+ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementBlock:(nonnull void(^)(TRPlacement *placement))block;
++ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
 /**
  @method setNavigationBarColor
  @abstract Set the survey wall navigation bar color
@@ -103,4 +103,5 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 
 
 @end
+
 
