@@ -1,4 +1,7 @@
 # Changelog
+## v2.0.8
+- Handle surveys without secure connection
+
 ## v2.0.7
 - Fix a Swift compilation issue
 
