@@ -1,4 +1,8 @@
 # Changelog
+## v2.0.9
+- Fix iOS 13 dialog type
+- Fix session identifier cookie storage
+
 ## v2.0.8
 - Handle surveys without secure connection
 
