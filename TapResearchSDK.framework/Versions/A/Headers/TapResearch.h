@@ -10,6 +10,7 @@
 
 @class TRPlacement;
 @class TRReward;
+@class TRPlacementCustomParameterList;
 
 typedef NS_OPTIONS(NSInteger, TRPayoutType) {
     TRPayoutEventProfileComplete = 0,
@@ -47,6 +48,13 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @abstract Initialize the TRPlacemnt
 */
 + (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
+
+/**
+ @method initPlacementWithIdentifier
+ @abstract Initialize the TRPlacemnt
+*/
++ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementCustomParameters:(nullable TRPlacementCustomParameterList *) placementParameterList placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
+
 /**
  @method setNavigationBarColor
  @abstract Set the survey wall navigation bar color
