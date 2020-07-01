@@ -8,6 +8,6 @@
 #import "TapResearch.h"
 #import "TRPlacement.h"
 #import "TRReward.h"
-#import "TRSerilizationHelper.h"
+#import "TRSerializationHelper.h"
 
 

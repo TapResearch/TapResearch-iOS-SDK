@@ -1,4 +1,10 @@
 # Changelog
+
+## v2.0.10
+- Custom placement parameters
+- Orientation adjustments for survey view
+- SDK exception logging
+
 ## v2.0.9
 - Fix iOS 13 dialog type
 - Fix session identifier cookie storage
