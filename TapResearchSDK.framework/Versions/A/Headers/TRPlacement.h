@@ -23,7 +23,6 @@
 @property (nonatomic, assign, readonly) NSInteger minPayoutInCurrency;
 @property (nonatomic, assign, readonly) NSInteger maxSurveyLength;
 @property (nonatomic, assign, readonly) NSInteger minSurveyLength;
-@property (nonatomic, strong) TRPlacementCustomParameterList *parameterList;
 
 - (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate>)surveyDelegate;
 
