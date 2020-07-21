@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.0.11
+- Fix crash on abandon
+
 ## v2.0.10
 - Custom placement parameters
 - Orientation adjustments for survey view
