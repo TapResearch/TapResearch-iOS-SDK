@@ -1,5 +1,9 @@
 # Changelog
 
+##v2.1.0
+- Quietly query AppTrackingTransparency for IDFA access
+- Requires Xcode12 with iOS14 SDK
+
 ##v2.0.12
 - Added Remote error logging
 - Fixed URL creation crash on nil cp_identifier
@@ -23,7 +27,7 @@
 - Fix a Swift compilation issue
 
 ## v2.0.6
--  Display a close button before the wall is loaded 
+- Display a close button before the wall is loaded 
 
 ## v2.0.5
 - Support more survey providers
