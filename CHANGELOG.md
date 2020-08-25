@@ -1,5 +1,9 @@
 # Changelog
 
+##v2.0.12
+- Added Remote error logging
+- Fixed URL creation crash on nil cp_identifier
+
 ## v2.0.11
 - Fix crash on abandon
 
