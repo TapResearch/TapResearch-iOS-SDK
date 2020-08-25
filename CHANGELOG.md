@@ -2,6 +2,7 @@
 
 ##v2.1.0
 - Quietly query AppTrackingTransparency for IDFA access
+- Requires Xcode12 with iOS14 SDK
 
 ##v2.0.12
 - Added Remote error logging

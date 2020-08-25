@@ -12,7 +12,7 @@ TapResearch IOS SDK, to learn more checkout: https://www.tapresearch.com/docs/io
   s.author           = { 'Ilan Caspi' => 'ilan@tapresarch.com' }
   s.source           = { :git => 'https://github.com/TapResearch/TapResearch-iOS-SDK.git', :tag => 'v2.1.0' }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.ios.vendored_frameworks = 'TapResearchSDK.framework'
   s.frameworks = 'UIKit', 'MapKit', 'Foundation', 'SystemConfiguration', 'MobileCoreServices', 'AdSupport', 'Security', 'AppTrackingTransparency'
 end
