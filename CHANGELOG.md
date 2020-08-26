@@ -1,10 +1,13 @@
 # Changelog
 
-##v2.1.0
+## v2.1.1
+- Fix framework build to work with Xcode12/iOS12 simulator
+
+## v2.1.0
 - Quietly query AppTrackingTransparency for IDFA access
 - Requires Xcode12 with iOS14 SDK
 
-##v2.0.12
+## v2.0.12
 - Added Remote error logging
 - Fixed URL creation crash on nil cp_identifier
 
