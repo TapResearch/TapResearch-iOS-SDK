@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.1.2
+- 
+
 ## v2.1.1
 - Fix framework build to work with Xcode12/iOS12 simulator
 
