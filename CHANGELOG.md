@@ -4,6 +4,7 @@
 - Change to xcframework.
 
 ## v2.1.2
+- Deprecated, do not use this version, use v2.0.12.
 - Remove AppTrackingTransparency.
 
 ## v2.1.1
