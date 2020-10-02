@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.1.3-beta2
+- Changes to xcframework.
+
 ## v2.1.3-beta
 - Change to xcframework.
 
