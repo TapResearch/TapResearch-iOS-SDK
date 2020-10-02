@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.1.3
+- Add arm64 to simulator fat binary in xcframework.
+
 ## v2.1.3-beta2
 - Changes to xcframework.
 
@@ -7,7 +10,6 @@
 - Change to xcframework.
 
 ## v2.1.2
-- Deprecated, do not use this version, use v2.0.12.
 - Remove AppTrackingTransparency.
 
 ## v2.1.1
