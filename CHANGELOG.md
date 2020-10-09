@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.1.4
+- Remove arm slice from simulator fat binary in xcframework.
+- Set base deploy to iOS 9.0.
+
 ## v2.1.3
 - Add arm64 to simulator fat binary in xcframework.
 
