@@ -26,6 +26,9 @@
 - Quietly query AppTrackingTransparency for IDFA access
 - Requires Xcode12 with iOS14 SDK
 
+## v2.0.15
+- Correct behavior of SDK when app moves from background to foreground.
+
 ## v2.0.12
 - Added Remote error logging
 - Fixed URL creation crash on nil cp_identifier
