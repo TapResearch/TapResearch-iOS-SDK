@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.1.5
+- Correct behavior of SDK when app moves from background to foreground.
+
 ## v2.1.4
 - Remove arm slice from simulator fat binary in xcframework.
 - Set base deploy to iOS 9.0.

@@ -1,5 +1,5 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v2.1.4
+TapResearch iOS SDK v2.1.5
 
 
 Please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration) for detailed information on using the TapResearch iOS SDK.
