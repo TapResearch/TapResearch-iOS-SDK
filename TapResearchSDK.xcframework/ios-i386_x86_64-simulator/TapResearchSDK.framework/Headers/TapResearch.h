@@ -83,11 +83,19 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 @protocol TapResearchRewardDelegate <NSObject>
 
 /**
- @method tapResearchDidReceiveRewardWithQuantity:transactionIdentifier:currenyName:payoutEvent
+ @method tapResearchDidReceiveReward:
  @abstract Notifies the delegate that a user has earned an in-app reward.
  @param reward The new reward
  */
 - (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward;
+
+/**
+ @method tapResearchDidReceiveRewards:
+ @abstract Notifies the delegate that a user has earned an in-app reward.
+ @param rewards An array containing new rewards
+ */
+- (void)tapResearchDidReceiveRewards:(nonnull NSArray<TRReward *>*)rewards;
+
 
 @end
 
@@ -96,14 +104,14 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 @optional
 
 /**
- @method tapResearchSurveyModalOpened
+ @method tapResearchSurveyModalOpened:
  @abstract Notifies the delegate when a user opens the survey modal.
  @param placement Placement identifier
  */
 - (void)tapResearchSurveyWallOpenedWithPlacement:(nonnull TRPlacement *)placement;
 
 /**
- @method tapResearchSurveyModalDismissed
+ @method tapResearchSurveyModalDismissed:
  @abstract Notifies the delegate when a user dismisses the survey modal.
  @param placement Placement identifier
  */
