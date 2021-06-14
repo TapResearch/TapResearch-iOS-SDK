@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.2.0
+- Instant rewards when closing survey screen.
+- Reduced framework size.
+- Improved networking code.
+
 ## v2.1.5
 - Correct behavior of SDK when app moves from background to foreground.
 

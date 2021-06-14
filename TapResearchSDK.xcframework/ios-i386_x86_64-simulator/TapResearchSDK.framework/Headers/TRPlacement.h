@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TapResearchSDK.h"
+#import <TapResearchSDK/TapResearchSDK.h>
 
 #define PLACEMENT_CODE_SDK_NOT_READY -1
 

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TRPlacementCustomParameter.h"
+#import <TapResearchSDK/TRPlacementCustomParameter.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

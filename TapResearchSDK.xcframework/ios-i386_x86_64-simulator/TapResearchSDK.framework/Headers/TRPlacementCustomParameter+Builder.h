@@ -6,7 +6,7 @@
 //  Copyright © 2020 TapResearch. All rights reserved.
 //
 
-#import "TRPlacementCustomParameterBuilder.h"
+#import <TapResearchSDK/TRPlacementCustomParameterBuilder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -12,5 +12,6 @@
 
 + (NSDictionary *) dictionaryWithPropertiesOfObject:(id)obj;
 + (NSString *)jsonStringFromDictionary:(NSDictionary *)dictionary;
++ (NSString *)jsonStringFromArray:(NSArray *)array;
 
 @end

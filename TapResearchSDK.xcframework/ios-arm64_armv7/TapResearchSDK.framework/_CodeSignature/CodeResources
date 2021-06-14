@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/TRPlacement.h</key>
 		<data>
-		j63gV+2UUu5TCQ11kmuxCLI1LCY=
+		BnLK1hz7dUwLjoOZzpOzw9WdQJ8=
 		</data>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
 		<data>
-		KXh/ELCZwDxV1fwKz9asZSMFODg=
+		LJtwZxusaCoByY/7R8Egakwp3mE=
 		</data>
 		<key>Headers/TRPlacementCustomParameter.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/TRPlacementCustomParameterBuilder.h</key>
 		<data>
-		gVZZt6d9/4wkrn/HyJ354LfXwMQ=
+		/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
 		</data>
 		<key>Headers/TRPlacementCustomParameterList.h</key>
 		<data>
-		kC/1/n+STeh1Ge84ZDI18bbE93Y=
+		5KpSWIBMdEuhJe85iHX/nwNhlCk=
 		</data>
 		<key>Headers/TRReward.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/TRSerializationHelper.h</key>
 		<data>
-		eoxCllwC+fLLH2F4zByBXg/QAkw=
+		o7jJP1NU0VVynszld2YsjxVXbg0=
 		</data>
 		<key>Headers/TapResearch.h</key>
 		<data>
-		vQw0Z2Y0iNWPISz+B7JrZrcbnqM=
+		sW/lOtfdbL9bd1/Oz19VFFjD3xk=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		M3jUezr43x2eoaTMMDS+DImkHJw=
+		WYplBe5hE9QvA0J1BQqaxyh+hRg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,22 +55,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j63gV+2UUu5TCQ11kmuxCLI1LCY=
+			BnLK1hz7dUwLjoOZzpOzw9WdQJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			h8hAAENQPFy8TF0XX+eCVKKWFisOaBs2kJcfZLOztHo=
+			SITu8BjwakYlpttcFhnwJ8l4cE4enzMSKffa43f7IEM=
 			</data>
 		</dict>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KXh/ELCZwDxV1fwKz9asZSMFODg=
+			LJtwZxusaCoByY/7R8Egakwp3mE=
 			</data>
 			<key>hash2</key>
 			<data>
-			eQj0VHcQj31pyjnHj8YB010AUzRQzBkaN6Mn5y2UmNA=
+			6lHdW5vEmPfTCD2QONAYZQUfoUgo1uptcRmFyICaz4M=
 			</data>
 		</dict>
 		<key>Headers/TRPlacementCustomParameter.h</key>
@@ -88,22 +88,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gVZZt6d9/4wkrn/HyJ354LfXwMQ=
+			/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ijH9feR8/TT4BaKSQ1SOkgMbAjulBEd3GPMtl+W3HrY=
+			OeP872jOiCBD6VGo+bPxq9nJ8HuKEdE3ZvcCCuPU1hA=
 			</data>
 		</dict>
 		<key>Headers/TRPlacementCustomParameterList.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kC/1/n+STeh1Ge84ZDI18bbE93Y=
+			5KpSWIBMdEuhJe85iHX/nwNhlCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			kHB+FFoKwOmea6r6QGgNed1JgKzuIMLtOVK3tZvJeQE=
+			yeTlGQ5iqL7tf77yS/vyvUJBH7bHPr+KAyLctceEtdU=
 			</data>
 		</dict>
 		<key>Headers/TRReward.h</key>
@@ -121,22 +121,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eoxCllwC+fLLH2F4zByBXg/QAkw=
+			o7jJP1NU0VVynszld2YsjxVXbg0=
 			</data>
 			<key>hash2</key>
 			<data>
-			h7DvUmVisKssm3gKx9HFfuUMkbwC/+lnf0sTQG6p9mY=
+			BwrA629cRiXnIYhXR2NWxvcri44pVDmKEIreTe25YNc=
 			</data>
 		</dict>
 		<key>Headers/TapResearch.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vQw0Z2Y0iNWPISz+B7JrZrcbnqM=
+			sW/lOtfdbL9bd1/Oz19VFFjD3xk=
 			</data>
 			<key>hash2</key>
 			<data>
-			JiCHlkCV4VSsGOSXjfR2Wh7LTSQV3RSufKb4aoc/BdM=
+			2crp+7U9NwV1Ll5QWr11iEi3Kf0j3w0CIYhlh4VRPVA=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
