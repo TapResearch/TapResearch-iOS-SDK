@@ -13,6 +13,6 @@ TapResearch IOS SDK, to learn more checkout: https://www.tapresearch.com/docs/io
   s.source           = { :git => 'https://github.com/TapResearch/TapResearch-iOS-SDK.git', :tag => 'v2.0.20' }
 
   s.ios.deployment_target = '9.2'
-  s.ios.vendored_frameworks = 'TapResearchSDK.xcframework'
+  s.ios.vendored_frameworks = 'TapResearchSDK.framework'
   s.frameworks = 'UIKit', 'MapKit', 'Foundation', 'SystemConfiguration', 'MobileCoreServices', 'AdSupport', 'Security'
 end
