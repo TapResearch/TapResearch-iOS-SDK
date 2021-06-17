@@ -31,6 +31,11 @@
 - Quietly query AppTrackingTransparency for IDFA access
 - Requires Xcode12 with iOS14 SDK
 
+## v2.0.20
+- Instant rewards when closing survey screen.
+- Reduced framework size.
+- Improved networking code.
+
 ## v2.0.12
 - Added Remote error logging
 - Fixed URL creation crash on nil cp_identifier
