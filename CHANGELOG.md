@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.2.1
+- Fix a caching issue.
+
 ## v2.2.0
 - Instant rewards when closing survey screen.
 - Reduced framework size.
@@ -30,6 +33,9 @@
 ## v2.1.0
 - Quietly query AppTrackingTransparency for IDFA access
 - Requires Xcode12 with iOS14 SDK
+
+## v2.0.21
+- Fix a caching issue.
 
 ## v2.0.20
 - Instant rewards when closing survey screen.
