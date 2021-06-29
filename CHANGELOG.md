@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.2.1
+- Fix a caching issue.
+
 ## v2.2.0
 - Instant rewards when closing survey screen.
 - Reduced framework size.
