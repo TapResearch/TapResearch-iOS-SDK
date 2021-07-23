@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.2.2
+- Guard against a possible crash when storing an internal array.
+
 ## v2.2.1
 - Fix a caching issue.
 
