@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.3.0
+- SDK gets and caches placements internally.
+- New delegates to update availability of placements.
+- Deprecated some TapResearch interface methods.
+- Improve web URL error logging.
+
 ## v2.2.2
 - Guard against a possible crash when storing an internal array.
 
@@ -60,7 +66,7 @@
 - Fix a Swift compilation issue
 
 ## v2.0.6
-- Display a close button before the wall is loaded 
+- Display a close button before the wall is loaded
 
 ## v2.0.5
 - Support more survey providers

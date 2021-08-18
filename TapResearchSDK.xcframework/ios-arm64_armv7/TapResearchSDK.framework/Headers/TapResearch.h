@@ -21,7 +21,7 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 
 @protocol TapResearchRewardDelegate;
 @protocol TapResearchSurveyDelegate;
-
+@protocol TapResearchPlacementDelegate;
 /**
  Main interface for you to communicate with the TapResearch service.
  */
@@ -30,11 +30,26 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 /**
  @method initWithApiToken:delegate:
  @abstract Initialize TapResearch with your apiToken and callback handler.
-
+ 
  @param apiToken Your app's unique identifier.
  @param delegate The class that will implement the TapResearchRewardsDelegate protocol.
+ 
+ @deprecated Use [TapResearch initWithApiToken:placementParameterList:rewardDelegate:placementDelegate:] instead.
  */
-+ (void)initWithApiToken:(nonnull NSString *)apiToken delegate:(nullable id<TapResearchRewardDelegate>)delegate;
++ (void)initWithApiToken:(NSString * _Nonnull)apiToken
+                delegate:(id<TapResearchRewardDelegate> _Nonnull)delegate DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.0, will be removed in a future version.\nUse [TapResearch initWithApiToken:rewardDelegate:placementDelegate:] instead.");
+
+/**
+ @method initWithApiToken:rewardDelegate:placementDelegate:
+ @abstract Initialize TapResearch with your apiToken and callback handler.
+
+ @param apiToken Your app's unique identifier.
+ @param rewardDelegate The class that will implement the TapResearchRewardsDelegate protocol.
+ @param placementDelegate The class that will implement the TapResearchPlacementDelegate protocol.
+ */
++ (void)initWithApiToken:(NSString * _Nonnull)apiToken
+          rewardDelegate:(id<TapResearchRewardDelegate> _Nonnull)rewardDelegate
+       placementDelegate:(id<TapResearchPlacementDelegate> _Nonnull)placementDelegate;
 
 /**
  @method setUniqueUserIdentifier
@@ -46,14 +61,22 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 /**
  @method initPlacementWithIdentifier
  @abstract Initialize the TRPlacemnt
-*/
-+ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
+ 
+ @deprecated Implement TapResearchPlacementDelegate and use [TapResearch initWithApiToken:rewardDelegate:placementDelegate:] then use [placement showSurveyWallWithDelegate] or [placement showSurveyWallWithDelegate:customParameters:] to show the placement's surveys.
+ */
++ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier
+                     placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
 
 /**
  @method initPlacementWithIdentifier
  @abstract Initialize the TRPlacemnt
+
+ @deprecated Implement TapResearchPlacementDelegate and use [TapResearch initWithApiToken:placementCustomParameters:rewardDelegate:placementDelegate:] then use [placement showSurveyWallWithDelegate] to show the placement's surveys.
 */
-+ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier placementCustomParameters:(nullable TRPlacementCustomParameterList *) placementParameterList placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
++ (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier
+          placementCustomParameters:(nullable TRPlacementCustomParameterList *)placementParameterList
+                     placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block
+DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.0, will be removed in a future version.\nImplement TapResearchPlacementDelegate and use [TapResearch initWithApiToken:rewardDelegate:placementDelegate:]\nthen use [placement showSurveyWallWithDelegate:customParameters:] to show the placement's surveys.");
 
 /**
  @method setNavigationBarColor
@@ -76,18 +99,25 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  */
 + (void)setNavigationBarTextColor:(nonnull UIColor *)color;
 
-+ (void)initWithApiToken:(nonnull NSString *)apiToken developmentPlatform:(nullable NSString *)developmentPlatform developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion delegate:(nullable id<TapResearchRewardDelegate>)delegate;
+/**
+ */
++ (void)initWithApiToken:(nonnull NSString *)apiToken
+     developmentPlatform:(nullable NSString *)developmentPlatform
+developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
+                delegate:(nullable id<TapResearchRewardDelegate>)delegate DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.0, will be removed in a future version. Use [TapResearch initWithApiToken:developmentPlatform:developmentPlatformVersion:rewardDelegate:placementDelegate:] instead");
+
+/**
+ */
++ (void)initWithApiToken:(nonnull NSString *)apiToken
+     developmentPlatform:(nullable NSString *)developmentPlatform
+developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
+          rewardDelegate:(nullable id<TapResearchRewardDelegate>)rewardDelegate
+       placementDelegate:(nullable id<TapResearchPlacementDelegate>)placementDelegate;
 
 @end
 
-@protocol TapResearchRewardDelegate <NSObject>
 
-/**
- @method tapResearchDidReceiveReward:
- @abstract Notifies the delegate that a user has earned an in-app reward.
- @param reward The new reward
- */
-- (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward;
+@protocol TapResearchRewardDelegate <NSObject>
 
 /**
  @method tapResearchDidReceiveRewards:
@@ -96,8 +126,17 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  */
 - (void)tapResearchDidReceiveRewards:(nonnull NSArray<TRReward *>*)rewards;
 
+@optional
+
+/**
+ @method tapResearchDidReceiveReward:
+ @abstract Notifies the delegate that a user has earned an in-app reward.
+ @param reward The new reward
+ */
+- (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward;
 
 @end
+
 
 @protocol TapResearchSurveyDelegate <NSObject>
 
@@ -117,7 +156,26 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  */
 - (void)tapResearchSurveyWallDismissedWithPlacement:(nonnull TRPlacement *)placement;
 
-
 @end
 
+
+@protocol TapResearchPlacementDelegate <NSObject>
+
+@optional
+
+/**
+ @method placementReady:
+ @abstract Notifies the delegate when a placement is ready.
+ @param placement TRPlacement object
+ */
+- (void)placementReady:(nonnull TRPlacement *)placement;
+
+/**
+ @method placementUnavailable:
+ @abstract Notifies the delegate when a cached placement has expired.
+ @param placementId TRPlacement's placementIdentifier
+ */
+- (void)placementUnavailable:(nonnull NSString *)placementId;
+
+@end
 

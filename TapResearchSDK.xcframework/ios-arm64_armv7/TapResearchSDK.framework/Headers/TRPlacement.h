@@ -25,5 +25,7 @@
 @property (nonatomic, assign, readonly) NSInteger minSurveyLength;
 
 - (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate>)surveyDelegate;
+- (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate>)surveyDelegate
+                  customParameters:(TRPlacementCustomParameterList *)customParameters;
 
 @end
