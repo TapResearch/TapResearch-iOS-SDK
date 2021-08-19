@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TRPlacement.h</key>
 		<data>
-		BnLK1hz7dUwLjoOZzpOzw9WdQJ8=
+		Fzaya/W+UVP+KJGir7WRBBuVe+E=
 		</data>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/TapResearch.h</key>
 		<data>
-		sW/lOtfdbL9bd1/Oz19VFFjD3xk=
+		EI9RZe5ICN8Kox2aPLWnOqLWZEE=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C8fbJpRMCCDaTLZgZJ1TspEkV8c=
+		Rkwz8GvKW/MkD8LjBVR0TbALCXI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,11 +55,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BnLK1hz7dUwLjoOZzpOzw9WdQJ8=
+			Fzaya/W+UVP+KJGir7WRBBuVe+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			SITu8BjwakYlpttcFhnwJ8l4cE4enzMSKffa43f7IEM=
+			Bs0IlJzCVxOKl6fnYDlAwCJPDCWYJ1zcxLseLBLRRE4=
 			</data>
 		</dict>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
@@ -132,11 +132,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sW/lOtfdbL9bd1/Oz19VFFjD3xk=
+			EI9RZe5ICN8Kox2aPLWnOqLWZEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2crp+7U9NwV1Ll5QWr11iEi3Kf0j3w0CIYhlh4VRPVA=
+			1ZBBcXk5DhZPfGd+vRsgPuAAmWteZE+JQJxYNZimPDw=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
