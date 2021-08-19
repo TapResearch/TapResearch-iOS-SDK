@@ -161,8 +161,6 @@ developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
 
 @protocol TapResearchPlacementDelegate <NSObject>
 
-@optional
-
 /**
  @method placementReady:
  @abstract Notifies the delegate when a placement is ready.
