@@ -6,6 +6,13 @@
 - Deprecated some TapResearch interface methods.
 - Improve web URL error logging.
 
+## v2.3.0u
+- SDK gets and caches placements internally.
+- New delegates to update availability of placements.
+- Deprecated some TapResearch interface methods.
+- Improve web URL error logging.
+- Framework instead of xcframework.
+
 ## v2.2.2
 - Guard against a possible crash when storing an internal array.
 
