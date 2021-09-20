@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.3.1
+- Fix crash related to not setting player user identifier and setitng it too late.
+
 ## v2.3.0
 - SDK gets and caches placements internally.
 - New delegates to update availability of placements.
