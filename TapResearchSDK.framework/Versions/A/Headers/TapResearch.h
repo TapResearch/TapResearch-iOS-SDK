@@ -133,7 +133,8 @@ developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
  @abstract Notifies the delegate that a user has earned an in-app reward.
  @param reward The new reward
  */
-- (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward;
+- (void)tapResearchDidReceiveReward:(nonnull TRReward *)reward DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.1, will be removed in a future version.");
+
 
 @end
 
