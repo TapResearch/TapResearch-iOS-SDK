@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.3.1
+## v2.3.1, v2.3.1u
 - Fix crash related to not setting player user identifier and setitng it too late.
 
 ## v2.3.0
