@@ -4,3 +4,8 @@ framework module TapResearchSDK {
   export *
   module * { export * }
 }
+
+module TapResearchSDK.Swift {
+    header "TapResearchSDK-Swift.h"
+    requires objc
+}

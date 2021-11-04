@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.4.0
+- Fix NSKeyedArchiver mutating-array crash.
+- Deprecated a TapResearch interface method.
+
 ## v2.3.1, v2.3.1u
 - Fix crash related to not setting player user identifier and setitng it too late.
 
