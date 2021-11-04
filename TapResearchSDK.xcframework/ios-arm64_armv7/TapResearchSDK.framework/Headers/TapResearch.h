@@ -65,7 +65,8 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
  @deprecated Implement TapResearchPlacementDelegate and use [TapResearch initWithApiToken:rewardDelegate:placementDelegate:] then use [placement showSurveyWallWithDelegate] or [placement showSurveyWallWithDelegate:customParameters:] to show the placement's surveys.
  */
 + (void)initPlacementWithIdentifier:(nonnull NSString *)placementIdentifier
-                     placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block;
+                     placementBlock:(nonnull void(^)(TRPlacement * _Nonnull placement))block
+DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.0, will be removed in a future version.\nImplement TapResearchPlacementDelegate and use [TapResearch initWithApiToken:rewardDelegate:placementDelegate:]\nthen use [placement showSurveyWallWithDelegate:customParameters:] to show the placement's surveys.");
 
 /**
  @method initPlacementWithIdentifier
