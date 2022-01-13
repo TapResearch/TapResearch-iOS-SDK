@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TapResearchSDK
+import AdSupport
 import CoreTelephony
 import Foundation
 import Network
@@ -8,38 +9,8 @@ import OSLog
 import Swift
 import SystemConfiguration
 @_exported import TapResearchSDK
-import TapResearchSDKPrivate
 import UIKit
 import _Concurrency
-@objc public enum LogLevel : Swift.Int {
-  case none
-  case debug
-  case info
-  case warning
-  case error
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum HTTPParamsDataType : Swift.Int {
-  case none
-  case json
-  case query
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @objc public class TRRequestProvider : ObjectiveC.NSObject {
-  @objc public class func request(withMethod method: Swift.String, url: Swift.String, headers: [Swift.String : Swift.String]?, paramsType: TapResearchSDK.HTTPParamsDataType, params: [Swift.String : Any]?) -> Foundation.URLRequest?
-  @objc override dynamic public init()
-  @objc deinit
-}
-public typealias HTTPHeaders = [Swift.String : Swift.String]
-public typealias Parameters = [Swift.String : Any]
 @_inheritsConvenienceInitializers @objc public class LogHelper : ObjectiveC.NSObject {
   @objc public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
   @objc public class func setLogLevel(to logLevel: Swift.Int)
@@ -52,44 +23,13 @@ public typealias Parameters = [Swift.String : Any]
   @objc public init(withError error: Foundation.NSError, startingUrlString: Swift.String, webSourceUrl: Swift.String?, cpIdentifier: Swift.String?, tabIndex: Swift.Int, isProvisional: Swift.Bool)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class CacheManager {
-  public static var shared: TapResearchSDK.CacheManager
-  @objc deinit
-}
-@objc open class LogEvent : ObjectiveC.NSObject, Swift.Codable {
-  public static func == (lhs: TapResearchSDK.LogEvent, rhs: TapResearchSDK.LogEvent) -> Swift.Bool
-  public init(withType type: TapResearchSDK.LogEventType, content: Swift.String, additionalParams: TapResearchSDK.Parameters = [:])
-  @objc deinit
-  open func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
-}
-@_inheritsConvenienceInitializers @objc public class TRLogger : ObjectiveC.NSObject {
-  public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
-  @objc public class func setLogLevel(to logLevel: TapResearchSDK.LogLevel)
-  public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType = .general, message: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil, parameters: TapResearchSDK.Parameters? = nil, filePath: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class NetworkMonitor {
-  public class func startMonitoring()
-  @objc deinit
-}
-@objc public enum LogType : Swift.Int {
-  case general
-  case network
-  case lifecycle
-  case web
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public enum LogEventType : Swift.Int {
-  case crash
-  case user
-  case webFailedPreload
-  case webFailedload
+@objc public enum LogLevel : Swift.Int {
+  case halt = -1
+  case none = 0
+  case debug = 1
+  case info = 2
+  case warning = 3
+  case error = 4
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -102,17 +42,18 @@ public typealias Parameters = [Swift.String : Any]
   @objc public static var kTRPlatform: Swift.String
   @objc public static var kTRAPIVersion: Swift.String
   @objc public static var kTRErrorDomain: Swift.String
+  @objc public class func idfa() -> Swift.String
   @objc public static var kTRGetVersions: Swift.String
   @objc public static var kTRGetRewardDelta: Swift.String
   @objc public static var kTRPostPlayers: Swift.String
-  @objc public static var kTRPostAppSessions: Swift.String
   @objc public static var kTRPostAppImpressions: Swift.String
-  @objc public static var kTRPostAppSessionOffers: Swift.String
   @objc public static var kTRPostRewardRedeemed: Swift.String
   @objc public static var kTRPostSurveyURL: Swift.String
   @objc public static var kTRPostEvents: Swift.String
   @objc public static var kTRGetOffers: Swift.String
   @objc public static var kNetworkTimeoutSeconds: Swift.Double
+  @objc public class func setUrlResponseMocks(_ dictionaries: [[Swift.AnyHashable : Any]])
+  @objc public class func setUrlPathMocks(_ dictionaries: [[Swift.AnyHashable : Any]])
   @objc public static var kTRCPIdentifier: Swift.String
   @objc public static var kTRCryptoKey: Swift.String
   @objc public static var kTRShouldSleepHeader: Swift.String
@@ -137,6 +78,7 @@ public typealias Parameters = [Swift.String : Any]
   @objc public static var kTREventsKey: Swift.String
   @objc public static var kTRVersionKey: Swift.String
   @objc public static var kTRCPIdentifierKey: Swift.String
+  @objc public static var kTRIsServerToServerKey: Swift.String
   @objc public static var kTROrientationKey: Swift.String
   @objc public static var kTRScreenDensityKey: Swift.String
   @objc public static var kTRScreenPixelSizeKey: Swift.String
@@ -171,15 +113,30 @@ public typealias Parameters = [Swift.String : Any]
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum PlatformType : Swift.Int {
-  case ios
-  case tvOS
-  case oasis
+@objc public enum HTTPParamsDataType : Swift.Int {
+  case none
+  case json
+  case query
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class TRRequestProvider : ObjectiveC.NSObject {
+  @objc public class func shouldMockResponse(for realPath: Swift.String) -> Swift.Bool
+  @objc public class func urlMockResponse(for realPath: Swift.String) -> Foundation.Data?
+  @objc public class func request(withMethod method: Swift.String, url: Swift.String, headers: [Swift.String : Swift.String]?, paramsType: TapResearchSDK.HTTPParamsDataType, params: [Swift.String : Any]?) -> Foundation.URLRequest?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TRLogger : ObjectiveC.NSObject {
+  public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, environment: TapResearchSDK.Environment = .production, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
+  @objc public class func setLogLevel(to logLevel: TapResearchSDK.LogLevel)
+  @objc public class func setEnvironment(to environment: TapResearchSDK.Environment)
+  public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType = .general, message: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil, parameters: TapResearchSDK.Parameters? = nil, filePath: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  @objc override dynamic public init()
+  @objc deinit
 }
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
@@ -265,4 +222,63 @@ extension TapResearchSDK.Reachability {
   public var description: Swift.String {
     get
   }
+}
+@objc public enum LogEventType : Swift.Int {
+  case crash = 0
+  case user = 1
+  case webFailedPreload = 4
+  case webFailedload = 5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc open class LogEvent : ObjectiveC.NSObject, Swift.Codable {
+  @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  public init(withType type: TapResearchSDK.LogEventType, content: Swift.String, additionalParams: TapResearchSDK.Parameters = [:])
+  @objc deinit
+  open func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+public typealias Parameters = [Swift.String : Any]
+@objc public enum Environment : Swift.Int {
+  case development
+  case yavin
+  case jedha
+  case production
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class CacheManager {
+  public static var shared: TapResearchSDK.CacheManager
+  @objc deinit
+}
+@objc public enum PlatformType : Swift.Int {
+  case ios
+  case tvOS
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum LogType : Swift.Int {
+  case general
+  case network
+  case lifecycle
+  case web
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NetworkMonitor {
+  public class func startMonitoring()
+  @objc deinit
 }

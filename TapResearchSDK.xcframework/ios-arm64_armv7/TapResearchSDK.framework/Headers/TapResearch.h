@@ -178,4 +178,3 @@ developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
 - (void)placementUnavailable:(nonnull NSString *)placementId;
 
 @end
-

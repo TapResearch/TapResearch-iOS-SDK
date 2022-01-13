@@ -224,18 +224,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRAPIVersion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRErrorDomain;)
 + (NSString * _Nonnull)kTRErrorDomain SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetVersions;)
 + (NSString * _Nonnull)kTRGetVersions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetRewardDelta;)
 + (NSString * _Nonnull)kTRGetRewardDelta SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
 + (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppSessions;)
-+ (NSString * _Nonnull)kTRPostAppSessions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
 + (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppSessionOffers;)
-+ (NSString * _Nonnull)kTRPostAppSessionOffers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardRedeemed;)
 + (NSString * _Nonnull)kTRPostRewardRedeemed SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
@@ -246,6 +243,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
 + (NSTimeInterval)kNetworkTimeoutSeconds SWIFT_WARN_UNUSED_RESULT;
++ (void)setUrlResponseMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
++ (void)setUrlPathMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifier;)
 + (NSString * _Nonnull)kTRCPIdentifier SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCryptoKey;)
@@ -294,6 +293,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRVersionKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifierKey;)
 + (NSString * _Nonnull)kTRCPIdentifierKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRIsServerToServerKey;)
++ (NSString * _Nonnull)kTRIsServerToServerKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
 + (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
@@ -359,6 +360,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultSta
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDevelopment = 0,
+  EnvironmentYavin = 1,
+  EnvironmentJedha = 2,
+  EnvironmentProduction = 3,
+};
+
 typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
   HTTPParamsDataTypeNone = 0,
   HTTPParamsDataTypeJson = 1,
@@ -368,6 +376,7 @@ typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
 
 SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
 @interface LogEvent : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -375,8 +384,8 @@ SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
 typedef SWIFT_ENUM(NSInteger, LogEventType, open) {
   LogEventTypeCrash = 0,
   LogEventTypeUser = 1,
-  LogEventTypeWebFailedPreload = 2,
-  LogEventTypeWebFailedload = 3,
+  LogEventTypeWebFailedPreload = 4,
+  LogEventTypeWebFailedload = 5,
 };
 
 enum PlatformType : NSInteger;
@@ -394,6 +403,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
 @end
 
 typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
+  LogLevelHalt = -1,
   LogLevelNone = 0,
   LogLevelDebug = 1,
   LogLevelInfo = 2,
@@ -411,22 +421,27 @@ typedef SWIFT_ENUM(NSInteger, LogType, open) {
 typedef SWIFT_ENUM(NSInteger, PlatformType, open) {
   PlatformTypeIos = 0,
   PlatformTypeTvOS = 1,
-  PlatformTypeOasis = 2,
 };
 
 
 SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 @interface TRLogger : NSObject
 + (void)setLogLevelTo:(enum LogLevel)logLevel;
++ (void)setEnvironmentTo:(enum Environment)environment;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSData;
 @class NSURLRequest;
 
 /// <hr/>
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
 @interface TRRequestProvider : NSObject
+/// <hr/>
++ (BOOL)shouldMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSData * _Nullable)urlMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
 + (NSURLRequest * _Nullable)requestWithMethod:(NSString * _Nonnull)method url:(NSString * _Nonnull)url headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers paramsType:(enum HTTPParamsDataType)paramsType params:(NSDictionary<NSString *, id> * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -440,7 +455,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -673,18 +687,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRAPIVersion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRErrorDomain;)
 + (NSString * _Nonnull)kTRErrorDomain SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetVersions;)
 + (NSString * _Nonnull)kTRGetVersions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetRewardDelta;)
 + (NSString * _Nonnull)kTRGetRewardDelta SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
 + (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppSessions;)
-+ (NSString * _Nonnull)kTRPostAppSessions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
 + (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppSessionOffers;)
-+ (NSString * _Nonnull)kTRPostAppSessionOffers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardRedeemed;)
 + (NSString * _Nonnull)kTRPostRewardRedeemed SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
@@ -695,6 +706,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
 + (NSTimeInterval)kNetworkTimeoutSeconds SWIFT_WARN_UNUSED_RESULT;
++ (void)setUrlResponseMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
++ (void)setUrlPathMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifier;)
 + (NSString * _Nonnull)kTRCPIdentifier SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCryptoKey;)
@@ -743,6 +756,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRVersionKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifierKey;)
 + (NSString * _Nonnull)kTRCPIdentifierKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRIsServerToServerKey;)
++ (NSString * _Nonnull)kTRIsServerToServerKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
 + (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
@@ -808,6 +823,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultSta
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDevelopment = 0,
+  EnvironmentYavin = 1,
+  EnvironmentJedha = 2,
+  EnvironmentProduction = 3,
+};
+
 typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
   HTTPParamsDataTypeNone = 0,
   HTTPParamsDataTypeJson = 1,
@@ -817,6 +839,7 @@ typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
 
 SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
 @interface LogEvent : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -824,8 +847,8 @@ SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
 typedef SWIFT_ENUM(NSInteger, LogEventType, open) {
   LogEventTypeCrash = 0,
   LogEventTypeUser = 1,
-  LogEventTypeWebFailedPreload = 2,
-  LogEventTypeWebFailedload = 3,
+  LogEventTypeWebFailedPreload = 4,
+  LogEventTypeWebFailedload = 5,
 };
 
 enum PlatformType : NSInteger;
@@ -843,6 +866,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
 @end
 
 typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
+  LogLevelHalt = -1,
   LogLevelNone = 0,
   LogLevelDebug = 1,
   LogLevelInfo = 2,
@@ -860,22 +884,27 @@ typedef SWIFT_ENUM(NSInteger, LogType, open) {
 typedef SWIFT_ENUM(NSInteger, PlatformType, open) {
   PlatformTypeIos = 0,
   PlatformTypeTvOS = 1,
-  PlatformTypeOasis = 2,
 };
 
 
 SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 @interface TRLogger : NSObject
 + (void)setLogLevelTo:(enum LogLevel)logLevel;
++ (void)setEnvironmentTo:(enum Environment)environment;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSData;
 @class NSURLRequest;
 
 /// <hr/>
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
 @interface TRRequestProvider : NSObject
+/// <hr/>
++ (BOOL)shouldMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSData * _Nullable)urlMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
 + (NSURLRequest * _Nullable)requestWithMethod:(NSString * _Nonnull)method url:(NSString * _Nonnull)url headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers paramsType:(enum HTTPParamsDataType)paramsType params:(NSDictionary<NSString *, id> * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -889,7 +918,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

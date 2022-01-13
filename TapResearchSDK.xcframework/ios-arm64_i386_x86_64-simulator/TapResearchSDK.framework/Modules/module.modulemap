@@ -1,0 +1,11 @@
+framework module TapResearchSDK {
+  umbrella header "TapResearchSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TapResearchSDK.Swift {
+    header "TapResearchSDK-Swift.h"
+    requires objc
+}
