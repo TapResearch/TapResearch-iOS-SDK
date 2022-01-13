@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.4.1
+- Improved stability.
+- Removed usage of deprecated iOS functions.
+- Fixed an issue that caused a run-away cache.
+- Fixed a compatibility issue with pure Swift projects.
+
 ## v2.4.0
 - Fix NSKeyedArchiver mutating-array crash.
 - Deprecated a TapResearch interface method.
