@@ -2,7 +2,7 @@
 TapResearch iOS SDK v2.4.1
 
 
-For additional information, please see the [TapResearch iOS SDK integration guide](https://www.tapresearch.com/docs/ios_integration_guide).
+For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
 
 ## Setup
 

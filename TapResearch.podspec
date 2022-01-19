@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'TapResearch IOS SDK'
 
   s.description      = <<-DESC
-TapResearch IOS SDK, to learn more checkout: https://www.tapresearch.com/docs/ios-integration-guide
+TapResearch IOS SDK, to learn more checkout: https://supply-docs.tapresearch.com/docs/ios-integration/
 	DESC
 
   s.homepage         = 'https://www.tapresearch.com'
