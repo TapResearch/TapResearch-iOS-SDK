@@ -8,6 +8,8 @@
 #import <TapResearchSDK/TapResearch.h>
 #import <TapResearchSDK/TRPlacement.h>
 #import <TapResearchSDK/TRReward.h>
+#import <TapResearchSDK/TRPlayer.h>
+#import <TapREsearchSDK/TRAppSession.h>
 #import <TapResearchSDK/TRSerializationHelper.h>
 #import <TapResearchSDK/TRPlacementCustomParameter.h>
 #import <TapResearchSDK/TRPlacementCustomParameterList.h>

@@ -192,6 +192,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -227,14 +228,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetVersions;)
 + (NSString * _Nonnull)kTRGetVersions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetRewardDelta;)
-+ (NSString * _Nonnull)kTRGetRewardDelta SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
 + (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
 + (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardRedeemed;)
-+ (NSString * _Nonnull)kTRPostRewardRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
 + (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostEvents;)
@@ -269,32 +270,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
 + (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerKey;)
-+ (NSString * _Nonnull)kTRPlayerKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppSessionKey;)
-+ (NSString * _Nonnull)kTRAppSessionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppImpressionKey;)
-+ (NSString * _Nonnull)kTRAppImpressionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRUserIdentifierKey;)
-+ (NSString * _Nonnull)kTRUserIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRLastDateKey;)
-+ (NSString * _Nonnull)kTRLastDateKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRequestsKey;)
-+ (NSString * _Nonnull)kTRRequestsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRewardsKey;)
-+ (NSString * _Nonnull)kTRRewardsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRSDKInvalidBundleVersionKey;)
-+ (NSString * _Nonnull)kTRSDKInvalidBundleVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCrashEventKey;)
-+ (NSString * _Nonnull)kTRCrashEventKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventsKey;)
-+ (NSString * _Nonnull)kTREventsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersionKey;)
-+ (NSString * _Nonnull)kTRVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifierKey;)
-+ (NSString * _Nonnull)kTRCPIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRIsServerToServerKey;)
-+ (NSString * _Nonnull)kTRIsServerToServerKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
 + (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
@@ -325,30 +300,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSession
 + (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
 + (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCrash;)
-+ (NSString * _Nonnull)kTREventCrash SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventUser;)
-+ (NSString * _Nonnull)kTREventUser SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventSendFail;)
-+ (NSString * _Nonnull)kTREventSendFail SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCleanCache;)
-+ (NSString * _Nonnull)kTREventCleanCache SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedPreLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedPreLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCrashType;)
-+ (NSInteger)kTREventCrashType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventUserType;)
-+ (NSInteger)kTREventUserType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventSendFailType;)
-+ (NSInteger)kTREventSendFailType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCleanCacheType;)
-+ (NSInteger)kTREventCleanCacheType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedPreLoadType;)
-+ (NSInteger)kTREventWebFailedPreLoadType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedLoadType;)
-+ (NSInteger)kTREventWebFailedLoadType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
 + (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
@@ -431,6 +382,20 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSData;
 @class NSURLRequest;
 
@@ -447,6 +412,39 @@ SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable lastDate;)
++ (NSString * _Nullable)lastDate SWIFT_WARN_UNUSED_RESULT;
++ (void)setLastDate:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable invalidBundleVersion;)
++ (NSString * _Nullable)invalidBundleVersion SWIFT_WARN_UNUSED_RESULT;
++ (void)setInvalidBundleVersion:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable cpIdentifier;)
++ (NSString * _Nullable)cpIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setCpIdentifier:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSError;
 
 SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
@@ -455,6 +453,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -655,6 +654,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -690,14 +690,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetVersions;)
 + (NSString * _Nonnull)kTRGetVersions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetRewardDelta;)
-+ (NSString * _Nonnull)kTRGetRewardDelta SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
 + (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
 + (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardRedeemed;)
-+ (NSString * _Nonnull)kTRPostRewardRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
 + (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostEvents;)
@@ -732,32 +732,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
 + (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerKey;)
-+ (NSString * _Nonnull)kTRPlayerKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppSessionKey;)
-+ (NSString * _Nonnull)kTRAppSessionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppImpressionKey;)
-+ (NSString * _Nonnull)kTRAppImpressionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRUserIdentifierKey;)
-+ (NSString * _Nonnull)kTRUserIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRLastDateKey;)
-+ (NSString * _Nonnull)kTRLastDateKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRequestsKey;)
-+ (NSString * _Nonnull)kTRRequestsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRewardsKey;)
-+ (NSString * _Nonnull)kTRRewardsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRSDKInvalidBundleVersionKey;)
-+ (NSString * _Nonnull)kTRSDKInvalidBundleVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCrashEventKey;)
-+ (NSString * _Nonnull)kTRCrashEventKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventsKey;)
-+ (NSString * _Nonnull)kTREventsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersionKey;)
-+ (NSString * _Nonnull)kTRVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifierKey;)
-+ (NSString * _Nonnull)kTRCPIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRIsServerToServerKey;)
-+ (NSString * _Nonnull)kTRIsServerToServerKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
 + (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
@@ -788,30 +762,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSession
 + (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
 + (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCrash;)
-+ (NSString * _Nonnull)kTREventCrash SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventUser;)
-+ (NSString * _Nonnull)kTREventUser SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventSendFail;)
-+ (NSString * _Nonnull)kTREventSendFail SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCleanCache;)
-+ (NSString * _Nonnull)kTREventCleanCache SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedPreLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedPreLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCrashType;)
-+ (NSInteger)kTREventCrashType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventUserType;)
-+ (NSInteger)kTREventUserType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventSendFailType;)
-+ (NSInteger)kTREventSendFailType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCleanCacheType;)
-+ (NSInteger)kTREventCleanCacheType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedPreLoadType;)
-+ (NSInteger)kTREventWebFailedPreLoadType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedLoadType;)
-+ (NSInteger)kTREventWebFailedLoadType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
 + (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
@@ -894,6 +844,20 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSData;
 @class NSURLRequest;
 
@@ -910,6 +874,39 @@ SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable lastDate;)
++ (NSString * _Nullable)lastDate SWIFT_WARN_UNUSED_RESULT;
++ (void)setLastDate:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable invalidBundleVersion;)
++ (NSString * _Nullable)invalidBundleVersion SWIFT_WARN_UNUSED_RESULT;
++ (void)setInvalidBundleVersion:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable cpIdentifier;)
++ (NSString * _Nullable)cpIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setCpIdentifier:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSError;
 
 SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
@@ -918,6 +915,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1118,6 +1116,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -1153,14 +1152,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetVersions;)
 + (NSString * _Nonnull)kTRGetVersions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetRewardDelta;)
-+ (NSString * _Nonnull)kTRGetRewardDelta SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
 + (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
 + (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardRedeemed;)
-+ (NSString * _Nonnull)kTRPostRewardRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
 + (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostEvents;)
@@ -1195,32 +1194,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
 + (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerKey;)
-+ (NSString * _Nonnull)kTRPlayerKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppSessionKey;)
-+ (NSString * _Nonnull)kTRAppSessionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppImpressionKey;)
-+ (NSString * _Nonnull)kTRAppImpressionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRUserIdentifierKey;)
-+ (NSString * _Nonnull)kTRUserIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRLastDateKey;)
-+ (NSString * _Nonnull)kTRLastDateKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRequestsKey;)
-+ (NSString * _Nonnull)kTRRequestsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRRewardsKey;)
-+ (NSString * _Nonnull)kTRRewardsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRSDKInvalidBundleVersionKey;)
-+ (NSString * _Nonnull)kTRSDKInvalidBundleVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCrashEventKey;)
-+ (NSString * _Nonnull)kTRCrashEventKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventsKey;)
-+ (NSString * _Nonnull)kTREventsKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersionKey;)
-+ (NSString * _Nonnull)kTRVersionKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifierKey;)
-+ (NSString * _Nonnull)kTRCPIdentifierKey SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRIsServerToServerKey;)
-+ (NSString * _Nonnull)kTRIsServerToServerKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
 + (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
@@ -1251,30 +1224,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSession
 + (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
 + (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCrash;)
-+ (NSString * _Nonnull)kTREventCrash SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventUser;)
-+ (NSString * _Nonnull)kTREventUser SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventSendFail;)
-+ (NSString * _Nonnull)kTREventSendFail SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventCleanCache;)
-+ (NSString * _Nonnull)kTREventCleanCache SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTREventWebFailedPreLoad;)
-+ (NSString * _Nonnull)kTREventWebFailedPreLoad SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCrashType;)
-+ (NSInteger)kTREventCrashType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventUserType;)
-+ (NSInteger)kTREventUserType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventSendFailType;)
-+ (NSInteger)kTREventSendFailType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventCleanCacheType;)
-+ (NSInteger)kTREventCleanCacheType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedPreLoadType;)
-+ (NSInteger)kTREventWebFailedPreLoadType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTREventWebFailedLoadType;)
-+ (NSInteger)kTREventWebFailedLoadType SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
 + (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
@@ -1357,6 +1306,20 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSData;
 @class NSURLRequest;
 
@@ -1373,6 +1336,39 @@ SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable lastDate;)
++ (NSString * _Nullable)lastDate SWIFT_WARN_UNUSED_RESULT;
++ (void)setLastDate:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable invalidBundleVersion;)
++ (NSString * _Nullable)invalidBundleVersion SWIFT_WARN_UNUSED_RESULT;
++ (void)setInvalidBundleVersion:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable cpIdentifier;)
++ (NSString * _Nullable)cpIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setCpIdentifier:(NSString * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSError;
 
 SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
@@ -1381,6 +1377,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
