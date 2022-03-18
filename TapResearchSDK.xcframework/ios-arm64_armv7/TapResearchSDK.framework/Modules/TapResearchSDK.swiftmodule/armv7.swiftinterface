@@ -44,10 +44,10 @@ import _Concurrency
   @objc public static var kTRErrorDomain: Swift.String
   @objc public class func idfa() -> Swift.String
   @objc public static var kTRGetVersions: Swift.String
-  @objc public static var kTRGetRewardDelta: Swift.String
+  @objc public static var kTRGetCampaignCompletes: Swift.String
   @objc public static var kTRPostPlayers: Swift.String
   @objc public static var kTRPostAppImpressions: Swift.String
-  @objc public static var kTRPostRewardRedeemed: Swift.String
+  @objc public static var kTRPostRewardsRedeemed: Swift.String
   @objc public static var kTRPostSurveyURL: Swift.String
   @objc public static var kTRPostEvents: Swift.String
   @objc public static var kTRGetOffers: Swift.String
@@ -66,19 +66,6 @@ import _Concurrency
   @objc public static var kTRAbandonAlertContinueKey: Swift.String
   @objc public static var kTRAbandonAlertCancelKey: Swift.String
   @objc public static var kTRMessageSDKVersionNoLongerSupported: Swift.String
-  @objc public static var kTRPlayerKey: Swift.String
-  @objc public static var kTRAppSessionKey: Swift.String
-  @objc public static var kTRAppImpressionKey: Swift.String
-  @objc public static var kTRUserIdentifierKey: Swift.String
-  @objc public static var kTRLastDateKey: Swift.String
-  @objc public static var kTRRequestsKey: Swift.String
-  @objc public static var kTRRewardsKey: Swift.String
-  @objc public static var kTRSDKInvalidBundleVersionKey: Swift.String
-  @objc public static var kTRCrashEventKey: Swift.String
-  @objc public static var kTREventsKey: Swift.String
-  @objc public static var kTRVersionKey: Swift.String
-  @objc public static var kTRCPIdentifierKey: Swift.String
-  @objc public static var kTRIsServerToServerKey: Swift.String
   @objc public static var kTROrientationKey: Swift.String
   @objc public static var kTRScreenDensityKey: Swift.String
   @objc public static var kTRScreenPixelSizeKey: Swift.String
@@ -94,18 +81,6 @@ import _Concurrency
   @objc public static var kTRSessionMonitoringInterval: Swift.Int
   @objc public static var kTRSessionLoginThreshold: Swift.Int
   @objc public static var kTRRequestInterval: Swift.Int
-  @objc public static var kTREventCrash: Swift.String
-  @objc public static var kTREventUser: Swift.String
-  @objc public static var kTREventSendFail: Swift.String
-  @objc public static var kTREventCleanCache: Swift.String
-  @objc public static var kTREventWebFailedLoad: Swift.String
-  @objc public static var kTREventWebFailedPreLoad: Swift.String
-  @objc public static var kTREventCrashType: Swift.Int
-  @objc public static var kTREventUserType: Swift.Int
-  @objc public static var kTREventSendFailType: Swift.Int
-  @objc public static var kTREventCleanCacheType: Swift.Int
-  @objc public static var kTREventWebFailedPreLoadType: Swift.Int
-  @objc public static var kTREventWebFailedLoadType: Swift.Int
   @objc public static var kValueNotAvailableString: Swift.String
   @objc public static var kTRDefaultIdfa: Swift.String
   @objc public static var kTRDefaultFastPassPollingTime: (Swift.Double)
@@ -223,6 +198,20 @@ extension TapResearchSDK.Reachability {
     get
   }
 }
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TRNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutorotate: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
 @objc public enum LogEventType : Swift.Int {
   case crash = 0
   case user = 1
@@ -233,6 +222,21 @@ extension TapResearchSDK.Reachability {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class TRStore : ObjectiveC.NSObject {
+  @objc public static var player: TapResearchSDK.TRPlayer?
+  @objc public static var appSession: TapResearchSDK.TRAppSession?
+  @objc public static var lastDate: Swift.String?
+  @objc public static var invalidBundleVersion: Swift.String?
+  @objc public static var cpIdentifier: Swift.String?
+  @objc public static var isServerToServer: Swift.Bool
+  @objc public static var rewards: [TapResearchSDK.TRReward]?
+  @objc public static var userIdentifier: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc open class LogEvent : ObjectiveC.NSObject, Swift.Codable {
   @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
