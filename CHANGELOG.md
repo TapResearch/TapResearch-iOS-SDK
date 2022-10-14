@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.5.0
+- New interstitial display event feature.
+- Removed deprecated SDK interfaces.
+- Removed navigation bar styling interfaces.
+- Additional validity checks in network API call.
+
 ## v2.4.2
 - Fix for potential missed reward.
 - Fix for offer staying unavailable after showing it.
