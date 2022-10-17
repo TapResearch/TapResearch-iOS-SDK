@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.5.2
+- Improved orientation check when displaying event interstitial.
+
 ## v2.5.1
 - Fix Reachability class name collision.
 
