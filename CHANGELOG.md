@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.5.1
+- Fix Reachability class name collision.
+
 ## v2.5.0
 - New interstitial display event feature.
 - Removed deprecated SDK interfaces.

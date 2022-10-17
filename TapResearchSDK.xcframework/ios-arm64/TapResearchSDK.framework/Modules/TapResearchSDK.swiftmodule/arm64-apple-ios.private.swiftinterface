@@ -5,10 +5,8 @@
 import AdSupport
 import CoreTelephony
 import Foundation
-import Network
 import OSLog
 import Swift
-import SystemConfiguration
 @_exported import TapResearchSDK
 import UIKit
 import _Concurrency
@@ -119,87 +117,6 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
-public enum ReachabilityError : Swift.Error {
-  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
-  case failedToCreateWithHostname(Swift.String, Swift.Int32)
-  case unableToSetCallback(Swift.Int32)
-  case unableToSetDispatchQueue(Swift.Int32)
-  case unableToGetFlags(Swift.Int32)
-}
-@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension Foundation.NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
-}
-public class Reachability {
-  public typealias NetworkReachable = (TapResearchSDK.Reachability) -> ()
-  public typealias NetworkUnreachable = (TapResearchSDK.Reachability) -> ()
-  @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
-    public var description: Swift.String {
-      get
-    }
-    public static func == (a: TapResearchSDK.Reachability.NetworkStatus, b: TapResearchSDK.Reachability.NetworkStatus) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public enum Connection : Swift.CustomStringConvertible {
-    case unavailable, wifi, cellular
-    public var description: Swift.String {
-      get
-    }
-    @available(*, deprecated, renamed: "unavailable")
-    public static let none: TapResearchSDK.Reachability.Connection
-    public static func == (a: TapResearchSDK.Reachability.Connection, b: TapResearchSDK.Reachability.Connection) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public var whenReachable: TapResearchSDK.Reachability.NetworkReachable?
-  public var whenUnreachable: TapResearchSDK.Reachability.NetworkUnreachable?
-  @available(*, deprecated, renamed: "allowsCellularConnection")
-  final public let reachableOnWWAN: Swift.Bool
-  public var allowsCellularConnection: Swift.Bool
-  public var notificationCenter: Foundation.NotificationCenter
-  @available(*, deprecated, renamed: "connection.description")
-  public var currentReachabilityString: Swift.String {
-    get
-  }
-  @available(*, unavailable, renamed: "connection")
-  public var currentReachabilityStatus: TapResearchSDK.Reachability.Connection {
-    get
-  }
-  public var connection: TapResearchSDK.Reachability.Connection {
-    get
-  }
-  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
-  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
-  @objc deinit
-}
-extension TapResearchSDK.Reachability {
-  public func startNotifier() throws
-  public func stopNotifier()
-  @available(*, deprecated, message: "Please use `connection != .none`")
-  public var isReachable: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .cellular`")
-  public var isReachableViaWWAN: Swift.Bool {
-    get
-  }
-  @available(*, deprecated, message: "Please use `connection == .wifi`")
-  public var isReachableViaWiFi: Swift.Bool {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-}
 @_inheritsConvenienceInitializers @objc public class TREventPresenter : ObjectiveC.NSObject {
   @objc public class func displayEvent(_ placement: TapResearchSDK.TRPlacement, offer: TapResearchSDK.TROffer, eventId: Swift.String?, playerIdentifier: Swift.String, displayDelegate: TapResearchSDK.TapResearchEventDelegate?, surveyDelegate: TapResearchSDK.TapResearchSurveyDelegate?, closeButtonLocation: TapResearchSDK.TRDisplayEventExitButtonLocation, transitionStyle: TapResearchSDK.TRDisplayEventTransitionType, customParameters: TapResearchSDK.TRPlacementCustomParameterList) -> Foundation.NSError?
   @objc override dynamic public init()
@@ -289,22 +206,12 @@ public typealias Parameters = [Swift.String : Any]
     get
   }
 }
-@_hasMissingDesignatedInitializers public class NetworkMonitor {
-  public class func startMonitoring()
-  @objc deinit
-}
 extension TapResearchSDK.LogLevel : Swift.Equatable {}
 extension TapResearchSDK.LogLevel : Swift.Hashable {}
 extension TapResearchSDK.LogLevel : Swift.RawRepresentable {}
 extension TapResearchSDK.HTTPParamsDataType : Swift.Equatable {}
 extension TapResearchSDK.HTTPParamsDataType : Swift.Hashable {}
 extension TapResearchSDK.HTTPParamsDataType : Swift.RawRepresentable {}
-@available(*, unavailable, renamed: "Connection")
-extension TapResearchSDK.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
-extension TapResearchSDK.Reachability.NetworkStatus : Swift.Hashable {}
-extension TapResearchSDK.Reachability.Connection : Swift.Equatable {}
-extension TapResearchSDK.Reachability.Connection : Swift.Hashable {}
 extension TapResearchSDK.LogEventType : Swift.Equatable {}
 extension TapResearchSDK.LogEventType : Swift.Hashable {}
 extension TapResearchSDK.LogEventType : Swift.RawRepresentable {}
