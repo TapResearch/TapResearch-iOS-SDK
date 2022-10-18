@@ -26,21 +26,21 @@ typedef NS_ENUM(NSUInteger, TRDisplayEventTransitionType) {
 
 @interface TREvent : NSObject
 
-@property (nonatomic, strong, readonly) NSString *event_tag;
-@property (nonatomic, strong, readonly) NSString *event_type;
-@property (nonatomic, strong, readonly) NSString *placement_type;
-@property (nonatomic, strong, readonly) NSString *start_time;
-@property (nonatomic, strong, readonly) NSString *end_time;
-@property (nonatomic, strong, readonly) NSString *identifier;
+@property (nonatomic, strong, readonly) NSString * _Nullable event_tag;
+@property (nonatomic, strong, readonly) NSString * _Nonnull event_type;
+@property (nonatomic, strong, readonly) NSString * _Nonnull placement_type;
+@property (nonatomic, strong, readonly) NSString * _Nonnull start_time;
+@property (nonatomic, strong, readonly) NSString * _Nonnull end_time;
+@property (nonatomic, strong, readonly) NSString * _Nonnull identifier;
 
 @end
 
 
 @interface TRPlacement : NSObject
 
-@property (nonatomic, copy, readonly)    NSString  *placementIdentifier;
-@property (nonatomic, copy, readonly)    NSString  *currencyName;
-@property (nonatomic, copy, readonly)    NSString  *placementErrorMessage;
+@property (nonatomic, copy, readonly)    NSString  * _Nonnull placementIdentifier;
+@property (nonatomic, copy, readonly)    NSString  * _Nullable currencyName;
+@property (nonatomic, copy, readonly)    NSString  * _Nullable placementErrorMessage;
 @property (nonatomic, assign, readonly)  BOOL      isSurveyWallAvailable;
 @property (nonatomic, assign, readonly)  BOOL      hasHotSurvey;
 @property (nonatomic, assign, readonly)  NSInteger placementCode;
@@ -48,14 +48,14 @@ typedef NS_ENUM(NSUInteger, TRDisplayEventTransitionType) {
 @property (nonatomic, assign, readonly)  NSInteger minPayoutInCurrency;
 @property (nonatomic, assign, readonly)  NSInteger maxSurveyLength;
 @property (nonatomic, assign, readonly)  NSInteger minSurveyLength;
-@property (nonatomic, retain, readwrite) NSArray   *events;
+@property (nonatomic, retain, readwrite) NSArray   * _Nullable events;
 
 /**
  @method showSurveyWallWithDelegate
  @abstract Show a placment's surveys
  @param surveyDelegate The class that will implement the TapResearchSurveyDelegate protocol.
  */
-- (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate>)surveyDelegate;
+- (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate> _Nullable)surveyDelegate;
 
 /**
  @method showSurveyWallWithDelegate
@@ -63,8 +63,8 @@ typedef NS_ENUM(NSUInteger, TRDisplayEventTransitionType) {
  @param surveyDelegate The class that will implement the TapResearchSurveyDelegate protocol.
  @param customParameters A list of custom paramaters.
  */
-- (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate>)surveyDelegate
-				  customParameters:(TRPlacementCustomParameterList *)customParameters;
+- (void)showSurveyWallWithDelegate:(id<TapResearchSurveyDelegate> _Nullable)surveyDelegate
+				  customParameters:(TRPlacementCustomParameterList * _Nullable)customParameters;
 
 /**
  @method displayEvent
