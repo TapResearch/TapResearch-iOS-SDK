@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/TRPlacement.h</key>
 		<data>
-		0M8uje1XQxH88Z6OTQ/0z/dXLRg=
+		d/BWVvkhU/ugJdnjh9kRtMGyalI=
 		</data>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Headers/TapResearch.h</key>
 		<data>
-		I5MA3hah9W8JvJ52YYeQlFkOGMI=
+		4jLc7nPKpQ2RrSqSoFexZa+rkJo=
 		</data>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		P/xItiC1V665Nh+KsR+dDpZeR34=
+		NuB4/LNzAPLDlyPA0Zre8vix/Xc=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aGuvPgAuhtnB30sTyb+/TpcjG/E=
+		9Zse8dlZuHbPc/5X1JPTO6MInQg=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		j1hWHrifNqlvMxHs8FLutneGNw4=
+		DWzRlbBCmImmK5NGDq0m83L9G98=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oYa52vOMue5rY6eEY/7rJjKtvW8=
+		MyRhMOPp7rWBUVnTvLoImd9bJvY=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		j1hWHrifNqlvMxHs8FLutneGNw4=
+		DWzRlbBCmImmK5NGDq0m83L9G98=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8pqeL2JbcqoA5Ea6DI4lhbOc9Gw=
+		qNZ0WJPqbEDJk81+AJs1fzVpHI4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0M8uje1XQxH88Z6OTQ/0z/dXLRg=
+			d/BWVvkhU/ugJdnjh9kRtMGyalI=
 			</data>
 			<key>hash2</key>
 			<data>
-			RnpCzpwr8x99W814ArkhgH8TIvzWsS+9vz5ptvVaG9I=
+			ar0dyFj8eYS0zMXkDTtOhz+B0Oe28beQev2jH0jJgCY=
 			</data>
 		</dict>
 		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
@@ -261,22 +261,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I5MA3hah9W8JvJ52YYeQlFkOGMI=
+			4jLc7nPKpQ2RrSqSoFexZa+rkJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			DmOE7uNc+OIjiTvnCLDv/j5lN07s/gPxbKA5OtN+kJc=
+			Iq1l2qz75lwqReR2/49vAh9kpMLb5aZaf7qpGGXl/XQ=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P/xItiC1V665Nh+KsR+dDpZeR34=
+			NuB4/LNzAPLDlyPA0Zre8vix/Xc=
 			</data>
 			<key>hash2</key>
 			<data>
-			0tAubrATnU9wKaAoYfyYLMszyGXhIPlzl4EjlfmIVOM=
+			P+uIZ4stl2sgWduztEH4Wv5rdHF2WpceQH8fos77yxc=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j1hWHrifNqlvMxHs8FLutneGNw4=
+			DWzRlbBCmImmK5NGDq0m83L9G98=
 			</data>
 			<key>hash2</key>
 			<data>
-			11/K2S51E99saUf6eetFjfk3EPkbubd7gKFaXng8VRw=
+			8nVAvbNv9OscZ90egS5nafxwVSsdUS802HBeeCCpNs4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -338,22 +338,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oYa52vOMue5rY6eEY/7rJjKtvW8=
+			MyRhMOPp7rWBUVnTvLoImd9bJvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YKAiWZZlucV34WevadQo/iVrc7iIhx/CIulZ1ZqdsPg=
+			v0KthofT0TAYSQQ8StH7W04leduVUb7i9GWtPOxPT0A=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			j1hWHrifNqlvMxHs8FLutneGNw4=
+			DWzRlbBCmImmK5NGDq0m83L9G98=
 			</data>
 			<key>hash2</key>
 			<data>
-			11/K2S51E99saUf6eetFjfk3EPkbubd7gKFaXng8VRw=
+			8nVAvbNv9OscZ90egS5nafxwVSsdUS802HBeeCCpNs4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -393,11 +393,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8pqeL2JbcqoA5Ea6DI4lhbOc9Gw=
+			qNZ0WJPqbEDJk81+AJs1fzVpHI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/AvVfTEM8LOFkeimtYi742y+3h5Zv2iK1HGyopakz8E=
+			J7rA9wY/Eu5U6vYIXdnxr9y8vtyuq3KskPBLGZLjJnc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

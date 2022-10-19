@@ -52,13 +52,6 @@ typedef NS_OPTIONS(NSInteger, TRPayoutType) {
 + (void)initWithApiToken:(nonnull NSString *)apiToken
      developmentPlatform:(nullable NSString *)developmentPlatform
 developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
-                delegate:(nullable id<TapResearchRewardDelegate>)delegate DEPRECATED_MSG_ATTRIBUTE("Deprecated from v2.3.0, will be removed in a future version. Use [TapResearch initWithApiToken:developmentPlatform:developmentPlatformVersion:rewardDelegate:placementDelegate:] instead");
-
-/**
- */
-+ (void)initWithApiToken:(nonnull NSString *)apiToken
-     developmentPlatform:(nullable NSString *)developmentPlatform
-developmentPlatformVersion:(nullable NSString *)developmentPlatformVersion
           rewardDelegate:(nullable id<TapResearchRewardDelegate>)rewardDelegate
        placementDelegate:(nullable id<TapResearchPlacementDelegate>)placementDelegate;
 

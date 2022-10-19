@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.5.3
+- Remove warnings.
+
 ## v2.5.2
 - Improved orientation check when displaying event interstitial.
 
