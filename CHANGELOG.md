@@ -1,5 +1,8 @@
 # Changelog
 
+## v2.5.4
+- Add isEventAvailable call to TRPlacement.
+
 ## v2.5.3
 - Remove warnings.
 

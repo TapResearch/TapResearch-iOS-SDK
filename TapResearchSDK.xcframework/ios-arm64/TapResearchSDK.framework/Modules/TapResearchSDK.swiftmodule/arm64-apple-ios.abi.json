@@ -8276,7 +8276,7 @@
       "kind": "StringLiteral",
       "offset": 925,
       "length": 7,
-      "value": "\"2.5.3\""
+      "value": "\"2.5.4\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
