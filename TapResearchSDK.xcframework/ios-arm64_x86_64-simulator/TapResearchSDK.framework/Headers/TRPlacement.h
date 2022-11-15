@@ -51,6 +51,12 @@ typedef NS_ENUM(NSUInteger, TRDisplayEventTransitionType) {
 @property (nonatomic, retain, readwrite) NSArray   * _Nullable events;
 
 /**
+ @method isEventAvailable
+ @abstract Check if a placement has any events
+ */
+- (BOOL)isEventAvailable;
+
+/**
  @method showSurveyWallWithDelegate
  @abstract Show a placment's surveys
  @param surveyDelegate The class that will implement the TapResearchSurveyDelegate protocol.
