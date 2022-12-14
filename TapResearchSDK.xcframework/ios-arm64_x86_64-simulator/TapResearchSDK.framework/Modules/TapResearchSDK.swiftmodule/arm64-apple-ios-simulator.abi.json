@@ -1434,8 +1434,8 @@
           },
           {
             "kind": "Var",
-            "name": "kTRGetCampaignCompletes",
-            "printedName": "kTRGetCampaignCompletes",
+            "name": "kTRGetOffers",
+            "printedName": "kTRGetOffers",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1445,8 +1445,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRGetCampaignCompletes",
-            "mangledName": "$s14TapResearchSDK9ConstantsC23kTRGetCampaignCompletesSSvpZ",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRGetOffers",
+            "mangledName": "$s14TapResearchSDK9ConstantsC12kTRGetOffersSSvpZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "declAttributes": [
@@ -1472,8 +1472,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRGetCampaignCompletes",
-                "mangledName": "$s14TapResearchSDK9ConstantsC23kTRGetCampaignCompletesSSvgZ",
+                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRGetOffers",
+                "mangledName": "$s14TapResearchSDK9ConstantsC12kTRGetOffersSSvgZ",
                 "moduleName": "TapResearchSDK",
                 "static": true,
                 "implicit": true,
@@ -1540,114 +1540,6 @@
           },
           {
             "kind": "Var",
-            "name": "kTRPostAppImpressions",
-            "printedName": "kTRPostAppImpressions",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRPostAppImpressions",
-            "mangledName": "$s14TapResearchSDK9ConstantsC21kTRPostAppImpressionsSSvpZ",
-            "moduleName": "TapResearchSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRPostAppImpressions",
-                "mangledName": "$s14TapResearchSDK9ConstantsC21kTRPostAppImpressionsSSvgZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "kTRPostRewardsRedeemed",
-            "printedName": "kTRPostRewardsRedeemed",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRPostRewardsRedeemed",
-            "mangledName": "$s14TapResearchSDK9ConstantsC22kTRPostRewardsRedeemedSSvpZ",
-            "moduleName": "TapResearchSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRPostRewardsRedeemed",
-                "mangledName": "$s14TapResearchSDK9ConstantsC22kTRPostRewardsRedeemedSSvgZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "kTRPostSurveyURL",
             "printedName": "kTRPostSurveyURL",
             "children": [
@@ -1701,8 +1593,8 @@
           },
           {
             "kind": "Var",
-            "name": "kTRPostEvents",
-            "printedName": "kTRPostEvents",
+            "name": "kTRGetCampaignCompletes",
+            "printedName": "kTRGetCampaignCompletes",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1712,8 +1604,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRPostEvents",
-            "mangledName": "$s14TapResearchSDK9ConstantsC13kTRPostEventsSSvpZ",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRGetCampaignCompletes",
+            "mangledName": "$s14TapResearchSDK9ConstantsC23kTRGetCampaignCompletesSSvpZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "declAttributes": [
@@ -1739,8 +1631,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRPostEvents",
-                "mangledName": "$s14TapResearchSDK9ConstantsC13kTRPostEventsSSvgZ",
+                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRGetCampaignCompletes",
+                "mangledName": "$s14TapResearchSDK9ConstantsC23kTRGetCampaignCompletesSSvgZ",
                 "moduleName": "TapResearchSDK",
                 "static": true,
                 "implicit": true,
@@ -1754,8 +1646,8 @@
           },
           {
             "kind": "Var",
-            "name": "kTRGetOffers",
-            "printedName": "kTRGetOffers",
+            "name": "kTRPostRewardsRedeemed",
+            "printedName": "kTRPostRewardsRedeemed",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1765,8 +1657,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRGetOffers",
-            "mangledName": "$s14TapResearchSDK9ConstantsC12kTRGetOffersSSvpZ",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRPostRewardsRedeemed",
+            "mangledName": "$s14TapResearchSDK9ConstantsC22kTRPostRewardsRedeemedSSvpZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "declAttributes": [
@@ -1792,8 +1684,61 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRGetOffers",
-                "mangledName": "$s14TapResearchSDK9ConstantsC12kTRGetOffersSSvgZ",
+                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRPostRewardsRedeemed",
+                "mangledName": "$s14TapResearchSDK9ConstantsC22kTRPostRewardsRedeemedSSvgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "kTRPostAppImpressions",
+            "printedName": "kTRPostAppImpressions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cpy)kTRPostAppImpressions",
+            "mangledName": "$s14TapResearchSDK9ConstantsC21kTRPostAppImpressionsSSvpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)kTRPostAppImpressions",
+                "mangledName": "$s14TapResearchSDK9ConstantsC21kTRPostAppImpressionsSSvgZ",
                 "moduleName": "TapResearchSDK",
                 "static": true,
                 "implicit": true,
@@ -7400,132 +7345,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "CacheManager",
-        "printedName": "CacheManager",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CacheManager",
-                "printedName": "TapResearchSDK.CacheManager",
-                "usr": "s:14TapResearchSDK12CacheManagerC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:14TapResearchSDK12CacheManagerC6sharedACvpZ",
-            "mangledName": "$s14TapResearchSDK12CacheManagerC6sharedACvpZ",
-            "moduleName": "TapResearchSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CacheManager",
-                    "printedName": "TapResearchSDK.CacheManager",
-                    "usr": "s:14TapResearchSDK12CacheManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TapResearchSDK12CacheManagerC6sharedACvgZ",
-                "mangledName": "$s14TapResearchSDK12CacheManagerC6sharedACvgZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CacheManager",
-                    "printedName": "TapResearchSDK.CacheManager",
-                    "usr": "s:14TapResearchSDK12CacheManagerC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TapResearchSDK12CacheManagerC6sharedACvsZ",
-                "mangledName": "$s14TapResearchSDK12CacheManagerC6sharedACvsZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14TapResearchSDK12CacheManagerC6sharedACvMZ",
-                "mangledName": "$s14TapResearchSDK12CacheManagerC6sharedACvMZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:14TapResearchSDK12CacheManagerC",
-        "mangledName": "$s14TapResearchSDK12CacheManagerC",
-        "moduleName": "TapResearchSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -8276,7 +8095,7 @@
       "kind": "StringLiteral",
       "offset": 925,
       "length": 7,
-      "value": "\"2.5.4\""
+      "value": "\"2.5.5\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
@@ -8302,329 +8121,322 @@
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1549,
+      "offset": 1559,
       "length": 10,
       "value": "\"versions\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
-      "length": 20,
-      "value": "\"campaign_completes\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1674,
-      "length": 16,
-      "value": "\"device_players\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1841,
-      "length": 17,
-      "value": "\"app_impressions\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 2004,
-      "length": 37,
-      "value": "\"campaign_completes\/rewards_redeemed\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 2086,
-      "length": 22,
-      "value": "\"campaign_survey_urls\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 2150,
-      "length": 8,
-      "value": "\"events\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 2199,
+      "offset": 1623,
       "length": 8,
       "value": "\"offers\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2261,
+      "offset": 1685,
+      "length": 16,
+      "value": "\"device_players\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1755,
+      "length": 22,
+      "value": "\"campaign_survey_urls\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1831,
+      "length": 20,
+      "value": "\"campaign_completes\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 37,
+      "value": "\"campaign_completes\/rewards_redeemed\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1996,
+      "length": 17,
+      "value": "\"app_impressions\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2067,
       "length": 24,
       "value": "\"v3\/interstitial_events\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2351,
+      "offset": 2157,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "Dictionary",
-      "offset": 2517,
+      "offset": 2323,
       "length": 223,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "Dictionary",
-      "offset": 3758,
+      "offset": 3564,
       "length": 871,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5403,
+      "offset": 5209,
       "length": 17,
       "value": "\"{CP_IDENTIFIER}\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5495,
+      "offset": 5301,
       "length": 34,
       "value": "\"gGVlXCiGZIlMDxwhalGBLvtcSvkGzagw\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5611,
+      "offset": 5417,
       "length": 14,
       "value": "\"should_sleep\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5711,
+      "offset": 5517,
       "length": 13,
       "value": "\"offer_entry\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5776,
+      "offset": 5582,
       "length": 10,
       "value": "\"no_offer\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5838,
+      "offset": 5644,
       "length": 9,
       "value": "\"abandon\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5902,
+      "offset": 5708,
       "length": 21,
       "value": "\"abandon_button_text\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5976,
+      "offset": 5782,
       "length": 19,
       "value": "\"close_button_text\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6050,
+      "offset": 5856,
       "length": 21,
       "value": "\"abandon_alert_title\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6129,
+      "offset": 5935,
       "length": 24,
       "value": "\"abandon_alert_continue\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6209,
+      "offset": 6015,
       "length": 22,
       "value": "\"abandon_alert_cancel\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6305,
+      "offset": 6111,
       "length": 153,
       "value": "\"Your version of the TapResearchSDK is no longer supported and all features have been turned off. Please visit www.tapresearch.com for more information.\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6546,
+      "offset": 6352,
       "length": 20,
       "value": "\"display-dimensions\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6634,
+      "offset": 6440,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6695,
+      "offset": 6501,
       "length": 9,
       "value": "\"density\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6754,
+      "offset": 6560,
       "length": 12,
       "value": "\"pixel_size\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6815,
+      "offset": 6621,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6874,
+      "offset": 6680,
       "length": 9,
       "value": "\"carrier\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6926,
+      "offset": 6732,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6980,
+      "offset": 6786,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7037,
+      "offset": 6843,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7091,
+      "offset": 6897,
       "length": 9,
       "value": "\"Version\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7140,
+      "offset": 6946,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7194,
+      "offset": 7000,
       "length": 14,
       "value": "\"triggered_at\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7305,
+      "offset": 7111,
       "length": 38,
       "value": "\"TR Player Eanred Reward Notification\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7431,
+      "offset": 7237,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7489,
+      "offset": 7295,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7541,
+      "offset": 7347,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7603,
+      "offset": 7409,
       "length": 15,
       "value": "\"not-available\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7686,
+      "offset": 7492,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7811,
+      "offset": 7617,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7817,
+      "offset": 7623,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7913,
+      "offset": 7719,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7919,
+      "offset": 7725,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7926,
+      "offset": 7732,
       "length": 4,
       "value": "60.0"
     },
@@ -9002,14 +8814,21 @@
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 536,
+      "offset": 474,
+      "length": 9,
+      "value": "\"Version\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 543,
       "length": 11,
       "value": "\"API-Token\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 2228,
+      "offset": 2235,
       "length": 3,
       "value": "[]"
     },
@@ -9054,13 +8873,6 @@
       "offset": 208,
       "length": 10,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/CacheManager.swift",
-      "kind": "StringLiteral",
-      "offset": 305,
-      "length": 14,
-      "value": "\"unsentEvents\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Helpers\/AppInfo.swift",

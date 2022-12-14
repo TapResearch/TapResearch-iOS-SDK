@@ -38,17 +38,17 @@ typedef NS_ENUM(NSUInteger, TRDisplayEventTransitionType) {
 
 @interface TRPlacement : NSObject
 
-@property (nonatomic, copy, readonly)    NSString  * _Nonnull placementIdentifier;
-@property (nonatomic, copy, readonly)    NSString  * _Nullable currencyName;
-@property (nonatomic, copy, readonly)    NSString  * _Nullable placementErrorMessage;
-@property (nonatomic, assign, readonly)  BOOL      isSurveyWallAvailable;
-@property (nonatomic, assign, readonly)  BOOL      hasHotSurvey;
-@property (nonatomic, assign, readonly)  NSInteger placementCode;
-@property (nonatomic, assign, readonly)  NSInteger maxPayoutInCurrency;
-@property (nonatomic, assign, readonly)  NSInteger minPayoutInCurrency;
-@property (nonatomic, assign, readonly)  NSInteger maxSurveyLength;
-@property (nonatomic, assign, readonly)  NSInteger minSurveyLength;
-@property (nonatomic, retain, readwrite) NSArray   * _Nullable events;
+@property (nonatomic, copy, readonly)   NSString  * _Nonnull placementIdentifier;
+@property (nonatomic, copy, readonly)   NSString  * _Nullable currencyName;
+@property (nonatomic, copy, readonly)   NSString  * _Nullable placementErrorMessage;
+@property (nonatomic, assign, readonly) BOOL      isSurveyWallAvailable;
+@property (nonatomic, assign, readonly) BOOL      hasHotSurvey;
+@property (nonatomic, assign, readonly) NSInteger placementCode;
+@property (nonatomic, assign, readonly) NSInteger maxPayoutInCurrency;
+@property (nonatomic, assign, readonly) NSInteger minPayoutInCurrency;
+@property (nonatomic, assign, readonly) NSInteger maxSurveyLength;
+@property (nonatomic, assign, readonly) NSInteger minSurveyLength;
+@property (nonatomic, retain, readonly) NSArray   * _Nullable events;
 
 /**
  @method isEventAvailable

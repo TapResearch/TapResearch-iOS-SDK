@@ -276,20 +276,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostVersions;)
 + (NSString * _Nonnull)kTRPostVersions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
-+ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
-+ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
-+ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
-+ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
-+ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostEvents;)
-+ (NSString * _Nonnull)kTRPostEvents SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetOffers;)
 + (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
++ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
++ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
++ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostInterstitialEvents;)
 + (NSString * _Nonnull)kTRPostInterstitialEvents SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
@@ -808,20 +806,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostVersions;)
 + (NSString * _Nonnull)kTRPostVersions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
-+ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
-+ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
-+ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
-+ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
-+ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostEvents;)
-+ (NSString * _Nonnull)kTRPostEvents SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetOffers;)
 + (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
++ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
++ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
++ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostInterstitialEvents;)
 + (NSString * _Nonnull)kTRPostInterstitialEvents SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
