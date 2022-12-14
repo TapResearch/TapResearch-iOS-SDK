@@ -46,13 +46,12 @@ import _StringProcessing
   @objc public static let kTRErrorDomain: Swift.String
   @objc public class func idfa() -> Swift.String
   @objc public static let kTRPostVersions: Swift.String
-  @objc public static let kTRGetCampaignCompletes: Swift.String
-  @objc public static let kTRPostPlayers: Swift.String
-  @objc public static let kTRPostAppImpressions: Swift.String
-  @objc public static let kTRPostRewardsRedeemed: Swift.String
-  @objc public static let kTRPostSurveyURL: Swift.String
-  @objc public static let kTRPostEvents: Swift.String
   @objc public static let kTRGetOffers: Swift.String
+  @objc public static let kTRPostPlayers: Swift.String
+  @objc public static let kTRPostSurveyURL: Swift.String
+  @objc public static let kTRGetCampaignCompletes: Swift.String
+  @objc public static let kTRPostRewardsRedeemed: Swift.String
+  @objc public static let kTRPostAppImpressions: Swift.String
   @objc public static let kTRPostInterstitialEvents: Swift.String
   @objc public static let kNetworkTimeoutSeconds: Swift.Double
   @objc public class func setUrlResponseMocks(_ dictionaries: [[Swift.AnyHashable : Any]])
@@ -181,10 +180,6 @@ public typealias Parameters = [Swift.String : Any]
   public var rawValue: Swift.Int {
     get
   }
-}
-@_hasMissingDesignatedInitializers public class CacheManager {
-  public static var shared: TapResearchSDK.CacheManager
-  @objc deinit
 }
 @objc public enum PlatformType : Swift.Int {
   case ios

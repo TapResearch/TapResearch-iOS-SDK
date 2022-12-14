@@ -1,5 +1,8 @@
 # Changelog
 
+##v2.5.5
+- Fix a crash that could occur due to internally referencing a deallocated placement.
+
 ## v2.5.4
 - Add isEventAvailable call to TRPlacement.
 
