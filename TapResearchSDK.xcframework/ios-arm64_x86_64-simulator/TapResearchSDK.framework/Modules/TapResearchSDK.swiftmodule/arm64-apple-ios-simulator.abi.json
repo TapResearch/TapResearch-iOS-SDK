@@ -8095,7 +8095,7 @@
       "kind": "StringLiteral",
       "offset": 925,
       "length": 7,
-      "value": "\"2.5.5\""
+      "value": "\"2.5.6\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
@@ -8814,21 +8814,21 @@
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 480,
       "length": 9,
       "value": "\"Version\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 543,
+      "offset": 549,
       "length": 11,
       "value": "\"API-Token\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Network\/NetworkManager.swift",
       "kind": "Dictionary",
-      "offset": 2235,
+      "offset": 2241,
       "length": 3,
       "value": "[]"
     },

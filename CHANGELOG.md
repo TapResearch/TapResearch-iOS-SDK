@@ -1,6 +1,11 @@
 # Changelog
 
-##v2.5.5
+## v2.5.6
+- Improved stability.
+- Fix a potential crash in an API handler.
+- Per Apple guidelines we have removed build support for arm7 and 32bit.
+
+## v2.5.5
 - Fix a crash that could occur due to internally referencing a deallocated placement.
 
 ## v2.5.4
@@ -37,7 +42,7 @@
 - Deprecated a TapResearch interface method.
 
 ## v2.3.1, v2.3.1u
-- Fix crash related to not setting player user identifier and setitng it too late.
+- Fix crash related to not setting player user identifier and setting it too late.
 
 ## v2.3.0
 - SDK gets and caches placements internally.
