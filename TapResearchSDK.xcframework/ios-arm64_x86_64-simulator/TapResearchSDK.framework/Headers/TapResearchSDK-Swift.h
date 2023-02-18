@@ -491,15 +491,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable p
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
 + (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
 + (void)setAppSession:(TRAppSession * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable lastDate;)
-+ (NSString * _Nullable)lastDate SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLastDate:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable invalidBundleVersion;)
-+ (NSString * _Nullable)invalidBundleVersion SWIFT_WARN_UNUSED_RESULT;
-+ (void)setInvalidBundleVersion:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable cpIdentifier;)
-+ (NSString * _Nullable)cpIdentifier SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCpIdentifier:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
 + (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsServerToServer:(BOOL)value;
@@ -1021,15 +1012,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable p
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
 + (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
 + (void)setAppSession:(TRAppSession * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable lastDate;)
-+ (NSString * _Nullable)lastDate SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLastDate:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable invalidBundleVersion;)
-+ (NSString * _Nullable)invalidBundleVersion SWIFT_WARN_UNUSED_RESULT;
-+ (void)setInvalidBundleVersion:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable cpIdentifier;)
-+ (NSString * _Nullable)cpIdentifier SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCpIdentifier:(NSString * _Nullable)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
 + (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
 + (void)setIsServerToServer:(BOOL)value;

@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.5.7
+- Improved stability.
+- Fix a rare memory access crash.
+
 ## v2.5.6
 - Improved stability.
 - Fix a potential crash in an API handler.
