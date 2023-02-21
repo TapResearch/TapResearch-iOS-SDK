@@ -149,9 +149,6 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class TRStore : ObjectiveC.NSObject {
   @objc public static var player: TapResearchSDK.TRPlayer?
   @objc public static var appSession: TapResearchSDK.TRAppSession?
-  @objc public static var lastDate: Swift.String?
-  @objc public static var invalidBundleVersion: Swift.String?
-  @objc public static var cpIdentifier: Swift.String?
   @objc public static var isServerToServer: Swift.Bool
   @objc public static var rewards: [TapResearchSDK.TRReward]?
   @objc public static var userIdentifier: Swift.String? {
