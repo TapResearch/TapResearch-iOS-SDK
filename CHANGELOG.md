@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.5.8
+- Improved stability.
+- Fix a rare memory access crash.
+- Include dSYMs.
+
 ## v2.5.7
 - Improved stability.
 - Fix a rare memory access crash.
