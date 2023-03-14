@@ -15,6 +15,7 @@ import _StringProcessing
   @objc public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
   @objc public class func setLogLevel(to logLevel: Swift.Int)
   @objc public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType, message: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
+  @objc public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType, message: Swift.String, error: Swift.Error? = nil, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
   @objc public class func logWeb(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, webEvent: TapResearchSDK.TRWebEvent)
   @objc override dynamic public init()
   @objc deinit

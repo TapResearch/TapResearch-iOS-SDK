@@ -201,6 +201,96 @@
           },
           {
             "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:eventType:category:message:error:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "TapResearchSDK.LogLevel",
+                "usr": "c:@M@TapResearchSDK@E@LogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogEventType",
+                "printedName": "TapResearchSDK.LogEventType",
+                "usr": "c:@M@TapResearchSDK@E@LogEventType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogType",
+                "printedName": "TapResearchSDK.LogType",
+                "usr": "c:@M@TapResearchSDK@E@LogType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapResearchSDK@objc(cs)LogHelper(cm)log:eventType:category:message:error:additionalHeaders:",
+            "mangledName": "$s14TapResearchSDK9LogHelperC3log_9eventType8category7message5error17additionalHeadersyAA0D5LevelO_AA0d5EventH0OAA0dH0OSSs5Error_pSgSDyS2SGSgtFZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logWeb",
             "printedName": "logWeb(_:eventType:webEvent:)",
             "children": [
@@ -7537,84 +7627,84 @@
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2712,
+      "offset": 3631,
       "length": 15,
       "value": "\"cp_identifier\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2754,
+      "offset": 3673,
       "length": 12,
       "value": "\"source_url\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2804,
+      "offset": 3723,
       "length": 30,
       "value": "\"failing_destination_uams {rl\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 3780,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2907,
+      "offset": 3826,
       "length": 23,
       "value": "\"web_error_full_detail\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2964,
+      "offset": 3883,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3011,
+      "offset": 3930,
       "length": 23,
       "value": "\"campaign_starting_url\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3064,
+      "offset": 3983,
       "length": 20,
       "value": "\"web_view_tab_index\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3117,
+      "offset": 4036,
       "length": 19,
       "value": "\"has_cp_identifier\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "Dictionary",
-      "offset": 3178,
+      "offset": 4097,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "Dictionary",
-      "offset": 3219,
+      "offset": 4138,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2660,
+      "offset": 3579,
       "length": 10,
       "value": "\"TapResearchSDK.TRWebEvent\""
     },
@@ -7714,7 +7804,7 @@
       "kind": "StringLiteral",
       "offset": 925,
       "length": 7,
-      "value": "\"2.5.7\""
+      "value": "\"2.5.8\""
     },
     {
       "filePath": "\/Users\/jeroen\/newtap\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",

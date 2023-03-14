@@ -399,6 +399,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
 + (void)configureWithPlatform:(enum PlatformType)platform appId:(NSString * _Nonnull)appId logLevel:(enum LogLevel)logLevel apiToken:(NSString * _Nonnull)apiToken additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
 + (void)setLogLevelTo:(NSInteger)logLevel;
 + (void)log:(enum LogLevel)level eventType:(enum LogEventType)eventType category:(enum LogType)category message:(NSString * _Nonnull)message additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)log:(enum LogLevel)level eventType:(enum LogEventType)eventType category:(enum LogType)category message:(NSString * _Nonnull)message error:(NSError * _Nullable)error additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
 + (void)logWeb:(enum LogLevel)level eventType:(enum LogEventType)eventType webEvent:(TRWebEvent * _Nonnull)webEvent;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
