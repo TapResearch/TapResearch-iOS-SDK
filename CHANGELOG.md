@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.0.0
+### This is a breaking change
+- SDK rewritten for stability, simplicity, and performance.
+- Added ability for some realtime feature updates and bug fixes.
+- Partial screen interstitials and banners.
+- Removed the need to store placement objects.
+- Improved error reporting.
+
 ## v2.5.8
 - Improved stability.
 - Fix a rare memory access crash.
