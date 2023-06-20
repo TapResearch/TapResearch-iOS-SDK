@@ -384,7 +384,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
 /// <hr/>
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
-- (void)onTapReseachDidError:(TRError * _Nonnull)error;
+- (void)onTapResearchDidError:(TRError * _Nonnull)error;
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 @end
 
@@ -783,7 +783,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
 /// <hr/>
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
-- (void)onTapReseachDidError:(TRError * _Nonnull)error;
+- (void)onTapResearchDidError:(TRError * _Nonnull)error;
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 @end
 

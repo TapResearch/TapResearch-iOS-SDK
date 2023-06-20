@@ -1,6 +1,10 @@
 # Changelog
 
-## v3.0.0
+## v3.0.0-beta2
+- Correct interface name.
+- Update to Unity support.
+
+## v3.0.0-beta1
 ### This is a breaking change
 - SDK rewritten for stability, simplicity, and performance.
 - Added ability for some realtime feature updates and bug fixes.
