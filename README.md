@@ -1,5 +1,5 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v3.0.0-beta1
+TapResearch iOS SDK v3.0.0-beta2
 
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
@@ -13,7 +13,7 @@ Create an [app](/supplier_dashboard/dashboard/apps/new) and grab your API Token.
 
 Add the pod info to the app's Podfile
  ```ruby
- pod 'TapResearch', '3.0.0-beta1'
+ pod 'TapResearch', '3.0.0-beta2'
  ```
 
  Then run the following command:
