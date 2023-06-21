@@ -11,6 +11,21 @@ Create an [app](/supplier_dashboard/dashboard/apps/new) and grab your API Token.
 
 ## Download
 
+### Swift Package Manager
+
+Add the following URL in the Xcode Swift Package Manager:
+
+https://github.com/TapResearch/TapResearch-iOS-SDK
+
+* Set Dependency Rule to "Exact Version" or "Up to Next Major Version"
+* Set the verrsion value to 3.0.0-beta2
+* Set "Add to Project" to your project 
+* Click "Add Package"
+
+In the resulting "Choose Package Product for TapResearch-iOS-SDK" select the TapResearchSDK row and click "Add Package".
+
+### Cocoapods
+
 Add the pod info to the app's Podfile
  ```ruby
  pod 'TapResearch', '3.0.0-beta2'
