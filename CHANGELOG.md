@@ -1,5 +1,8 @@
 # Changelog
 
+## v3.0.0-beta3
+- Tapping outside a banner dismisses the banner.
+
 ## v3.0.0-beta2
 - Correct interface name.
 - Update to Unity support.
