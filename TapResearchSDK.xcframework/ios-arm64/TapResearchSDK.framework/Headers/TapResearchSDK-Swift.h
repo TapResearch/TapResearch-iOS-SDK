@@ -284,19 +284,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NSString;
 @class NSCoder;
+@class NSString;
 
 /// <hr/>
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK7TRError")
 @interface TRError : NSError
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
-+ (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
-+ (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
-+ (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
@@ -357,16 +351,24 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
 @interface TapResearchSDK : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
++ (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
++ (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
++ (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(TRError * _Nullable))completion;
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
-+ (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(TRError * _Nullable))completion;
++ (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(TRError * _Nullable))completion;
++ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(TRError * _Nullable))completion;
++ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <hr/>
++ (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -384,8 +386,9 @@ SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
 /// <hr/>
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
-- (void)onTapResearchDidError:(TRError * _Nonnull)error;
+- (void)onTapResearchDidError:(NSError * _Nonnull)error;
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
+- (void)onTapResearchSdkReady;
 @end
 
 

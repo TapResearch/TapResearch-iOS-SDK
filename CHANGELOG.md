@@ -1,5 +1,10 @@
 # Changelog
 
+## v3.1.0-beta1
+- Added sendUserAttributes interface.
+- Added SDK ready callback.
+- Removed usage of TRError to simplify integration.
+
 ## v3.0.0-beta3
 - Tapping outside a banner dismisses the banner.
 
