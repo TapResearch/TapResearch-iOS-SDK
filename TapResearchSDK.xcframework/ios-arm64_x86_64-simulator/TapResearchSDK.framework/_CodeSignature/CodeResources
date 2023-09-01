@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1rTMedhhTk9UO79whREVGgb8Tqs=
+		/9f9KCexTTlyXMMRFKjVJHBL2aQ=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7pe25aWA92fp9ohYcsZvJtBGY50=
+		GcOLcW0ZfdUD2ZC1vsJdqVe4JCU=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		QtmaoJv+QeQlBv5zkQgoQH2Hccg=
+		z9uzlJug63hl7rDcbekMf0zEPxM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TAlspqm272QjsngMlQjC0Cetov40wm4PzA009y0Guik=
+			p/2kpzCI4CRgSwTbzC4KGpr2iIMwp/iEKLa0VRctlvI=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5F/4IAhnaV54dOdwHc5YEKTSxxxW2J3Ii9m2wUlLdWM=
+			dCTt+hM78ilWa6krE/bkwuzbDu9gtTMgqBI2DqHe9ek=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
