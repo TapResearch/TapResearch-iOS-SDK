@@ -1,5 +1,8 @@
 # Changelog
 
+## v3.1.0-beta2
+- Minor bugfixes.
+
 ## v3.1.0-beta1
 - Added sendUserAttributes interface.
 - Added SDK ready callback.
