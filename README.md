@@ -4,7 +4,8 @@ TapResearch iOS SDK v3.1.0-beta3.15
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
 
-This version is for use with Xcode 15, for Xcode 14 please use v3.1.0-beta3.14.
+> [!WARNING]
+> This version is for use with Xcode 15, for Xcode 14 please use **v3.1.0-beta3.14**.
 
 ## Setup
 
