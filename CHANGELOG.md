@@ -1,5 +1,11 @@
 # Changelog
 
+
+## v3.1.0-beta3.15
+- Built for Xcode 15.
+- Presentation animation bug fix.
+- Minor bugfixes.
+
 ## v3.1.0-beta3.14
 - Built for Xcode 14.
 - Presentation animation bug fix.

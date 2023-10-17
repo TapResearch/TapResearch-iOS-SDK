@@ -1,7 +1,7 @@
 framework module TapResearchSDK {
   umbrella header "TapResearchSDK.h"
-
   export *
+
   module * { export * }
 }
 
