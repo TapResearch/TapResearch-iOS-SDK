@@ -1,9 +1,16 @@
 # Changelog
 
+## v3.2.0-beta1-15
+- Built for Xcode 15.
+- Add support for multiple question content type
+- Add network check in showContent and canShowContent
+- Introduce new error codes, improved error reporting
+- Make reward callback optional (for server-to-server apps)
+
 ## v3.2.0-beta1-14
 - Built for Xcode 14.
 - Add support for multiple question content type
-- Add network check in showConent and canShowContent
+- Add network check in showContent and canShowContent
 - Introduce new error codes, improved error reporting
 - Make reward callback optional (for server-to-server apps)
 
