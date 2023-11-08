@@ -375,9 +375,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
 + (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
@@ -389,6 +386,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -406,9 +404,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
 - (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchSdkReady;
-@optional
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
+- (void)onTapResearchSdkReady;
 @end
 
 
@@ -797,9 +794,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
 + (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
@@ -811,6 +805,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -828,9 +823,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
 - (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchSdkReady;
-@optional
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
+- (void)onTapResearchSdkReady;
 @end
 
 
