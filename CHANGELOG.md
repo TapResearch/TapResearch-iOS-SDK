@@ -14,6 +14,10 @@
 - Introduce new error codes, improved error reporting
 - Make reward callback optional (for server-to-server apps)
 
+## v3.1.0-beta4-15
+- Built for Xcode 15.
+- Versioning fix for short bundle version string
+
 ## v3.1.0-beta3.15
 - Built for Xcode 15.
 - Presentation animation bug fix.
