@@ -18,6 +18,10 @@
 - Built for Xcode 15.
 - Versioning fix for short bundle version string
 
+## v3.1.0-beta4-14
+- Built for Xcode 14.
+- Versioning fix for short bundle version string
+
 ## v3.1.0-beta3.15
 - Built for Xcode 15.
 - Presentation animation bug fix.
