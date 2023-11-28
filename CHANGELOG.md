@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.2.0-beta2
+- One xcframework for Xcode 14 and Xcode 15.
+- Note: TapResearchSDK interface has been renamed to TapResearch.
+
 ## v3.2.0-beta1-15
 - Built for Xcode 15.
 - Add support for multiple question content type
