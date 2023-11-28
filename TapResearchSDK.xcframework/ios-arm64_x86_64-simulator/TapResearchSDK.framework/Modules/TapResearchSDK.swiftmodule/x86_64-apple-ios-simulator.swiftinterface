@@ -1,0 +1,48 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TapResearchSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
+import AppTrackingTransparency
+import CoreTelephony
+import Foundation
+import Network
+import Swift
+import SystemConfiguration
+@_exported import TapResearchSDK
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let transactionIdentifier: Swift.String?
+  @objc final public let placementTag: Swift.String?
+  @objc final public let placementIdentifier: Swift.String?
+  @objc final public let currencyName: Swift.String?
+  @objc final public let payoutEvent: Swift.String?
+  @objc final public let rewardAmount: Swift.Int
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol TapResearchSDKDelegate {
+  @objc func onTapResearchDidError(_ error: Foundation.NSError)
+  @objc func onTapResearchSdkReady()
+  @objc optional func onTapResearchDidReceiveRewards(_ rewards: [TapResearchSDK.TRReward])
+}
+@objc public protocol TapResearchContentDelegate {
+  @objc func onTapResearchContentShown(forPlacement placement: Swift.String)
+  @objc func onTapResearchContentDismissed(forPlacement placement: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class TapResearch : ObjectiveC.NSObject {
+  @objc public static let TapResearcherrorDomain: Swift.String
+  @objc public static let TapResearchErrorCode: Swift.String
+  @objc public static let TapResearchErrorCodeString: Swift.String
+  @objc deinit
+  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func canShowContent(forPlacement tag: Swift.String) -> Swift.Bool
+  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func sendUserAttributes(attributes: [Swift.AnyHashable : Any]) -> Foundation.NSError?
+}
