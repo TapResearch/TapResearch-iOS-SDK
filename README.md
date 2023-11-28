@@ -1,11 +1,7 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v3.1.0-beta4-14
-
+TapResearch iOS SDK v3.2.0-beta2
 
 For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
-
-> [!WARNING]
-> This version is for use with Xcode 14, for Xcode 15 please use **v3.1.0-beta4-15**.
 
 ## Setup
 
@@ -20,8 +16,8 @@ Add the following URL in the Xcode Swift Package Manager:
 
 https://github.com/TapResearch/TapResearch-iOS-SDK
 
-* Set Dependency Rule to "Exact Version" or "Up to Next Major Version"
-* Set the version value to 3.1.0-beta4-14
+* Set Dependency Rule to "Exact Version"
+* Set the version value to 3.2.0-beta2
 * Set "Add to Project" to your project 
 * Click "Add Package"
 
@@ -31,7 +27,7 @@ In the resulting "Choose Package Product for TapResearch-iOS-SDK" select the Tap
 
 Add the pod info to the app's Podfile
  ```ruby
- pod 'TapResearch', '3.1.0-beta4-14'
+ pod 'TapResearch', '3.2.0-beta2'
  ```
 
  Then run the following command:
