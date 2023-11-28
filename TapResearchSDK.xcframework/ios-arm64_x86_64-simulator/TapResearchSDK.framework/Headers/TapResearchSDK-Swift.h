@@ -262,7 +262,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -284,43 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NSCoder;
 @class NSString;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK7TRError")
-@interface TRError : NSError
-/// <hr/>
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
-@end
-
-
-@class UIViewController;
-@class NSBundle;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
-@interface TRNavigationController : UINavigationController
-/// <hr/>
-@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
-/// <hr/>
-@property (nonatomic, readonly) BOOL shouldAutorotate;
-- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
-- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK11TRPlacement")
-@interface TRPlacement : NSObject
-@end
-
 
 /// <hr/>
 /// <hr/>
@@ -336,27 +299,23 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
-@protocol TapResearchContentDelegate
-- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
-- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
-@end
-
 @protocol TapResearchSDKDelegate;
+@class NSError;
+@protocol TapResearchContentDelegate;
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
-@interface TapResearchSDK : NSObject
+SWIFT_CLASS("_TtC14TapResearchSDK11TapResearch")
+@interface TapResearch : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
 + (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
 + (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
 + (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
@@ -369,17 +328,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface TapResearchSDK (SWIFT_EXTENSION(TapResearchSDK))
-/// <hr/>
-- (void)onPlacementReadyWithPlacement:(TRPlacement * _Nonnull)placement;
-/// <hr/>
-- (void)onPlacementUnavailableWithPlacement:(TRPlacement * _Nonnull)placement;
-@end
 
+
+/// <hr/>
+/// <hr/>
+SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
+@protocol TapResearchContentDelegate
+- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
+- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
+@end
 
 
 /// <hr/>
@@ -387,8 +347,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
 - (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 - (void)onTapResearchSdkReady;
+@optional
+- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 @end
 
 
@@ -664,7 +625,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #endif
@@ -686,43 +646,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class NSCoder;
 @class NSString;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK7TRError")
-@interface TRError : NSError
-/// <hr/>
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
-@end
-
-
-@class UIViewController;
-@class NSBundle;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
-@interface TRNavigationController : UINavigationController
-/// <hr/>
-@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
-/// <hr/>
-@property (nonatomic, readonly) BOOL shouldAutorotate;
-- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
-- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK11TRPlacement")
-@interface TRPlacement : NSObject
-@end
-
 
 /// <hr/>
 /// <hr/>
@@ -738,27 +662,23 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
-@protocol TapResearchContentDelegate
-- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
-- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
-@end
-
 @protocol TapResearchSDKDelegate;
+@class NSError;
+@protocol TapResearchContentDelegate;
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK14TapResearchSDK")
-@interface TapResearchSDK : NSObject
+SWIFT_CLASS("_TtC14TapResearchSDK11TapResearch")
+@interface TapResearch : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
 + (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
 + (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
 + (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
@@ -771,17 +691,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface TapResearchSDK (SWIFT_EXTENSION(TapResearchSDK))
-/// <hr/>
-- (void)onPlacementReadyWithPlacement:(TRPlacement * _Nonnull)placement;
-/// <hr/>
-- (void)onPlacementUnavailableWithPlacement:(TRPlacement * _Nonnull)placement;
-@end
 
+
+/// <hr/>
+/// <hr/>
+SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
+@protocol TapResearchContentDelegate
+- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
+- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
+@end
 
 
 /// <hr/>
@@ -789,8 +710,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 @protocol TapResearchSDKDelegate
 - (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 - (void)onTapResearchSdkReady;
+@optional
+- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 @end
 
 
