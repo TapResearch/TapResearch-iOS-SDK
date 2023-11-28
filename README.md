@@ -16,7 +16,7 @@ Add the following URL in the Xcode Swift Package Manager:
 
 https://github.com/TapResearch/TapResearch-iOS-SDK
 
-* Set Dependency Rule to "Exact Version" or "Up to Next Major Version"
+* Set Dependency Rule to "Exact Version"
 * Set the version value to 3.2.0-beta2
 * Set "Add to Project" to your project 
 * Click "Add Package"
