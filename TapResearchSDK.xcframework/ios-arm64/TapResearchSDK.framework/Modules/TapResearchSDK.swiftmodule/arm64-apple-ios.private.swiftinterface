@@ -14,17 +14,6 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let transactionIdentifier: Swift.String?
-  @objc final public let placementTag: Swift.String?
-  @objc final public let placementIdentifier: Swift.String?
-  @objc final public let currencyName: Swift.String?
-  @objc final public let payoutEvent: Swift.String?
-  @objc final public let rewardAmount: Swift.Int
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 @objc public protocol TapResearchSDKDelegate {
   @objc func onTapResearchDidError(_ error: Foundation.NSError)
   @objc func onTapResearchSdkReady()
@@ -45,4 +34,15 @@ import _StringProcessing
   @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func sendUserAttributes(attributes: [Swift.AnyHashable : Any]) -> Foundation.NSError?
+}
+@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let transactionIdentifier: Swift.String?
+  @objc final public let placementTag: Swift.String?
+  @objc final public let placementIdentifier: Swift.String?
+  @objc final public let currencyName: Swift.String?
+  @objc final public let payoutEvent: Swift.String?
+  @objc final public let rewardAmount: Swift.Int
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
