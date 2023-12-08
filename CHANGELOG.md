@@ -18,6 +18,9 @@
 - Introduce new error codes, improved error reporting
 - Make reward callback optional (for server-to-server apps)
 
+## v3.1.0-beta6
+- Bug fixes.
+
 ## v3.1.0-beta5
 - One xcframework for Xcode 14 and Xcode 15.
 - Note: TapResearchSDK interface has been renamed to TapResearch.
