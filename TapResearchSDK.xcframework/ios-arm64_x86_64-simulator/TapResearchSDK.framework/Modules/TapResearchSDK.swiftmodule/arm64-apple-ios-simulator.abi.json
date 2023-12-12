@@ -2634,28 +2634,28 @@
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationAnimation.swift",
       "kind": "FloatLiteral",
-      "offset": 1476,
+      "offset": 1523,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationAnimation.swift",
       "kind": "IntegerLiteral",
-      "offset": 1738,
+      "offset": 1785,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationAnimation.swift",
       "kind": "FloatLiteral",
-      "offset": 1761,
+      "offset": 1808,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationAnimation.swift",
       "kind": "FloatLiteral",
-      "offset": 1791,
+      "offset": 1838,
       "length": 3,
       "value": "0.0"
     },
@@ -2928,154 +2928,119 @@
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "StringLiteral",
-      "offset": 800,
-      "length": 7,
-      "value": "\"title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 835,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 14,
-      "value": "\"action_title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 914,
-      "length": 15,
-      "value": "\"dismiss_title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 957,
-      "length": 20,
-      "value": "\"action_destructive\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 800,
-      "length": 7,
-      "value": "\"title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 835,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 872,
-      "length": 14,
-      "value": "\"action_title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 914,
-      "length": 15,
-      "value": "\"dismiss_title\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 957,
-      "length": 20,
-      "value": "\"action_destructive\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
-      "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1213,
       "length": 14,
       "value": "\"Leave Survey\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "StringLiteral",
-      "offset": 1385,
+      "offset": 1322,
       "length": 91,
       "value": "\"Once you leave this survey you won't be able to try it again.\n\nDo you want to continue?\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "StringLiteral",
-      "offset": 1571,
+      "offset": 1508,
       "length": 14,
       "value": "\"Leave Survey\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 1617,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 1811,
+      "offset": 1751,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 1815,
+      "offset": 1755,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 1822,
+      "offset": 1762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 1864,
+      "offset": 1804,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
+      "kind": "StringLiteral",
+      "offset": 1954,
+      "length": 14,
+      "value": "\"Leave Survey\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
+      "kind": "StringLiteral",
+      "offset": 1996,
+      "length": 91,
+      "value": "\"Once you leave this survey you won't be able to try it again.\n\nDo you want to continue?\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
+      "kind": "StringLiteral",
+      "offset": 2115,
+      "length": 14,
+      "value": "\"Leave Survey\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
+      "kind": "StringLiteral",
+      "offset": 2157,
+      "length": 8,
+      "value": "\"Cancel\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2193,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "IntegerLiteral",
-      "offset": 3819,
+      "offset": 4331,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 3824,
+      "offset": 4336,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 3831,
+      "offset": 4343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationNavigationBar.swift",
       "kind": "BooleanLiteral",
-      "offset": 3860,
+      "offset": 4372,
       "length": 4,
       "value": "true"
     },
@@ -3623,14 +3588,14 @@
       "kind": "StringLiteral",
       "offset": 205,
       "length": 13,
-      "value": "\"3.1.0-beta6\""
+      "value": "\"3.1.0-beta7\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 14,
-      "value": "\"3.1.0--beta5\""
+      "value": "\"3.1.0--beta7\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
@@ -4531,63 +4496,63 @@
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1571,
+      "offset": 1629,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1597,
+      "offset": 1655,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1637,
+      "offset": 1695,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "StringLiteral",
-      "offset": 1674,
+      "offset": 1732,
       "length": 13,
       "value": "\"full_screen\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1708,
+      "offset": 1766,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1744,
+      "offset": 1802,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1788,
+      "offset": 1846,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1810,
+      "offset": 1868,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/Configurations\/TRConfigurationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1846,
+      "offset": 1904,
       "length": 5,
       "value": "false"
     },
