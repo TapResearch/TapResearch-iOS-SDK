@@ -5717,7 +5717,7 @@
       "kind": "StringLiteral",
       "offset": 205,
       "length": 13,
-      "value": "\"3.2.0-beta3\""
+      "value": "\"3.2.0-beta4\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
@@ -6016,42 +6016,56 @@
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
-      "offset": 11504,
+      "offset": 10904,
+      "length": 17,
+      "value": "\"https:\/\/seek.gg\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "kind": "StringLiteral",
+      "offset": 11554,
       "length": 43,
       "value": "\"handleSurveyWallRedirect('%@', '%@', %d);\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
-      "offset": 11580,
+      "offset": 11630,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
-      "offset": 11712,
+      "offset": 11762,
       "length": 40,
       "value": "\"handleSurveyWallRedirect('%@', '', 0);\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
-      "offset": 11785,
+      "offset": 11835,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
-      "offset": 12336,
+      "offset": 12386,
       "length": 24,
       "value": "\"tapresearch.com\/legal\/\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "kind": "StringLiteral",
+      "offset": 12443,
+      "length": 17,
+      "value": "\"https:\/\/seek.gg\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "Dictionary",
-      "offset": 12552,
+      "offset": 12652,
       "length": 3,
       "value": "[]"
     },
@@ -6792,8 +6806,15 @@
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 18568,
+      "length": 17,
+      "value": "\"https:\/\/seek.gg\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
       "kind": "Dictionary",
-      "offset": 18727,
+      "offset": 18777,
       "length": 3,
       "value": "[]"
     },

@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.0-beta4
+- Support offers.
+
+## v3.2.0-beta3
+- Bug fixes.
+
 ## v3.2.0-beta2
 - Bug fixes.
 
