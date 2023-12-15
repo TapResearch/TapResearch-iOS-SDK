@@ -27,6 +27,9 @@
 - Introduce new error codes, improved error reporting
 - Make reward callback optional (for server-to-server apps)
 
+## v3.1.0-beta8
+- Support offers.
+
 ## v3.1.0-beta7
 - Bug fixes.
 

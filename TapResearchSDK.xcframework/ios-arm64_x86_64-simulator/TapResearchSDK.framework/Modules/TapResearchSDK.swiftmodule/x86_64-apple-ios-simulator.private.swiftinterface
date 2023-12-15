@@ -14,22 +14,10 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let transactionIdentifier: Swift.String?
-  @objc final public let placementTag: Swift.String?
-  @objc final public let placementIdentifier: Swift.String?
-  @objc final public let currencyName: Swift.String?
-  @objc final public let payoutEvent: Swift.String?
-  @objc final public let rewardAmount: Swift.Int
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 @objc public protocol TapResearchSDKDelegate {
   @objc func onTapResearchDidError(_ error: Foundation.NSError)
   @objc func onTapResearchSdkReady()
   @objc optional func onTapResearchDidReceiveRewards(_ rewards: [TapResearchSDK.TRReward])
-  @objc optional func onTapResearchQuickQuestionResponse(_ qqPayload: TapResearchSDK.TRQQDataPayload)
 }
 @objc public protocol TapResearchContentDelegate {
   @objc func onTapResearchContentShown(forPlacement placement: Swift.String)
@@ -47,52 +35,13 @@ import _StringProcessing
   @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func sendUserAttributes(attributes: [Swift.AnyHashable : Any]) -> Foundation.NSError?
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayload : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let survey_identifier: Swift.String
-  @objc final public let app_name: Swift.String
-  @objc final public let api_token: Swift.String
-  @objc final public let sdk_version: Swift.String
-  @objc final public let platform: Swift.String
-  @objc final public let placement_tag: Swift.String
-  @objc final public let user_identifier: Swift.String
-  @objc final public let user_locale: Swift.String
-  @objc final public let seen_at: Swift.String
-  @objc final public let questions: [TapResearchSDK.TRQQDataPayloadQuestion]
-  @objc final public let target_audience: [TapResearchSDK.TRQQDataPayloadTargetFilter]?
-  @objc final public let complete: TapResearchSDK.TRQQComplete?
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc final public class TRQQComplete : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let complete_identifier: Swift.String
-  @objc final public let completed_at: Swift.String
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc final public class TRQQUserAnswer : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let value: Swift.String
-  @objc final public let identifiers: [Swift.String]
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayloadQuestion : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let question_identifier: Swift.String
-  @objc final public let question_text: Swift.String
-  @objc final public let question_type: Swift.String
-  @objc final public let rating_scale_size: Swift.Int
-  @objc final public let user_answer: TapResearchSDK.TRQQUserAnswer?
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayloadTargetFilter : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let filter_attribute_name: Swift.String
-  @objc final public let filter_operator: Swift.String
-  @objc final public let filter_value: Swift.String
-  @objc final public let user_value: Swift.String
+@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let transactionIdentifier: Swift.String?
+  @objc final public let placementTag: Swift.String?
+  @objc final public let placementIdentifier: Swift.String?
+  @objc final public let currencyName: Swift.String?
+  @objc final public let payoutEvent: Swift.String?
+  @objc final public let rewardAmount: Swift.Int
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
