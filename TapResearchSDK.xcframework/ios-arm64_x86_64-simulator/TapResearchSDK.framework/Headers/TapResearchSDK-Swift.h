@@ -287,79 +287,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK12TRQQComplete")
-@interface TRQQComplete : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull complete_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull completed_at;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class TRQQDataPayloadQuestion;
-@class TRQQDataPayloadTargetFilter;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK15TRQQDataPayload")
-@interface TRQQDataPayload : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull survey_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull app_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull api_token;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdk_version;
-@property (nonatomic, readonly, copy) NSString * _Nonnull platform;
-@property (nonatomic, readonly, copy) NSString * _Nonnull placement_tag;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_locale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull seen_at;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadQuestion *> * _Nonnull questions;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadTargetFilter *> * _Nullable target_audience;
-@property (nonatomic, readonly, strong) TRQQComplete * _Nullable complete;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class TRQQUserAnswer;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK23TRQQDataPayloadQuestion")
-@interface TRQQDataPayloadQuestion : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_type;
-@property (nonatomic, readonly) NSInteger rating_scale_size;
-@property (nonatomic, readonly, strong) TRQQUserAnswer * _Nullable user_answer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK27TRQQDataPayloadTargetFilter")
-@interface TRQQDataPayloadTargetFilter : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_attribute_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_operator;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_value;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_value;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK14TRQQUserAnswer")
-@interface TRQQUserAnswer : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull value;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull identifiers;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 @interface TRReward : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable transactionIdentifier;
@@ -423,7 +350,6 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 - (void)onTapResearchSdkReady;
 @optional
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-- (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
 @end
 
 
@@ -724,79 +650,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK12TRQQComplete")
-@interface TRQQComplete : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull complete_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull completed_at;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class TRQQDataPayloadQuestion;
-@class TRQQDataPayloadTargetFilter;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK15TRQQDataPayload")
-@interface TRQQDataPayload : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull survey_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull app_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull api_token;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdk_version;
-@property (nonatomic, readonly, copy) NSString * _Nonnull platform;
-@property (nonatomic, readonly, copy) NSString * _Nonnull placement_tag;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_locale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull seen_at;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadQuestion *> * _Nonnull questions;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadTargetFilter *> * _Nullable target_audience;
-@property (nonatomic, readonly, strong) TRQQComplete * _Nullable complete;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class TRQQUserAnswer;
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK23TRQQDataPayloadQuestion")
-@interface TRQQDataPayloadQuestion : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_type;
-@property (nonatomic, readonly) NSInteger rating_scale_size;
-@property (nonatomic, readonly, strong) TRQQUserAnswer * _Nullable user_answer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK27TRQQDataPayloadTargetFilter")
-@interface TRQQDataPayloadTargetFilter : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_attribute_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_operator;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_value;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_value;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK14TRQQUserAnswer")
-@interface TRQQUserAnswer : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull value;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull identifiers;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-/// <hr/>
-/// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 @interface TRReward : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable transactionIdentifier;
@@ -860,7 +713,6 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 - (void)onTapResearchSdkReady;
 @optional
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-- (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
 @end
 
 
