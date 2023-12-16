@@ -262,7 +262,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
+
+#import <TapResearchSDK/TapResearchSDK.h>
 
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -282,76 +285,261 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
+@class NSURLSession;
 @class NSString;
 
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
-@interface TRReward : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable transactionIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementTag;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable currencyName;
-@property (nonatomic, readonly, copy) NSString * _Nullable payoutEvent;
-@property (nonatomic, readonly) NSInteger rewardAmount;
+SWIFT_CLASS("_TtC14TapResearchSDK9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Constants * _Nonnull shared;)
++ (Constants * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSURLSession * _Null_unspecified urlSession;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRBaseURL;)
++ (NSString * _Nonnull)kTRBaseURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersion;)
++ (NSString * _Nonnull)kTRVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatform;)
++ (NSString * _Nonnull)kTRPlatform SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAPIVersion;)
++ (NSString * _Nonnull)kTRAPIVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRErrorDomain;)
++ (NSString * _Nonnull)kTRErrorDomain SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostVersions;)
++ (NSString * _Nonnull)kTRPostVersions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetOffers;)
++ (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
++ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
++ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
++ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostInterstitialEvents;)
++ (NSString * _Nonnull)kTRPostInterstitialEvents SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
++ (NSTimeInterval)kNetworkTimeoutSeconds SWIFT_WARN_UNUSED_RESULT;
++ (void)setUrlResponseMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
++ (void)setUrlPathMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifier;)
++ (NSString * _Nonnull)kTRCPIdentifier SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCryptoKey;)
++ (NSString * _Nonnull)kTRCryptoKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRShouldSleepHeader;)
++ (NSString * _Nonnull)kTRShouldSleepHeader SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageOfferEntryKey;)
++ (NSString * _Nonnull)kTRMessageOfferEntryKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageNoOfferKey;)
++ (NSString * _Nonnull)kTRMessageNoOfferKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageAbandonKey;)
++ (NSString * _Nonnull)kTRMessageAbandonKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonButtonTextKey;)
++ (NSString * _Nonnull)kTRAbandonButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCloseButtonTextKey;)
++ (NSString * _Nonnull)kTRCloseButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertTitleKey;)
++ (NSString * _Nonnull)kTRAbandonAlertTitleKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertContinueKey;)
++ (NSString * _Nonnull)kTRAbandonAlertContinueKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertCancelKey;)
++ (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
++ (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDisplayDimensions;)
++ (NSString * _Nonnull)kTRDisplayDimensions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
++ (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
++ (NSString * _Nonnull)kTRScreenDensityKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenPixelSizeKey;)
++ (NSString * _Nonnull)kTRScreenPixelSizeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRConnectionTypeKey;)
++ (NSString * _Nonnull)kTRConnectionTypeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCarrierKey;)
++ (NSString * _Nonnull)kTRCarrierKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatformKey;)
++ (NSString * _Nonnull)kTRPlatformKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROsVersionKey;)
++ (NSString * _Nonnull)kTROsVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDeviceNameKey;)
++ (NSString * _Nonnull)kTRDeviceNameKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTVersionKey;)
++ (NSString * _Nonnull)kTVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppIdKey;)
++ (NSString * _Nonnull)kTRAppIdKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRTriggeredAtKey;)
++ (NSString * _Nonnull)kTRTriggeredAtKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerEarnedRewardNotification;)
++ (NSString * _Nonnull)kTRPlayerEarnedRewardNotification SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionMonitoringInterval;)
++ (NSInteger)kTRSessionMonitoringInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionLoginThreshold;)
++ (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
++ (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
++ (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
++ (NSString * _Nonnull)kTRDefaultIdfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultFastPassPollingTime;)
++ (double)kTRDefaultFastPassPollingTime SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultStandardPollingTime;)
++ (double)kTRDefaultStandardPollingTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDevelopment = 0,
+  EnvironmentYavin = 1,
+  EnvironmentJedha = 2,
+  EnvironmentProduction = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
+  HTTPParamsDataTypeNone = 0,
+  HTTPParamsDataTypeJson = 1,
+  HTTPParamsDataTypeQuery = 2,
+};
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
+@interface LogEvent : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol TapResearchSDKDelegate;
+typedef SWIFT_ENUM(NSInteger, LogEventType, open) {
+  LogEventTypeCrash = 0,
+  LogEventTypeUser = 1,
+  LogEventTypeWebFailedPreload = 4,
+  LogEventTypeWebFailedload = 5,
+};
+
+enum PlatformType : NSInteger;
+enum LogLevel : NSInteger;
+enum LogType : NSInteger;
+@class TRWebEvent;
+
+SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
+@interface LogHelper : NSObject
++ (void)configureWithPlatform:(enum PlatformType)platform appId:(NSString * _Nonnull)appId logLevel:(enum LogLevel)logLevel apiToken:(NSString * _Nonnull)apiToken additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)setLogLevelTo:(NSInteger)logLevel;
++ (void)log:(enum LogLevel)level eventType:(enum LogEventType)eventType category:(enum LogType)category message:(NSString * _Nonnull)message additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)logWeb:(enum LogLevel)level eventType:(enum LogEventType)eventType webEvent:(TRWebEvent * _Nonnull)webEvent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
+  LogLevelHalt = -1,
+  LogLevelNone = 0,
+  LogLevelDebug = 1,
+  LogLevelInfo = 2,
+  LogLevelWarning = 3,
+  LogLevelError = 4,
+};
+
+typedef SWIFT_ENUM(NSInteger, LogType, open) {
+  LogTypeGeneral = 0,
+  LogTypeNetwork = 1,
+  LogTypeLifecycle = 2,
+  LogTypeWeb = 3,
+};
+
+
+typedef SWIFT_ENUM(NSInteger, PlatformType, open) {
+  PlatformTypeIos = 0,
+  PlatformTypeTvOS = 1,
+};
+
+@class TRPlacement;
+@class TROffer;
+@protocol TapResearchEventDelegate;
+@protocol TapResearchSurveyDelegate;
+@class TRPlacementCustomParameterList;
 @class NSError;
-@protocol TapResearchContentDelegate;
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK11TapResearch")
-@interface TapResearch : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
-+ (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
-+ (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
-+ (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC14TapResearchSDK16TREventPresenter")
+@interface TREventPresenter : NSObject
 /// <hr/>
++ (NSError * _Nullable)displayEvent:(TRPlacement * _Nonnull)placement offer:(TROffer * _Nonnull)offer eventId:(NSString * _Nullable)eventId playerIdentifier:(NSString * _Nonnull)playerIdentifier displayDelegate:(id <TapResearchEventDelegate> _Nullable)displayDelegate surveyDelegate:(id <TapResearchSurveyDelegate> _Nullable)surveyDelegate closeButtonLocation:(TRDisplayEventExitButtonLocation)closeButtonLocation transitionStyle:(TRDisplayEventTransitionType)transitionStyle customParameters:(TRPlacementCustomParameterList * _Nonnull)customParameters SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
+@interface TRLogger : NSObject
++ (void)setLogLevelTo:(enum LogLevel)logLevel;
++ (void)setEnvironmentTo:(enum Environment)environment;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSData;
+@class NSURLRequest;
+
+/// <hr/>
+/// <hr/>
+SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
+@interface TRRequestProvider : NSObject
+/// <hr/>
++ (BOOL)shouldMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSData * _Nullable)urlMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSURLRequest * _Nullable)requestWithMethod:(NSString * _Nonnull)method url:(NSString * _Nonnull)url headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers paramsType:(enum HTTPParamsDataType)paramsType params:(NSDictionary<NSString *, id> * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
+@interface TRWebEvent : NSObject
+- (nonnull instancetype)initWithError:(NSError * _Nonnull)error startingUrlString:(NSString * _Nonnull)startingUrlString webSourceUrl:(NSString * _Nullable)webSourceUrl cpIdentifier:(NSString * _Nullable)cpIdentifier tabIndex:(NSInteger)tabIndex isProvisional:(BOOL)isProvisional OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <hr/>
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
-@protocol TapResearchContentDelegate
-- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
-- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
-@protocol TapResearchSDKDelegate
-- (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchSdkReady;
-@optional
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-@end
-
 
 #endif
 #if defined(__cplusplus)
@@ -625,7 +813,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
+
+#import <TapResearchSDK/TapResearchSDK.h>
 
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -645,76 +836,261 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
+@class NSURLSession;
 @class NSString;
 
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
-@interface TRReward : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable transactionIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementTag;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable currencyName;
-@property (nonatomic, readonly, copy) NSString * _Nullable payoutEvent;
-@property (nonatomic, readonly) NSInteger rewardAmount;
+SWIFT_CLASS("_TtC14TapResearchSDK9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Constants * _Nonnull shared;)
++ (Constants * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSURLSession * _Null_unspecified urlSession;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRBaseURL;)
++ (NSString * _Nonnull)kTRBaseURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersion;)
++ (NSString * _Nonnull)kTRVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatform;)
++ (NSString * _Nonnull)kTRPlatform SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAPIVersion;)
++ (NSString * _Nonnull)kTRAPIVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRErrorDomain;)
++ (NSString * _Nonnull)kTRErrorDomain SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostVersions;)
++ (NSString * _Nonnull)kTRPostVersions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetOffers;)
++ (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
++ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
++ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
++ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostInterstitialEvents;)
++ (NSString * _Nonnull)kTRPostInterstitialEvents SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
++ (NSTimeInterval)kNetworkTimeoutSeconds SWIFT_WARN_UNUSED_RESULT;
++ (void)setUrlResponseMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
++ (void)setUrlPathMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifier;)
++ (NSString * _Nonnull)kTRCPIdentifier SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCryptoKey;)
++ (NSString * _Nonnull)kTRCryptoKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRShouldSleepHeader;)
++ (NSString * _Nonnull)kTRShouldSleepHeader SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageOfferEntryKey;)
++ (NSString * _Nonnull)kTRMessageOfferEntryKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageNoOfferKey;)
++ (NSString * _Nonnull)kTRMessageNoOfferKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageAbandonKey;)
++ (NSString * _Nonnull)kTRMessageAbandonKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonButtonTextKey;)
++ (NSString * _Nonnull)kTRAbandonButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCloseButtonTextKey;)
++ (NSString * _Nonnull)kTRCloseButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertTitleKey;)
++ (NSString * _Nonnull)kTRAbandonAlertTitleKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertContinueKey;)
++ (NSString * _Nonnull)kTRAbandonAlertContinueKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertCancelKey;)
++ (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
++ (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDisplayDimensions;)
++ (NSString * _Nonnull)kTRDisplayDimensions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
++ (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
++ (NSString * _Nonnull)kTRScreenDensityKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenPixelSizeKey;)
++ (NSString * _Nonnull)kTRScreenPixelSizeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRConnectionTypeKey;)
++ (NSString * _Nonnull)kTRConnectionTypeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCarrierKey;)
++ (NSString * _Nonnull)kTRCarrierKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatformKey;)
++ (NSString * _Nonnull)kTRPlatformKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROsVersionKey;)
++ (NSString * _Nonnull)kTROsVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDeviceNameKey;)
++ (NSString * _Nonnull)kTRDeviceNameKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTVersionKey;)
++ (NSString * _Nonnull)kTVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppIdKey;)
++ (NSString * _Nonnull)kTRAppIdKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRTriggeredAtKey;)
++ (NSString * _Nonnull)kTRTriggeredAtKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerEarnedRewardNotification;)
++ (NSString * _Nonnull)kTRPlayerEarnedRewardNotification SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionMonitoringInterval;)
++ (NSInteger)kTRSessionMonitoringInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionLoginThreshold;)
++ (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
++ (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
++ (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
++ (NSString * _Nonnull)kTRDefaultIdfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultFastPassPollingTime;)
++ (double)kTRDefaultFastPassPollingTime SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultStandardPollingTime;)
++ (double)kTRDefaultStandardPollingTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDevelopment = 0,
+  EnvironmentYavin = 1,
+  EnvironmentJedha = 2,
+  EnvironmentProduction = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
+  HTTPParamsDataTypeNone = 0,
+  HTTPParamsDataTypeJson = 1,
+  HTTPParamsDataTypeQuery = 2,
+};
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
+@interface LogEvent : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol TapResearchSDKDelegate;
+typedef SWIFT_ENUM(NSInteger, LogEventType, open) {
+  LogEventTypeCrash = 0,
+  LogEventTypeUser = 1,
+  LogEventTypeWebFailedPreload = 4,
+  LogEventTypeWebFailedload = 5,
+};
+
+enum PlatformType : NSInteger;
+enum LogLevel : NSInteger;
+enum LogType : NSInteger;
+@class TRWebEvent;
+
+SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
+@interface LogHelper : NSObject
++ (void)configureWithPlatform:(enum PlatformType)platform appId:(NSString * _Nonnull)appId logLevel:(enum LogLevel)logLevel apiToken:(NSString * _Nonnull)apiToken additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)setLogLevelTo:(NSInteger)logLevel;
++ (void)log:(enum LogLevel)level eventType:(enum LogEventType)eventType category:(enum LogType)category message:(NSString * _Nonnull)message additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)logWeb:(enum LogLevel)level eventType:(enum LogEventType)eventType webEvent:(TRWebEvent * _Nonnull)webEvent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
+  LogLevelHalt = -1,
+  LogLevelNone = 0,
+  LogLevelDebug = 1,
+  LogLevelInfo = 2,
+  LogLevelWarning = 3,
+  LogLevelError = 4,
+};
+
+typedef SWIFT_ENUM(NSInteger, LogType, open) {
+  LogTypeGeneral = 0,
+  LogTypeNetwork = 1,
+  LogTypeLifecycle = 2,
+  LogTypeWeb = 3,
+};
+
+
+typedef SWIFT_ENUM(NSInteger, PlatformType, open) {
+  PlatformTypeIos = 0,
+  PlatformTypeTvOS = 1,
+};
+
+@class TRPlacement;
+@class TROffer;
+@protocol TapResearchEventDelegate;
+@protocol TapResearchSurveyDelegate;
+@class TRPlacementCustomParameterList;
 @class NSError;
-@protocol TapResearchContentDelegate;
 
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK11TapResearch")
-@interface TapResearch : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearcherrorDomain;)
-+ (NSString * _Nonnull)TapResearcherrorDomain SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
-+ (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
-+ (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC14TapResearchSDK16TREventPresenter")
+@interface TREventPresenter : NSObject
 /// <hr/>
++ (NSError * _Nullable)displayEvent:(TRPlacement * _Nonnull)placement offer:(TROffer * _Nonnull)offer eventId:(NSString * _Nullable)eventId playerIdentifier:(NSString * _Nonnull)playerIdentifier displayDelegate:(id <TapResearchEventDelegate> _Nullable)displayDelegate surveyDelegate:(id <TapResearchSurveyDelegate> _Nullable)surveyDelegate closeButtonLocation:(TRDisplayEventExitButtonLocation)closeButtonLocation transitionStyle:(TRDisplayEventTransitionType)transitionStyle customParameters:(TRPlacementCustomParameterList * _Nonnull)customParameters SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
+@interface TRLogger : NSObject
++ (void)setLogLevelTo:(enum LogLevel)logLevel;
++ (void)setEnvironmentTo:(enum Environment)environment;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSData;
+@class NSURLRequest;
+
+/// <hr/>
+/// <hr/>
+SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
+@interface TRRequestProvider : NSObject
+/// <hr/>
++ (BOOL)shouldMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSData * _Nullable)urlMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSURLRequest * _Nullable)requestWithMethod:(NSString * _Nonnull)method url:(NSString * _Nonnull)url headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers paramsType:(enum HTTPParamsDataType)paramsType params:(NSDictionary<NSString *, id> * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
+@interface TRWebEvent : NSObject
+- (nonnull instancetype)initWithError:(NSError * _Nonnull)error startingUrlString:(NSString * _Nonnull)startingUrlString webSourceUrl:(NSString * _Nullable)webSourceUrl cpIdentifier:(NSString * _Nullable)cpIdentifier tabIndex:(NSInteger)tabIndex isProvisional:(BOOL)isProvisional OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <hr/>
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <hr/>
-+ (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
-@protocol TapResearchContentDelegate
-- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
-- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
-@end
-
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
-@protocol TapResearchSDKDelegate
-- (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchSdkReady;
-@optional
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-@end
-
 
 #endif
 #if defined(__cplusplus)
