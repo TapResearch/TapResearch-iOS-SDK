@@ -1,5 +1,7 @@
 # Changelog
 
+> <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.9 Legacy SDK update is available with support for offers.</span>
+
 ## v3.2.0-beta4
 - Support offers.
 
@@ -80,6 +82,9 @@
 - Partial screen interstitials and banners.
 - Removed the need to store placement objects.
 - Improved error reporting.
+
+## v2.5.9
+- Support offers.
 
 ## v2.5.8
 - Improved stability.
