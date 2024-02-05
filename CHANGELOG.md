@@ -89,6 +89,9 @@
 - Removed the need to store placement objects.
 - Improved error reporting.
 
+## v2.5.10
+- Bug fixes.
+
 ## v2.5.9
 - Support offers.
 
