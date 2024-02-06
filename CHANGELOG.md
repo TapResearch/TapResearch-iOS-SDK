@@ -2,6 +2,9 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.9 Legacy SDK update is available with support for offers.</span>
 
+## v3.2.3
+- Bug fixes.
+
 ## v3.2.2
 - Bug fixes.
 
