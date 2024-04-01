@@ -1,100 +1,218 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TapResearchSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapResearchSDK
 import AdSupport
-import AppTrackingTransparency
 import CoreTelephony
 import Foundation
-import Network
+import OSLog
 import Swift
-import SystemConfiguration
 @_exported import TapResearchSDK
 import UIKit
-import WebKit
 import _Concurrency
 import _StringProcessing
-@_hasMissingDesignatedInitializers @objc final public class TRReward : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let transactionIdentifier: Swift.String?
-  @objc final public let placementTag: Swift.String?
-  @objc final public let placementIdentifier: Swift.String?
-  @objc final public let currencyName: Swift.String?
-  @objc final public let payoutEvent: Swift.String?
-  @objc final public let rewardAmount: Swift.Int
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class LogHelper : ObjectiveC.NSObject {
+  @objc public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
+  @objc public class func setLogLevel(to logLevel: Swift.Int)
+  @objc public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType, message: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
+  @objc public class func logWeb(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, webEvent: TapResearchSDK.TRWebEvent)
+  @objc override dynamic public init()
   @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
-@objc public protocol TapResearchSDKDelegate {
-  @objc func onTapResearchDidError(_ error: Foundation.NSError)
-  @objc func onTapResearchSdkReady()
-  @objc optional func onTapResearchDidReceiveRewards(_ rewards: [TapResearchSDK.TRReward])
-  @objc optional func onTapResearchQuickQuestionResponse(_ qqPayload: TapResearchSDK.TRQQDataPayload)
-}
-@objc public protocol TapResearchContentDelegate {
-  @objc func onTapResearchContentShown(forPlacement placement: Swift.String)
-  @objc func onTapResearchContentDismissed(forPlacement placement: Swift.String)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class TapResearch : ObjectiveC.NSObject {
-  @objc public static let TapResearcherrorDomain: Swift.String
-  @objc public static let TapResearchErrorCode: Swift.String
-  @objc public static let TapResearchErrorCodeString: Swift.String
+@objc public class TRWebEvent : ObjectiveC.NSObject {
+  @objc public init(withError error: Foundation.NSError, startingUrlString: Swift.String, webSourceUrl: Swift.String?, cpIdentifier: Swift.String?, tabIndex: Swift.Int, isProvisional: Swift.Bool)
   @objc deinit
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func canShowContent(forPlacement tag: Swift.String) -> Swift.Bool
-  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func sendUserAttributes(attributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false) -> Foundation.NSError?
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayload : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let survey_identifier: Swift.String
-  @objc final public let app_name: Swift.String
-  @objc final public let api_token: Swift.String
-  @objc final public let sdk_version: Swift.String
-  @objc final public let platform: Swift.String
-  @objc final public let placement_tag: Swift.String
-  @objc final public let user_identifier: Swift.String
-  @objc final public let user_locale: Swift.String
-  @objc final public let seen_at: Swift.String
-  @objc final public let questions: [TapResearchSDK.TRQQDataPayloadQuestion]
-  @objc final public let target_audience: [TapResearchSDK.TRQQDataPayloadTargetFilter]?
-  @objc final public let complete: TapResearchSDK.TRQQComplete?
+@objc public enum LogLevel : Swift.Int {
+  case halt = -1
+  case none = 0
+  case debug = 1
+  case info = 2
+  case warning = 3
+  case error = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class Constants : ObjectiveC.NSObject {
+  @objc public static let shared: TapResearchSDK.Constants
+  @objc public var urlSession: Foundation.URLSession!
+  @objc public static let kTRBaseURL: Swift.String
+  @objc public static let kTRVersion: Swift.String
+  @objc public static let kTRPlatform: Swift.String
+  @objc public static let kTRAPIVersion: Swift.String
+  @objc public static let kTRErrorDomain: Swift.String
+  @objc public class func idfa() -> Swift.String
+  @objc public static let kTRPostVersions: Swift.String
+  @objc public static let kTRGetOffers: Swift.String
+  @objc public static let kTRPostPlayers: Swift.String
+  @objc public static let kTRPostSurveyURL: Swift.String
+  @objc public static let kTRGetCampaignCompletes: Swift.String
+  @objc public static let kTRPostRewardsRedeemed: Swift.String
+  @objc public static let kTRPostAppImpressions: Swift.String
+  @objc public static let kTRPostInterstitialEvents: Swift.String
+  @objc public static let kNetworkTimeoutSeconds: Swift.Double
+  @objc public class func setUrlResponseMocks(_ dictionaries: [[Swift.AnyHashable : Any]])
+  @objc public class func setUrlPathMocks(_ dictionaries: [[Swift.AnyHashable : Any]])
+  @objc public static let kTRCPIdentifier: Swift.String
+  @objc public static let kTRCryptoKey: Swift.String
+  @objc public static let kTRShouldSleepHeader: Swift.String
+  @objc public static let kTRMessageOfferEntryKey: Swift.String
+  @objc public static let kTRMessageNoOfferKey: Swift.String
+  @objc public static let kTRMessageAbandonKey: Swift.String
+  @objc public static let kTRAbandonButtonTextKey: Swift.String
+  @objc public static let kTRCloseButtonTextKey: Swift.String
+  @objc public static let kTRAbandonAlertTitleKey: Swift.String
+  @objc public static let kTRAbandonAlertContinueKey: Swift.String
+  @objc public static let kTRAbandonAlertCancelKey: Swift.String
+  @objc public static let kTRMessageSDKVersionNoLongerSupported: Swift.String
+  @objc public static let kTRDisplayDimensions: Swift.String
+  @objc public static let kTROrientationKey: Swift.String
+  @objc public static let kTRScreenDensityKey: Swift.String
+  @objc public static let kTRScreenPixelSizeKey: Swift.String
+  @objc public static let kTRConnectionTypeKey: Swift.String
+  @objc public static let kTRCarrierKey: Swift.String
+  @objc public static let kTRPlatformKey: Swift.String
+  @objc public static let kTROsVersionKey: Swift.String
+  @objc public static let kTRDeviceNameKey: Swift.String
+  @objc public static let kTVersionKey: Swift.String
+  @objc public static let kTRAppIdKey: Swift.String
+  @objc public static let kTRTriggeredAtKey: Swift.String
+  @objc public static let kTRPlayerEarnedRewardNotification: Swift.String
+  @objc public static let kTRSessionMonitoringInterval: Swift.Int
+  @objc public static let kTRSessionLoginThreshold: Swift.Int
+  @objc public static let kTRRequestInterval: Swift.Int
+  @objc public static let kValueNotAvailableString: Swift.String
+  @objc public static let kTRDefaultIdfa: Swift.String
+  @objc public static let kTRDefaultFastPassPollingTime: (Swift.Double)
+  @objc public static let kTRDefaultStandardPollingTime: (Swift.Double)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum HTTPParamsDataType : Swift.Int {
+  case none
+  case json
+  case query
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class TRRequestProvider : ObjectiveC.NSObject {
+  @objc public class func shouldMockResponse(for realPath: Swift.String) -> Swift.Bool
+  @objc public class func urlMockResponse(for realPath: Swift.String) -> Foundation.Data?
+  @objc public class func request(withMethod method: Swift.String, url: Swift.String, headers: [Swift.String : Swift.String]?, paramsType: TapResearchSDK.HTTPParamsDataType, params: [Swift.String : Any]?) -> Foundation.URLRequest?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TRLogger : ObjectiveC.NSObject {
+  public class func configure(platform: TapResearchSDK.PlatformType, appId: Swift.String, logLevel: TapResearchSDK.LogLevel, apiToken: Swift.String, environment: TapResearchSDK.Environment = .production, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil)
+  @objc public class func setLogLevel(to logLevel: TapResearchSDK.LogLevel)
+  @objc public class func setEnvironment(to environment: TapResearchSDK.Environment)
+  public class func log(_ level: TapResearchSDK.LogLevel, eventType: TapResearchSDK.LogEventType, category: TapResearchSDK.LogType = .general, message: Swift.String, additionalHeaders: TapResearchSDK.HTTPHeaders? = nil, parameters: TapResearchSDK.Parameters? = nil, filePath: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class TREventPresenter : ObjectiveC.NSObject {
+  @objc public class func displayEvent(_ placement: TapResearchSDK.TRPlacement, offer: TapResearchSDK.TROffer, eventId: Swift.String?, playerIdentifier: Swift.String, displayDelegate: (any TapResearchSDK.TapResearchEventDelegate)?, surveyDelegate: (any TapResearchSDK.TapResearchSurveyDelegate)?, closeButtonLocation: TapResearchSDK.TRDisplayEventExitButtonLocation, transitionStyle: TapResearchSDK.TRDisplayEventTransitionType, customParameters: TapResearchSDK.TRPlacementCustomParameterList) -> Foundation.NSError?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TRNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc public enum LogEventType : Swift.Int {
+  case crash = 0
+  case user = 1
+  case webFailedPreload = 4
+  case webFailedload = 5
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class TRStore : ObjectiveC.NSObject {
+  @objc public static var player: TapResearchSDK.TRPlayer?
+  @objc public static var appSession: TapResearchSDK.TRAppSession?
+  @objc public static var isServerToServer: Swift.Bool
+  @objc public static var rewards: [TapResearchSDK.TRReward]?
+  @objc public static var userIdentifier: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class LogEvent : ObjectiveC.NSObject, Swift.Codable {
+  @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  public init(withType type: TapResearchSDK.LogEventType, content: Swift.String, additionalParams: TapResearchSDK.Parameters = [:])
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQComplete : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let complete_identifier: Swift.String
-  @objc final public let completed_at: Swift.String
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+public typealias Parameters = [Swift.String : Any]
+@objc public enum Environment : Swift.Int {
+  case development
+  case yavin
+  case jedha
+  case production
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQUserAnswer : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let value: Swift.String
-  @objc final public let identifiers: [Swift.String]
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
+@objc public enum PlatformType : Swift.Int {
+  case ios
+  case tvOS
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayloadQuestion : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let question_identifier: Swift.String
-  @objc final public let question_text: Swift.String
-  @objc final public let question_type: Swift.String
-  @objc final public var rating_scale_size: Swift.Int
-  @objc final public let user_answer: TapResearchSDK.TRQQUserAnswer?
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
+@objc public enum LogType : Swift.Int {
+  case general
+  case network
+  case lifecycle
+  case web
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-@_hasMissingDesignatedInitializers @objc final public class TRQQDataPayloadTargetFilter : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let filter_attribute_name: Swift.String
-  @objc final public let filter_operator: Swift.String
-  @objc final public let filter_value: Swift.String
-  @objc final public let user_value: Swift.String
-  required public init(from decoder: any Swift.Decoder) throws
-  final public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
+extension TapResearchSDK.LogLevel : Swift.Equatable {}
+extension TapResearchSDK.LogLevel : Swift.Hashable {}
+extension TapResearchSDK.LogLevel : Swift.RawRepresentable {}
+extension TapResearchSDK.HTTPParamsDataType : Swift.Equatable {}
+extension TapResearchSDK.HTTPParamsDataType : Swift.Hashable {}
+extension TapResearchSDK.HTTPParamsDataType : Swift.RawRepresentable {}
+extension TapResearchSDK.LogEventType : Swift.Equatable {}
+extension TapResearchSDK.LogEventType : Swift.Hashable {}
+extension TapResearchSDK.LogEventType : Swift.RawRepresentable {}
+extension TapResearchSDK.Environment : Swift.Equatable {}
+extension TapResearchSDK.Environment : Swift.Hashable {}
+extension TapResearchSDK.Environment : Swift.RawRepresentable {}
+extension TapResearchSDK.PlatformType : Swift.Equatable {}
+extension TapResearchSDK.PlatformType : Swift.Hashable {}
+extension TapResearchSDK.PlatformType : Swift.RawRepresentable {}
+extension TapResearchSDK.LogType : Swift.Equatable {}
+extension TapResearchSDK.LogType : Swift.Hashable {}
+extension TapResearchSDK.LogType : Swift.RawRepresentable {}
