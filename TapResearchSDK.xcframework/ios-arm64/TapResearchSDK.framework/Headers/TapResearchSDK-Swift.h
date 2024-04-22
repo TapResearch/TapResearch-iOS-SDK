@@ -456,5 +456,5 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 #endif
 
 #else
-#error unsupported Swift architecture
+//#error unsupported Swift architecture
 #endif
