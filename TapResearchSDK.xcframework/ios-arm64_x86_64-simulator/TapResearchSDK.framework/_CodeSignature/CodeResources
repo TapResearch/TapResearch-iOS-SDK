@@ -4,61 +4,105 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/TRReward.swift</key>
+		<key>Assets.car</key>
 		<data>
-		d8+UeU3vO+/sT9wCwGvdsTzvD2Q=
+		vA5VBy1sTbEDDiIw/zz1crj4g6U=
+		</data>
+		<key>Headers/TRAppSession.h</key>
+		<data>
+		bL1i4tiAMVZ3wwC+dmINY2l1LF8=
+		</data>
+		<key>Headers/TROffer.h</key>
+		<data>
+		SpjlfeMgpoK+l2HftMO4gJvG34w=
+		</data>
+		<key>Headers/TRPlacement.h</key>
+		<data>
+		omE3Qri5NWHOmtKlaXttprAeD2Q=
+		</data>
+		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
+		<data>
+		LJtwZxusaCoByY/7R8Egakwp3mE=
+		</data>
+		<key>Headers/TRPlacementCustomParameter.h</key>
+		<data>
+		5POiPUmUsk0TSBWzsnAol5LgpJk=
+		</data>
+		<key>Headers/TRPlacementCustomParameterBuilder.h</key>
+		<data>
+		/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+		</data>
+		<key>Headers/TRPlacementCustomParameterList.h</key>
+		<data>
+		5KpSWIBMdEuhJe85iHX/nwNhlCk=
+		</data>
+		<key>Headers/TRPlayer.h</key>
+		<data>
+		A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+		</data>
+		<key>Headers/TRReward.h</key>
+		<data>
+		Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+		</data>
+		<key>Headers/TRSerializationHelper.h</key>
+		<data>
+		o7jJP1NU0VVynszld2YsjxVXbg0=
+		</data>
+		<key>Headers/TapResearch.h</key>
+		<data>
+		4jLc7nPKpQ2RrSqSoFexZa+rkJo=
 		</data>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		iLcRiGi6t6kllRIf4wOb/URhNnQ=
+		FY2ZzsI+N9vRGW4taJh8Oh0kLqg=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
-		9vAfL3PhjNv662SUnLOFZfZSg+M=
+		1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3eetya3w9jKGqM+ooNASLrtCGKY=
+		UyT+a2pun7AmteHGQgWba4iYeUU=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gXyx3nrRhFuJATJxoi0q9gti+iM=
+		GSTwhN46sQKNl/yDiBn/qg9GAU0=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2k2b24+T3JPEex8CXP14T6uSEK8=
+		0FLxq2RUFoNfUF1/WghuKdR3xl4=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		SkSoACu/s4t45QEfgPoS086rR88=
+		52DrqEtXf940qd5gTKjeaMrDuB4=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2k2b24+T3JPEex8CXP14T6uSEK8=
+		0FLxq2RUFoNfUF1/WghuKdR3xl4=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Au2o6t0JkCfW24HcGB4lseWrcdM=
+		rj/bpyAgET/dmVF6V0V5COXTdlM=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gXyx3nrRhFuJATJxoi0q9gti+iM=
+		GSTwhN46sQKNl/yDiBn/qg9GAU0=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JuKKqujOq9QzkJaXB3OGV3S2Xf0=
+		M6P32zzE21nJfiJwdY03L7WbV5M=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UCXyLKLSQRqrSWgzGGMcfM1aZhs=
+		3Iub+Kn1o8U8Qu0BYsD+boOgulg=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JuKKqujOq9QzkJaXB3OGV3S2Xf0=
+		M6P32zzE21nJfiJwdY03L7WbV5M=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zYyd4JnRO7ENYoUBJSL8ABtYrDA=
+		d4TqOUQVqxDryJITpIKX0Ulou1I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,104 +110,321 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		RUt95XBIlHr9EZpxERIafOF4KrQ=
+		1rb0DbGCnQWK5slF/DuVBOZIhTw=
+		</data>
+		<key>TREvent.storyboardc/Info.plist</key>
+		<data>
+		1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+		</data>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<data>
+		UnYlisNX5X08xQzWUtU0OgxVbj0=
+		</data>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<data>
+		42Y1tht51dowPhOyJc+QmIyGJh4=
+		</data>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<data>
+		v666wtH7l8zik8nCHnJEpQTlBGs=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/TRReward.swift</key>
+		<key>Assets.car</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vA5VBy1sTbEDDiIw/zz1crj4g6U=
+			</data>
 			<key>hash2</key>
 			<data>
-			O8/ddU5k4vLkTByhXxRy3PVzD7Lk1rYG3sEpNo8x6QU=
+			kQ70lfgTXkoA8XZ7IOlqYqTSZk18Uvnd6TJi/JDmvK4=
+			</data>
+		</dict>
+		<key>Headers/TRAppSession.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bL1i4tiAMVZ3wwC+dmINY2l1LF8=
+			</data>
+			<key>hash2</key>
+			<data>
+			8bBUTVrOlwKy/gY0dOfPOAraXjYuVOJpRltGHvP6+jY=
+			</data>
+		</dict>
+		<key>Headers/TROffer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SpjlfeMgpoK+l2HftMO4gJvG34w=
+			</data>
+			<key>hash2</key>
+			<data>
+			KXwniAQ0HDCgCG/yNwJ9fdUo9zGpmbEfS4JHw+nnoiQ=
+			</data>
+		</dict>
+		<key>Headers/TRPlacement.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			omE3Qri5NWHOmtKlaXttprAeD2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			ALLlJY1SsuKo4HfEJOrHldNsl5xbS3QHPIzoooGHNmM=
+			</data>
+		</dict>
+		<key>Headers/TRPlacementCustomParameter+Builder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LJtwZxusaCoByY/7R8Egakwp3mE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6lHdW5vEmPfTCD2QONAYZQUfoUgo1uptcRmFyICaz4M=
+			</data>
+		</dict>
+		<key>Headers/TRPlacementCustomParameter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5POiPUmUsk0TSBWzsnAol5LgpJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6rM5Q02P2rkxQbIA+8FbtKZlcZS7TgBRAfSJyoMsxt4=
+			</data>
+		</dict>
+		<key>Headers/TRPlacementCustomParameterBuilder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OeP872jOiCBD6VGo+bPxq9nJ8HuKEdE3ZvcCCuPU1hA=
+			</data>
+		</dict>
+		<key>Headers/TRPlacementCustomParameterList.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5KpSWIBMdEuhJe85iHX/nwNhlCk=
+			</data>
+			<key>hash2</key>
+			<data>
+			yeTlGQ5iqL7tf77yS/vyvUJBH7bHPr+KAyLctceEtdU=
+			</data>
+		</dict>
+		<key>Headers/TRPlayer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+			</data>
+			<key>hash2</key>
+			<data>
+			jFDCT7aDqrpePKmeiaKtqIYFZDLTZXYzpbTRFPN4SYg=
+			</data>
+		</dict>
+		<key>Headers/TRReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ht5HCgEiIQFYYAqpBM+w6nW2+tTX5/TbphVjp1cleyA=
+			</data>
+		</dict>
+		<key>Headers/TRSerializationHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7jJP1NU0VVynszld2YsjxVXbg0=
+			</data>
+			<key>hash2</key>
+			<data>
+			BwrA629cRiXnIYhXR2NWxvcri44pVDmKEIreTe25YNc=
+			</data>
+		</dict>
+		<key>Headers/TapResearch.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4jLc7nPKpQ2RrSqSoFexZa+rkJo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Iq1l2qz75lwqReR2/49vAh9kpMLb5aZaf7qpGGXl/XQ=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FY2ZzsI+N9vRGW4taJh8Oh0kLqg=
+			</data>
 			<key>hash2</key>
 			<data>
-			EyBkHdX/bYC/cmJ9MA/UROi75OtoWagLxMv2kayHC7I=
+			0qbJpzxIURcaBGyHwJSONeXXwjXg+qnzNxUFJ6RCMd8=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
+			</data>
 			<key>hash2</key>
 			<data>
-			pPQS9ycGzO4/n81l2BefqK6AxYXGt+LRZ3cQy33cu1M=
+			f4kY2uq+Z/96CKmPEPdRhIt5hQ7Tsj678VpEYdlJgTM=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GSTwhN46sQKNl/yDiBn/qg9GAU0=
+			</data>
 			<key>hash2</key>
 			<data>
-			OEv7qUezw1naNQM+GN5zv5h47qQPrXbZ/T9y+Z0nwF0=
+			7nfuS031IpOvUfUzzw2XqzKAGVAz4VUjl5y7DCm6RJ4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0FLxq2RUFoNfUF1/WghuKdR3xl4=
+			</data>
 			<key>hash2</key>
 			<data>
-			kIaJT2l4Pp6h6GW+8wnmJUljjOj3hfzztkFy8DiJOTk=
+			hP0QJhbsPCJZP7pITQe+xlXIp2zkX3+Vu0ELDQoJenI=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			52DrqEtXf940qd5gTKjeaMrDuB4=
+			</data>
 			<key>hash2</key>
 			<data>
-			WSZ+L6fcB4pkyusG6nbsoRB9ViM7dOIFNwW+/rtZ6Aw=
+			2wGsu87xowRxoNkw2/qxMOHf8MjEuWn3Q0pHvE8tLEE=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0FLxq2RUFoNfUF1/WghuKdR3xl4=
+			</data>
 			<key>hash2</key>
 			<data>
-			kIaJT2l4Pp6h6GW+8wnmJUljjOj3hfzztkFy8DiJOTk=
+			hP0QJhbsPCJZP7pITQe+xlXIp2zkX3+Vu0ELDQoJenI=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rj/bpyAgET/dmVF6V0V5COXTdlM=
+			</data>
 			<key>hash2</key>
 			<data>
-			7BqDBZmAxjfLy8O1FvfbIKJmIA08pNVFnaiPE27MdyI=
+			Rx23/7h8nFL+mnBaOTVwVAEIUfZ73LyiU1NVlEIHRdY=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GSTwhN46sQKNl/yDiBn/qg9GAU0=
+			</data>
 			<key>hash2</key>
 			<data>
-			OEv7qUezw1naNQM+GN5zv5h47qQPrXbZ/T9y+Z0nwF0=
+			7nfuS031IpOvUfUzzw2XqzKAGVAz4VUjl5y7DCm6RJ4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			M6P32zzE21nJfiJwdY03L7WbV5M=
+			</data>
 			<key>hash2</key>
 			<data>
-			hJ9rRBh5iI/pbE33y7h4wTYxljtVUom7vN8tvc9IT+k=
+			h3zCVaPAdkV8YpBt11VNF8rQuXStXNgoCu7Lynr/H7g=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3Iub+Kn1o8U8Qu0BYsD+boOgulg=
+			</data>
 			<key>hash2</key>
 			<data>
-			iJzoKJrUauqVwQ4+Cx768qF6D02+e8MDDcsqeNVufLk=
+			qq+GxWBrh0rS/YMk4NUi2XH6Q3bZjm6ngQHyWKOy3lg=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			M6P32zzE21nJfiJwdY03L7WbV5M=
+			</data>
 			<key>hash2</key>
 			<data>
-			hJ9rRBh5iI/pbE33y7h4wTYxljtVUom7vN8tvc9IT+k=
+			h3zCVaPAdkV8YpBt11VNF8rQuXStXNgoCu7Lynr/H7g=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			d4TqOUQVqxDryJITpIKX0Ulou1I=
+			</data>
 			<key>hash2</key>
 			<data>
-			VpRgM8leAB/2lVM5495ncwDRv2+yW0P3Xbxui4b470g=
+			C1YjbgdgCZzNzCkVu+vdY21Ax5oCDOghYuLtCEWgmx8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gVJLg9S2O1ZgHgHcdKyXkdG7MKY=
+			</data>
 			<key>hash2</key>
 			<data>
 			hQx0k1r2GhiGemOgJIka5f3eVuUf9LZoBSwKIMeuG44=
@@ -171,9 +432,123 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1rb0DbGCnQWK5slF/DuVBOZIhTw=
+			</data>
 			<key>hash2</key>
 			<data>
-			XyaoQPyZ39T2wUERlnf60rjBGItgw7MneaP7+u1n63U=
+			k2PcIcJnEACBHJITpiempW9rupKa6COLawSs009m14Q=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6QobcbiuwWIRxK5Sv0UXG5oJ4JQ9+4CVR2ax2Jj/rt8=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UnYlisNX5X08xQzWUtU0OgxVbj0=
+			</data>
+			<key>hash2</key>
+			<data>
+			6NHhUHFsREPy0ir14utLrSVUK5WY05I0U+zkw2XWWhs=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42Y1tht51dowPhOyJc+QmIyGJh4=
+			</data>
+			<key>hash2</key>
+			<data>
+			zjVQUb254tk3H/EFz9zlcVoZUIKdm6PBXTJEJKgeBQY=
+			</data>
+		</dict>
+		<key>TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v666wtH7l8zik8nCHnJEpQTlBGs=
+			</data>
+			<key>hash2</key>
+			<data>
+			9V9xas2N7klIVKHGXoRmqejfRp1qbIPlR+91UloHMEA=
 			</data>
 		</dict>
 	</dict>

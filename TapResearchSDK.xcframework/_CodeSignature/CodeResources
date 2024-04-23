@@ -4,41 +4,81 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ios-arm64/TapResearchSDK.framework/Headers/TRReward.swift</key>
+		<key>ios-arm64/TapResearchSDK.framework/Assets.car</key>
 		<data>
-		d8+UeU3vO+/sT9wCwGvdsTzvD2Q=
+		vA5VBy1sTbEDDiIw/zz1crj4g6U=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRAppSession.h</key>
+		<data>
+		bL1i4tiAMVZ3wwC+dmINY2l1LF8=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TROffer.h</key>
+		<data>
+		SpjlfeMgpoK+l2HftMO4gJvG34w=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacement.h</key>
+		<data>
+		omE3Qri5NWHOmtKlaXttprAeD2Q=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameter+Builder.h</key>
+		<data>
+		LJtwZxusaCoByY/7R8Egakwp3mE=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameter.h</key>
+		<data>
+		5POiPUmUsk0TSBWzsnAol5LgpJk=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameterBuilder.h</key>
+		<data>
+		/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameterList.h</key>
+		<data>
+		5KpSWIBMdEuhJe85iHX/nwNhlCk=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlayer.h</key>
+		<data>
+		A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRReward.h</key>
+		<data>
+		Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRSerializationHelper.h</key>
+		<data>
+		o7jJP1NU0VVynszld2YsjxVXbg0=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearch.h</key>
+		<data>
+		4jLc7nPKpQ2RrSqSoFexZa+rkJo=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		cRZqw+RgbTi4rzxtCtmW3c7s750=
+		im8jYvIF7KXSzy5ClUHHVdXClrw=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearchSDK.h</key>
 		<data>
-		9vAfL3PhjNv662SUnLOFZfZSg+M=
+		1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Info.plist</key>
 		<data>
-		/toX1aZMzQkb6PdTvv2hupx0zh0=
+		P8rWpVjNaBEOpycZ3K9/pOTgjrE=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gXyx3nrRhFuJATJxoi0q9gti+iM=
+		WhznwE7TXaC2daX1sWTPZ1fLy1c=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		GOLQGcOQQM5yt7JutjgCnd5H9yQ=
+		q9/5dWCJEZFb6MeSjFwR8zX/Nag=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		fhZj5C0z8i2vmJl+kW42dynlj70=
+		LiT8j8TlUx0XEgs27CPOczDmmGo=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		GOLQGcOQQM5yt7JutjgCnd5H9yQ=
-		</data>
-		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		jmxCNx7sOc12HvsVVmHqKabqc7o=
+		q9/5dWCJEZFb6MeSjFwR8zX/Nag=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,79 +86,143 @@
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		RUt95XBIlHr9EZpxERIafOF4KrQ=
+		1rb0DbGCnQWK5slF/DuVBOZIhTw=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/Info.plist</key>
+		<data>
+		1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<data>
+		UnYlisNX5X08xQzWUtU0OgxVbj0=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<data>
+		42Y1tht51dowPhOyJc+QmIyGJh4=
+		</data>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<data>
+		v666wtH7l8zik8nCHnJEpQTlBGs=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/TapResearchSDK</key>
 		<data>
-		qvZk6NeCDE5QlJ+VTodoLpITtXw=
+		5Se7GmkYFrThLUkKmrLD9LrzJfg=
 		</data>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Assets.car</key>
 		<data>
-		tKAGVif1DW+nmt3PeFxgSWWq6Zc=
+		vA5VBy1sTbEDDiIw/zz1crj4g6U=
 		</data>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRAppSession.h</key>
 		<data>
-		jq1o0oeeDYPg202I1MdBrZaXnRY=
+		bL1i4tiAMVZ3wwC+dmINY2l1LF8=
 		</data>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TROffer.h</key>
 		<data>
-		mo0WbiAZ2SPIiWOdoiSr8meGBx8=
+		SpjlfeMgpoK+l2HftMO4gJvG34w=
 		</data>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRReward.swift</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacement.h</key>
 		<data>
-		d8+UeU3vO+/sT9wCwGvdsTzvD2Q=
+		omE3Qri5NWHOmtKlaXttprAeD2Q=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameter+Builder.h</key>
+		<data>
+		LJtwZxusaCoByY/7R8Egakwp3mE=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameter.h</key>
+		<data>
+		5POiPUmUsk0TSBWzsnAol5LgpJk=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameterBuilder.h</key>
+		<data>
+		/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameterList.h</key>
+		<data>
+		5KpSWIBMdEuhJe85iHX/nwNhlCk=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlayer.h</key>
+		<data>
+		A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRReward.h</key>
+		<data>
+		Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRSerializationHelper.h</key>
+		<data>
+		o7jJP1NU0VVynszld2YsjxVXbg0=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearch.h</key>
+		<data>
+		4jLc7nPKpQ2RrSqSoFexZa+rkJo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		Hio3fJtYBZlDAHQs8u2tx1nwzMI=
+		FY2ZzsI+N9vRGW4taJh8Oh0kLqg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearchSDK.h</key>
 		<data>
-		9vAfL3PhjNv662SUnLOFZfZSg+M=
+		1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Info.plist</key>
 		<data>
-		3eetya3w9jKGqM+ooNASLrtCGKY=
+		UyT+a2pun7AmteHGQgWba4iYeUU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gXyx3nrRhFuJATJxoi0q9gti+iM=
+		GSTwhN46sQKNl/yDiBn/qg9GAU0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2k2b24+T3JPEex8CXP14T6uSEK8=
+		0FLxq2RUFoNfUF1/WghuKdR3xl4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		SkSoACu/s4t45QEfgPoS086rR88=
+		52DrqEtXf940qd5gTKjeaMrDuB4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2k2b24+T3JPEex8CXP14T6uSEK8=
-		</data>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		Au2o6t0JkCfW24HcGB4lseWrcdM=
+		0FLxq2RUFoNfUF1/WghuKdR3xl4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gXyx3nrRhFuJATJxoi0q9gti+iM=
+		GSTwhN46sQKNl/yDiBn/qg9GAU0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JuKKqujOq9QzkJaXB3OGV3S2Xf0=
+		M6P32zzE21nJfiJwdY03L7WbV5M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UCXyLKLSQRqrSWgzGGMcfM1aZhs=
+		3Iub+Kn1o8U8Qu0BYsD+boOgulg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JuKKqujOq9QzkJaXB3OGV3S2Xf0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		zYyd4JnRO7ENYoUBJSL8ABtYrDA=
+		M6P32zzE21nJfiJwdY03L7WbV5M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -126,132 +230,266 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		RUt95XBIlHr9EZpxERIafOF4KrQ=
+		1rb0DbGCnQWK5slF/DuVBOZIhTw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/Info.plist</key>
+		<data>
+		1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<data>
+		dzbLLFFVwkn+CfRSNXOphDxuWN4=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<data>
+		quKfNkeHVgJ+xLjHozV5h48MqIs=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<data>
+		UnYlisNX5X08xQzWUtU0OgxVbj0=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<data>
+		42Y1tht51dowPhOyJc+QmIyGJh4=
+		</data>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<data>
+		v666wtH7l8zik8nCHnJEpQTlBGs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TapResearchSDK</key>
 		<data>
-		LbcMGc1fycpODele12I8keHA5+8=
+		O3ZkFt8gw+bTZsqf3Ls0WFBJS80=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		an3fkTT+5jYhmmmfboyfqbWycoE=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
-		<data>
-		tKAGVif1DW+nmt3PeFxgSWWq6Zc=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
-		<data>
-		WsXi/CQlHm4e0EBasrEdp7HQp8U=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
-		<data>
-		jlle6bmUsZvnHUpFMzqtFFUg0i0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/TapResearchSDK.yml</key>
-		<data>
-		OkUbxtq4KVQqamraRp0y+TfTEWU=
+		ZcaWFuX5jdIB2VoQZSqTCuiO1ks=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64/TapResearchSDK.framework/Headers/TRReward.swift</key>
+		<key>ios-arm64/TapResearchSDK.framework/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d8+UeU3vO+/sT9wCwGvdsTzvD2Q=
+			vA5VBy1sTbEDDiIw/zz1crj4g6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8/ddU5k4vLkTByhXxRy3PVzD7Lk1rYG3sEpNo8x6QU=
+			kQ70lfgTXkoA8XZ7IOlqYqTSZk18Uvnd6TJi/JDmvK4=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRAppSession.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bL1i4tiAMVZ3wwC+dmINY2l1LF8=
+			</data>
+			<key>hash2</key>
+			<data>
+			8bBUTVrOlwKy/gY0dOfPOAraXjYuVOJpRltGHvP6+jY=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TROffer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SpjlfeMgpoK+l2HftMO4gJvG34w=
+			</data>
+			<key>hash2</key>
+			<data>
+			KXwniAQ0HDCgCG/yNwJ9fdUo9zGpmbEfS4JHw+nnoiQ=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacement.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			omE3Qri5NWHOmtKlaXttprAeD2Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			ALLlJY1SsuKo4HfEJOrHldNsl5xbS3QHPIzoooGHNmM=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameter+Builder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LJtwZxusaCoByY/7R8Egakwp3mE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6lHdW5vEmPfTCD2QONAYZQUfoUgo1uptcRmFyICaz4M=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5POiPUmUsk0TSBWzsnAol5LgpJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6rM5Q02P2rkxQbIA+8FbtKZlcZS7TgBRAfSJyoMsxt4=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameterBuilder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OeP872jOiCBD6VGo+bPxq9nJ8HuKEdE3ZvcCCuPU1hA=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlacementCustomParameterList.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5KpSWIBMdEuhJe85iHX/nwNhlCk=
+			</data>
+			<key>hash2</key>
+			<data>
+			yeTlGQ5iqL7tf77yS/vyvUJBH7bHPr+KAyLctceEtdU=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRPlayer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+			</data>
+			<key>hash2</key>
+			<data>
+			jFDCT7aDqrpePKmeiaKtqIYFZDLTZXYzpbTRFPN4SYg=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ht5HCgEiIQFYYAqpBM+w6nW2+tTX5/TbphVjp1cleyA=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TRSerializationHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7jJP1NU0VVynszld2YsjxVXbg0=
+			</data>
+			<key>hash2</key>
+			<data>
+			BwrA629cRiXnIYhXR2NWxvcri44pVDmKEIreTe25YNc=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearch.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4jLc7nPKpQ2RrSqSoFexZa+rkJo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Iq1l2qz75lwqReR2/49vAh9kpMLb5aZaf7qpGGXl/XQ=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearchSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cRZqw+RgbTi4rzxtCtmW3c7s750=
+			im8jYvIF7KXSzy5ClUHHVdXClrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bTYvtJFQF4sJSuxNt5F3JUw4FHCPasTAzvIN1vJ1spI=
+			tWAvpQEJiG8wXUViuk/sh6TNZiriEfMMeyZzmShItCI=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Headers/TapResearchSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9vAfL3PhjNv662SUnLOFZfZSg+M=
+			1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPQS9ycGzO4/n81l2BefqK6AxYXGt+LRZ3cQy33cu1M=
+			f4kY2uq+Z/96CKmPEPdRhIt5hQ7Tsj678VpEYdlJgTM=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/toX1aZMzQkb6PdTvv2hupx0zh0=
+			P8rWpVjNaBEOpycZ3K9/pOTgjrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Aw/taC3N97FKQzoR8uVjUMPZaAUXCsxl3PkIux+Gzo=
+			N054EvVsILtPZ4uevwP9vC91n47ZfAEUUw34q2CYmes=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gXyx3nrRhFuJATJxoi0q9gti+iM=
+			WhznwE7TXaC2daX1sWTPZ1fLy1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			OEv7qUezw1naNQM+GN5zv5h47qQPrXbZ/T9y+Z0nwF0=
+			ChEa6PeuerAJu4WBm2nIuUtd36AkuiR3MLmqWIZhQyM=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GOLQGcOQQM5yt7JutjgCnd5H9yQ=
+			q9/5dWCJEZFb6MeSjFwR8zX/Nag=
 			</data>
 			<key>hash2</key>
 			<data>
-			rZrc7oOgjZxt7EVpMzSc45YDdhyA0W0ni1s0P7POKKg=
+			ktSs+F1ic553X84p96dQSWtCSFvW8tEV0IR8Zsml/M8=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fhZj5C0z8i2vmJl+kW42dynlj70=
+			LiT8j8TlUx0XEgs27CPOczDmmGo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PDmCoSx0z+fS2+a8beGaI702XCinR+RYm8FbupTVIe8=
+			D4dy6o0easN0VeDJAdCv7n7Wk1pVKpr1Of/GLajOTiU=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GOLQGcOQQM5yt7JutjgCnd5H9yQ=
+			q9/5dWCJEZFb6MeSjFwR8zX/Nag=
 			</data>
 			<key>hash2</key>
 			<data>
-			rZrc7oOgjZxt7EVpMzSc45YDdhyA0W0ni1s0P7POKKg=
-			</data>
-		</dict>
-		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jmxCNx7sOc12HvsVVmHqKabqc7o=
-			</data>
-			<key>hash2</key>
-			<data>
-			+6y48TnJEftGi9gEXQVK5CHnjByJqdryNpf+UXiIYq8=
+			ktSs+F1ic553X84p96dQSWtCSFvW8tEV0IR8Zsml/M8=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/module.modulemap</key>
@@ -269,209 +507,385 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUt95XBIlHr9EZpxERIafOF4KrQ=
+			1rb0DbGCnQWK5slF/DuVBOZIhTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XyaoQPyZ39T2wUERlnf60rjBGItgw7MneaP7+u1n63U=
+			k2PcIcJnEACBHJITpiempW9rupKa6COLawSs009m14Q=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6QobcbiuwWIRxK5Sv0UXG5oJ4JQ9+4CVR2ax2Jj/rt8=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UnYlisNX5X08xQzWUtU0OgxVbj0=
+			</data>
+			<key>hash2</key>
+			<data>
+			6NHhUHFsREPy0ir14utLrSVUK5WY05I0U+zkw2XWWhs=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42Y1tht51dowPhOyJc+QmIyGJh4=
+			</data>
+			<key>hash2</key>
+			<data>
+			zjVQUb254tk3H/EFz9zlcVoZUIKdm6PBXTJEJKgeBQY=
+			</data>
+		</dict>
+		<key>ios-arm64/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v666wtH7l8zik8nCHnJEpQTlBGs=
+			</data>
+			<key>hash2</key>
+			<data>
+			9V9xas2N7klIVKHGXoRmqejfRp1qbIPlR+91UloHMEA=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/TapResearchSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qvZk6NeCDE5QlJ+VTodoLpITtXw=
+			5Se7GmkYFrThLUkKmrLD9LrzJfg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eLb+aUjbwN9IspX+/YmSv0/Wis8Vwa4yqppw5q2f6W8=
+			DdXKa4YG5Gcon2G/Ff3KFIP5l35hVNpYHqZXCbwiHK4=
 			</data>
 		</dict>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tKAGVif1DW+nmt3PeFxgSWWq6Zc=
+			vA5VBy1sTbEDDiIw/zz1crj4g6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			nmf1PU53yffAhpT+stu/oJpVWsSVBxbzKUeC9H6/mmk=
+			kQ70lfgTXkoA8XZ7IOlqYqTSZk18Uvnd6TJi/JDmvK4=
 			</data>
 		</dict>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRAppSession.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jq1o0oeeDYPg202I1MdBrZaXnRY=
+			bL1i4tiAMVZ3wwC+dmINY2l1LF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5RoVgEgKn/YcfoyXQa+Npq0Me0I/QyiHGIXbGQXtkl8=
+			8bBUTVrOlwKy/gY0dOfPOAraXjYuVOJpRltGHvP6+jY=
 			</data>
 		</dict>
-		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TROffer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mo0WbiAZ2SPIiWOdoiSr8meGBx8=
+			SpjlfeMgpoK+l2HftMO4gJvG34w=
 			</data>
 			<key>hash2</key>
 			<data>
-			EHAnP8Ahb1RNK06+Yloi1hl9RS2BPYjRLvu4pRdYHzo=
+			KXwniAQ0HDCgCG/yNwJ9fdUo9zGpmbEfS4JHw+nnoiQ=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRReward.swift</key>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacement.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d8+UeU3vO+/sT9wCwGvdsTzvD2Q=
+			omE3Qri5NWHOmtKlaXttprAeD2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			O8/ddU5k4vLkTByhXxRy3PVzD7Lk1rYG3sEpNo8x6QU=
+			ALLlJY1SsuKo4HfEJOrHldNsl5xbS3QHPIzoooGHNmM=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameter+Builder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LJtwZxusaCoByY/7R8Egakwp3mE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6lHdW5vEmPfTCD2QONAYZQUfoUgo1uptcRmFyICaz4M=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5POiPUmUsk0TSBWzsnAol5LgpJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6rM5Q02P2rkxQbIA+8FbtKZlcZS7TgBRAfSJyoMsxt4=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameterBuilder.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/OGIDK+CnYbmHbo+kK9GCsUb/JQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OeP872jOiCBD6VGo+bPxq9nJ8HuKEdE3ZvcCCuPU1hA=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlacementCustomParameterList.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5KpSWIBMdEuhJe85iHX/nwNhlCk=
+			</data>
+			<key>hash2</key>
+			<data>
+			yeTlGQ5iqL7tf77yS/vyvUJBH7bHPr+KAyLctceEtdU=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRPlayer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A1gVuA6qMDoGFG/TXhwNAPpCjgY=
+			</data>
+			<key>hash2</key>
+			<data>
+			jFDCT7aDqrpePKmeiaKtqIYFZDLTZXYzpbTRFPN4SYg=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/mt+0sz7OTZRwsHsn2ZK5xbXxU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ht5HCgEiIQFYYAqpBM+w6nW2+tTX5/TbphVjp1cleyA=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TRSerializationHelper.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o7jJP1NU0VVynszld2YsjxVXbg0=
+			</data>
+			<key>hash2</key>
+			<data>
+			BwrA629cRiXnIYhXR2NWxvcri44pVDmKEIreTe25YNc=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearch.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4jLc7nPKpQ2RrSqSoFexZa+rkJo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Iq1l2qz75lwqReR2/49vAh9kpMLb5aZaf7qpGGXl/XQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearchSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hio3fJtYBZlDAHQs8u2tx1nwzMI=
+			FY2ZzsI+N9vRGW4taJh8Oh0kLqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			jf8/6dpd9oneHEOzIcNrNvRLuPPkCH75flrPuJUvffw=
+			0qbJpzxIURcaBGyHwJSONeXXwjXg+qnzNxUFJ6RCMd8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Headers/TapResearchSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9vAfL3PhjNv662SUnLOFZfZSg+M=
+			1Hkmf3e+VoXFX+9jEKcaFJDCkcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			pPQS9ycGzO4/n81l2BefqK6AxYXGt+LRZ3cQy33cu1M=
+			f4kY2uq+Z/96CKmPEPdRhIt5hQ7Tsj678VpEYdlJgTM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3eetya3w9jKGqM+ooNASLrtCGKY=
+			UyT+a2pun7AmteHGQgWba4iYeUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			1ccoEcEdJm+CVWs3qJS6UJ99Ac+j+XZT1Y5FKBUmqX4=
+			UqPx466fYblYypuBMsLVpqtjD7Rny5lmlj+USzVk+VI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gXyx3nrRhFuJATJxoi0q9gti+iM=
+			GSTwhN46sQKNl/yDiBn/qg9GAU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			OEv7qUezw1naNQM+GN5zv5h47qQPrXbZ/T9y+Z0nwF0=
+			7nfuS031IpOvUfUzzw2XqzKAGVAz4VUjl5y7DCm6RJ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2k2b24+T3JPEex8CXP14T6uSEK8=
+			0FLxq2RUFoNfUF1/WghuKdR3xl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			kIaJT2l4Pp6h6GW+8wnmJUljjOj3hfzztkFy8DiJOTk=
+			hP0QJhbsPCJZP7pITQe+xlXIp2zkX3+Vu0ELDQoJenI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SkSoACu/s4t45QEfgPoS086rR88=
+			52DrqEtXf940qd5gTKjeaMrDuB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			WSZ+L6fcB4pkyusG6nbsoRB9ViM7dOIFNwW+/rtZ6Aw=
+			2wGsu87xowRxoNkw2/qxMOHf8MjEuWn3Q0pHvE8tLEE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2k2b24+T3JPEex8CXP14T6uSEK8=
+			0FLxq2RUFoNfUF1/WghuKdR3xl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			kIaJT2l4Pp6h6GW+8wnmJUljjOj3hfzztkFy8DiJOTk=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Au2o6t0JkCfW24HcGB4lseWrcdM=
-			</data>
-			<key>hash2</key>
-			<data>
-			7BqDBZmAxjfLy8O1FvfbIKJmIA08pNVFnaiPE27MdyI=
+			hP0QJhbsPCJZP7pITQe+xlXIp2zkX3+Vu0ELDQoJenI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gXyx3nrRhFuJATJxoi0q9gti+iM=
+			GSTwhN46sQKNl/yDiBn/qg9GAU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			OEv7qUezw1naNQM+GN5zv5h47qQPrXbZ/T9y+Z0nwF0=
+			7nfuS031IpOvUfUzzw2XqzKAGVAz4VUjl5y7DCm6RJ4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JuKKqujOq9QzkJaXB3OGV3S2Xf0=
+			M6P32zzE21nJfiJwdY03L7WbV5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			hJ9rRBh5iI/pbE33y7h4wTYxljtVUom7vN8tvc9IT+k=
+			h3zCVaPAdkV8YpBt11VNF8rQuXStXNgoCu7Lynr/H7g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UCXyLKLSQRqrSWgzGGMcfM1aZhs=
+			3Iub+Kn1o8U8Qu0BYsD+boOgulg=
 			</data>
 			<key>hash2</key>
 			<data>
-			iJzoKJrUauqVwQ4+Cx768qF6D02+e8MDDcsqeNVufLk=
+			qq+GxWBrh0rS/YMk4NUi2XH6Q3bZjm6ngQHyWKOy3lg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JuKKqujOq9QzkJaXB3OGV3S2Xf0=
+			M6P32zzE21nJfiJwdY03L7WbV5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			hJ9rRBh5iI/pbE33y7h4wTYxljtVUom7vN8tvc9IT+k=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zYyd4JnRO7ENYoUBJSL8ABtYrDA=
-			</data>
-			<key>hash2</key>
-			<data>
-			VpRgM8leAB/2lVM5495ncwDRv2+yW0P3Xbxui4b470g=
+			h3zCVaPAdkV8YpBt11VNF8rQuXStXNgoCu7Lynr/H7g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/module.modulemap</key>
@@ -489,77 +903,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUt95XBIlHr9EZpxERIafOF4KrQ=
+			1rb0DbGCnQWK5slF/DuVBOZIhTw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XyaoQPyZ39T2wUERlnf60rjBGItgw7MneaP7+u1n63U=
+			k2PcIcJnEACBHJITpiempW9rupKa6COLawSs009m14Q=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1LTnUbr3X9pPbmXiHa3CW8nQeQw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6QobcbiuwWIRxK5Sv0UXG5oJ4JQ9+4CVR2ax2Jj/rt8=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRDisplayEventVC.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzbLLFFVwkn+CfRSNXOphDxuWN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OLe4jeeGsUNRWgqwS/gX7CjaWYCfsNe4HOvmwAaQNKo=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/TRNavigationController.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			quKfNkeHVgJ+xLjHozV5h48MqIs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jAxDNZlmLEm/lK6E640XHg2JlNuOeNyhtJVQeqm2a6o=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UnYlisNX5X08xQzWUtU0OgxVbj0=
+			</data>
+			<key>hash2</key>
+			<data>
+			6NHhUHFsREPy0ir14utLrSVUK5WY05I0U+zkw2XWWhs=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			42Y1tht51dowPhOyJc+QmIyGJh4=
+			</data>
+			<key>hash2</key>
+			<data>
+			zjVQUb254tk3H/EFz9zlcVoZUIKdm6PBXTJEJKgeBQY=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TREvent.storyboardc/U4x-OP-RhL-view-Bag-Zb-Ou2.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v666wtH7l8zik8nCHnJEpQTlBGs=
+			</data>
+			<key>hash2</key>
+			<data>
+			9V9xas2N7klIVKHGXoRmqejfRp1qbIPlR+91UloHMEA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TapResearchSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LbcMGc1fycpODele12I8keHA5+8=
+			O3ZkFt8gw+bTZsqf3Ls0WFBJS80=
 			</data>
 			<key>hash2</key>
 			<data>
-			whM+fwTmtBCr2Rbur1g5QDjaOTCl19BYIi5J1qy9qJY=
+			lOzx3LZFbsx2khjpK+hyV5gJUL8zgrYpQ6JltB7+Tmg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			an3fkTT+5jYhmmmfboyfqbWycoE=
+			ZcaWFuX5jdIB2VoQZSqTCuiO1ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			KrbD0qLNYDOC7ZkhBF+QI64VuAxdDCoR24sALp9RA0Y=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tKAGVif1DW+nmt3PeFxgSWWq6Zc=
-			</data>
-			<key>hash2</key>
-			<data>
-			nmf1PU53yffAhpT+stu/oJpVWsSVBxbzKUeC9H6/mmk=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WsXi/CQlHm4e0EBasrEdp7HQp8U=
-			</data>
-			<key>hash2</key>
-			<data>
-			iBrqjKffpMMZD2o93zepWu3RmiSB2f5YmR05DDnGwCI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jlle6bmUsZvnHUpFMzqtFFUg0i0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q9P6zRkzV3nVsc3jrkksR/eCOTDcIsFWkSDzRdd2wzc=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/x86_64/TapResearchSDK.yml</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OkUbxtq4KVQqamraRp0y+TfTEWU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Q0BCYJHPcVvDBgUrb0MFf6F9Kq2oZXrRDkmn88u4KB8=
+			qmssG2nHmn86ZNW7RPsoeldN0+H0Mbl3vd4ijlzPQ5Y=
 			</data>
 		</dict>
 	</dict>
