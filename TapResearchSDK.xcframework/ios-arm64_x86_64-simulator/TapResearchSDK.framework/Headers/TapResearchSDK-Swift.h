@@ -405,6 +405,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultFas
 + (double)kTRDefaultFastPassPollingTime SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultStandardPollingTime;)
 + (double)kTRDefaultStandardPollingTime SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSString * _Nonnull)carrierString SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSString * _Nonnull)connectionType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -414,20 +418,6 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentJedha = 2,
   EnvironmentProduction = 3,
 };
-
-
-SWIFT_CLASS("_TtC14TapResearchSDK25GlobalOrientationOverride")
-@interface GlobalOrientationOverride : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GlobalOrientationOverride * _Nonnull shared;)
-+ (GlobalOrientationOverride * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-- (void)clearOverride;
-/// <hr/>
-- (BOOL)canRotate SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-- (void)nextOrientation;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
   HTTPParamsDataTypeNone = 0,
@@ -516,13 +506,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 
 SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
 @interface TRNavigationController : UINavigationController
-/// <hr/>
-- (void)viewWillDisappear:(BOOL)animated;
-/// <hr/>
-@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-/// <hr/>
 @property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
-/// <hr/>
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
@@ -577,8 +561,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -995,6 +977,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultFas
 + (double)kTRDefaultFastPassPollingTime SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultStandardPollingTime;)
 + (double)kTRDefaultStandardPollingTime SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSString * _Nonnull)carrierString SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSString * _Nonnull)connectionType SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1004,20 +990,6 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentJedha = 2,
   EnvironmentProduction = 3,
 };
-
-
-SWIFT_CLASS("_TtC14TapResearchSDK25GlobalOrientationOverride")
-@interface GlobalOrientationOverride : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GlobalOrientationOverride * _Nonnull shared;)
-+ (GlobalOrientationOverride * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-- (void)clearOverride;
-/// <hr/>
-- (BOOL)canRotate SWIFT_WARN_UNUSED_RESULT;
-/// <hr/>
-- (void)nextOrientation;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
   HTTPParamsDataTypeNone = 0,
@@ -1106,13 +1078,7 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
 
 SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
 @interface TRNavigationController : UINavigationController
-/// <hr/>
-- (void)viewWillDisappear:(BOOL)animated;
-/// <hr/>
-@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-/// <hr/>
 @property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
-/// <hr/>
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
@@ -1167,8 +1133,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-
 
 #endif
 #if __has_attribute(external_source_symbol)

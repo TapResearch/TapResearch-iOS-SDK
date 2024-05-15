@@ -1,13 +1,12 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapResearchSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapResearchSDK
 import AdSupport
 import CoreTelephony
-import DeveloperToolsSupport
 import Foundation
 import OSLog
 import Swift
-import SwiftUI
+import SystemConfiguration
 @_exported import TapResearchSDK
 import UIKit
 import _Concurrency
@@ -90,14 +89,8 @@ import _SwiftConcurrencyShims
   @objc public static let kTRDefaultIdfa: Swift.String
   @objc public static let kTRDefaultFastPassPollingTime: (Swift.Double)
   @objc public static let kTRDefaultStandardPollingTime: (Swift.Double)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class GlobalOrientationOverride : ObjectiveC.NSObject {
-  @objc public static let shared: TapResearchSDK.GlobalOrientationOverride
-  @objc public func clearOverride()
-  @objc public func canRotate() -> Swift.Bool
-  @objc public func nextOrientation()
+  @objc public class func carrierString() -> Swift.String
+  @objc public class func connectionType() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -132,10 +125,6 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class TRNavigationController : UIKit.UINavigationController {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
-  }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
     @objc get
   }
