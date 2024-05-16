@@ -916,6 +916,20 @@
         "moduleName": "TapResearchSDK"
       },
       {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "TapResearchSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "TapResearchSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "Constants",
         "printedName": "Constants",
@@ -3663,6 +3677,54 @@
             ]
           },
           {
+            "kind": "Function",
+            "name": "carrierString",
+            "printedName": "carrierString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)carrierString",
+            "mangledName": "$s14TapResearchSDK9ConstantsC13carrierStringSSyFZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectionType",
+            "printedName": "connectionType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TapResearchSDK@objc(cs)Constants(cm)connectionType",
+            "mangledName": "$s14TapResearchSDK9ConstantsC14connectionTypeSSyFZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3697,223 +3759,6 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "GlobalOrientationOverride",
-        "printedName": "GlobalOrientationOverride",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GlobalOrientationOverride",
-                "printedName": "TapResearchSDK.GlobalOrientationOverride",
-                "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(cpy)shared",
-            "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC6sharedACvpZ",
-            "moduleName": "TapResearchSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GlobalOrientationOverride",
-                    "printedName": "TapResearchSDK.GlobalOrientationOverride",
-                    "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(cm)shared",
-                "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC6sharedACvgZ",
-                "moduleName": "TapResearchSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "clearOverride",
-            "printedName": "clearOverride()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(im)clearOverride",
-            "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC05clearF0yyF",
-            "moduleName": "TapResearchSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "canRotate",
-            "printedName": "canRotate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(im)canRotate",
-            "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC9canRotateSbyF",
-            "moduleName": "TapResearchSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "nextOrientation",
-            "printedName": "nextOrientation()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(im)nextOrientation",
-            "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC04nextE0yyF",
-            "moduleName": "TapResearchSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GlobalOrientationOverride",
-                "printedName": "TapResearchSDK.GlobalOrientationOverride",
-                "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride(im)init",
-            "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideCACycfc",
-            "moduleName": "TapResearchSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@TapResearchSDK@objc(cs)GlobalOrientationOverride",
-        "mangledName": "$s14TapResearchSDK25GlobalOrientationOverrideC",
-        "moduleName": "TapResearchSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -5153,92 +4998,6 @@
         "printedName": "TRNavigationController",
         "children": [
           {
-            "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@TapResearchSDK@objc(cs)TRNavigationController(im)viewWillDisappear:",
-            "mangledName": "$s14TapResearchSDK22TRNavigationControllerC17viewWillDisappearyySbF",
-            "moduleName": "TapResearchSDK",
-            "overriding": true,
-            "objc_name": "viewWillDisappear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "supportedInterfaceOrientations",
-            "printedName": "supportedInterfaceOrientations",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIInterfaceOrientationMask",
-                "printedName": "UIKit.UIInterfaceOrientationMask",
-                "usr": "c:@E@UIInterfaceOrientationMask"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TapResearchSDK@objc(cs)TRNavigationController(py)supportedInterfaceOrientations",
-            "mangledName": "$s14TapResearchSDK22TRNavigationControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
-            "moduleName": "TapResearchSDK",
-            "overriding": true,
-            "objc_name": "supportedInterfaceOrientations",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIInterfaceOrientationMask",
-                    "printedName": "UIKit.UIInterfaceOrientationMask",
-                    "usr": "c:@E@UIInterfaceOrientationMask"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TapResearchSDK@objc(cs)TRNavigationController(im)supportedInterfaceOrientations",
-                "mangledName": "$s14TapResearchSDK22TRNavigationControllerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
-                "moduleName": "TapResearchSDK",
-                "overriding": true,
-                "objc_name": "supportedInterfaceOrientations",
-                "declAttributes": [
-                  "Dynamic",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Var",
             "name": "preferredInterfaceOrientationForPresentation",
             "printedName": "preferredInterfaceOrientationForPresentation",
@@ -5261,8 +5020,7 @@
               "ObjC",
               "Custom",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -5314,8 +5072,7 @@
               "ObjC",
               "Custom",
               "Override",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "accessors": [
               {
@@ -7813,34 +7570,6 @@
             "mangledName": "$sSY"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "DeveloperToolsSupport",
-        "printedName": "DeveloperToolsSupport",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK"
       }
     ],
     "json_format_version": 8
@@ -8045,359 +7774,380 @@
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 829,
+      "offset": 877,
       "length": 41,
       "value": "\"https:\/\/api.tapresearch.com\/supply_api\/\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 925,
+      "offset": 973,
       "length": 8,
-      "value": "\"2.5.12\""
+      "value": "\"2.5.13\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 976,
+      "offset": 1024,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1026,
+      "offset": 1074,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1075,
+      "offset": 1123,
       "length": 16,
       "value": "\"TapResearchSDK\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1560,
+      "offset": 1608,
       "length": 10,
       "value": "\"versions\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1624,
+      "offset": 1672,
       "length": 8,
       "value": "\"offers\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1686,
+      "offset": 1734,
       "length": 16,
       "value": "\"device_players\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 1804,
       "length": 22,
       "value": "\"campaign_survey_urls\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1832,
+      "offset": 1880,
       "length": 20,
       "value": "\"campaign_completes\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1954,
       "length": 37,
       "value": "\"campaign_completes\/rewards_redeemed\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 2045,
       "length": 17,
       "value": "\"app_impressions\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 2116,
       "length": 24,
       "value": "\"v3\/interstitial_events\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2158,
+      "offset": 2206,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "Dictionary",
-      "offset": 2324,
+      "offset": 2372,
       "length": 223,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "Dictionary",
-      "offset": 3565,
+      "offset": 3613,
       "length": 871,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5210,
+      "offset": 5258,
       "length": 17,
       "value": "\"{CP_IDENTIFIER}\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5302,
+      "offset": 5350,
       "length": 34,
       "value": "\"gGVlXCiGZIlMDxwhalGBLvtcSvkGzagw\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5418,
+      "offset": 5466,
       "length": 14,
       "value": "\"should_sleep\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5521,
+      "offset": 5569,
       "length": 13,
       "value": "\"offer_entry\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5592,
+      "offset": 5640,
       "length": 10,
       "value": "\"no_offer\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5660,
+      "offset": 5708,
       "length": 9,
       "value": "\"abandon\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5727,
+      "offset": 5775,
       "length": 21,
       "value": "\"abandon_button_text\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5806,
+      "offset": 5854,
       "length": 19,
       "value": "\"close_button_text\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5883,
+      "offset": 5931,
       "length": 21,
       "value": "\"abandon_alert_title\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5962,
+      "offset": 6010,
       "length": 24,
       "value": "\"abandon_alert_continue\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6044,
+      "offset": 6092,
       "length": 22,
       "value": "\"abandon_alert_cancel\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6136,
+      "offset": 6184,
       "length": 153,
       "value": "\"Your version of the TapResearchSDK is no longer supported and all features have been turned off. Please visit www.tapresearch.com for more information.\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6377,
+      "offset": 6425,
       "length": 20,
       "value": "\"display-dimensions\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6465,
+      "offset": 6513,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6526,
+      "offset": 6574,
       "length": 9,
       "value": "\"density\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6585,
+      "offset": 6633,
       "length": 12,
       "value": "\"pixel_size\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6646,
+      "offset": 6694,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6705,
+      "offset": 6753,
       "length": 9,
       "value": "\"carrier\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6757,
+      "offset": 6805,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6811,
+      "offset": 6859,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6868,
+      "offset": 6916,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6922,
+      "offset": 6970,
       "length": 9,
       "value": "\"Version\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6971,
+      "offset": 7019,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7025,
+      "offset": 7073,
       "length": 14,
       "value": "\"triggered_at\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7136,
+      "offset": 7184,
       "length": 38,
-      "value": "\"TR Player Eanred Reward Notification\""
+      "value": "\"TR Player Earned Reward Notification\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7262,
+      "offset": 7306,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7320,
+      "offset": 7364,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 7372,
+      "offset": 7416,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7434,
+      "offset": 7478,
       "length": 15,
       "value": "\"not-available\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 7561,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7642,
+      "offset": 7686,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7648,
+      "offset": 7692,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7744,
+      "offset": 7788,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7750,
+      "offset": 7794,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 7757,
+      "offset": 7801,
       "length": 4,
       "value": "60.0"
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7913,
+      "length": 6,
+      "value": "\"wifi\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7959,
+      "length": 15,
+      "value": "\"no connection\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 8014,
+      "length": 9,
+      "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/Global\/TRRequestProvider.swift",
@@ -8883,13 +8633,6 @@
       "value": "\"portrait\""
     },
     {
-      "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1171,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
       "filePath": "\/Users\/jeroen\/orca\/Nova\/TapResearchSDK\/TapResearchSDK\/TRLogger\/Models\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 228,
@@ -8930,13 +8673,6 @@
       "offset": 264,
       "length": 3,
       "value": "3"
-    },
-    {
-      "filePath": "\/tmp\/iphoneos\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TapResearchSDK\/IntermediateBuildFilesPath\/TapResearchSDK.build\/Release-iphoneos\/TapResearchSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 725,
-      "length": 8,
-      "value": "\"rotate\""
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** SDK builds from 3.2.4 and up are code-signed and include a PrivacyInfo.xcprivacy file.</span>
 
-> <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.12 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
+> <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
 ## v3.2.5
 - Fixed display issue for banner type.
@@ -101,6 +101,11 @@
 - Partial screen interstitials and banners.
 - Removed the need to store placement objects.
 - Improved error reporting.
+
+## 2.5.13
+- Orientation update.
+- Remove deprecated iOS functions usage.
+- Update deployment target SDK to iOS 12.
 
 ## 2.5.12
 - Orientation update.
