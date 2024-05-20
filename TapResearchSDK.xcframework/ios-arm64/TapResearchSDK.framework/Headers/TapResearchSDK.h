@@ -2,17 +2,17 @@
 //  TapResearchSDK.h
 //  TapResearchSDK
 //
-//  Copyright (c) 2015 TapResearch. All rights reserved.
+//  Created by Jeroen Verbeek on 2/16/23.
 //
 
-#import <TapResearchSDK/TapResearch.h>
-#import <TapResearchSDK/TRPlacement.h>
-#import <TapResearchSDK/TRReward.h>
-#import <TapResearchSDK/TRPlayer.h>
-#import <TapREsearchSDK/TRAppSession.h>
-#import <TapResearchSDK/TRSerializationHelper.h>
-#import <TapResearchSDK/TRPlacementCustomParameter.h>
-#import <TapResearchSDK/TRPlacementCustomParameterList.h>
-#import <TapResearchSDK/TRPlacementCustomParameterBuilder.h>
-#import <TapResearchSDK/TRPlacementCustomParameter+Builder.h>
+#import <Foundation/Foundation.h>
+
+//! Project version number for TapResearchSDK.
+FOUNDATION_EXPORT double TapResearchSDKVersionNumber;
+
+//! Project version string for TapResearchSDK.
+FOUNDATION_EXPORT const unsigned char TapResearchSDKVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <TapResearchSDK/PublicHeader.h>
+
 
