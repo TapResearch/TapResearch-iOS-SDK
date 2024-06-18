@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Info.plist</key>
 		<data>
-		ZMZ7gEHVtdJWG0qOvNVLBe67MjI=
+		p2T+9ZWZ0EsepVe5bBgHoZ+uKkE=
 		</data>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
 		<data>
-		pgmkquU5TDQZXVeumLXIlyx8oTQ=
+		On2YWziNoKUOIwRs9vuc+Uc+dyI=
 		</data>
 		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Info.plist</key>
 		<data>
-		5t3C1lLbOdPptJgKOXlp3fZDtOU=
+		U9vE00wv/LrCojolv2R51SQh1pk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/TapResearchSDK</key>
 		<data>
-		6/HpraCwMCQKD4iJkDuT4ve2/jc=
+		EmP4JmJbExRvmzmWAD4WYQ6j1p0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		vqcCRU2EU4lojBx7i93Wdwv1WVY=
+		bAF7PybvCwGVo0G0dFi1Wa5CUOM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/DWARF/TapResearchSDK</key>
 		<data>
-		6v6/+6B7orzDciGOgjWzKMVcU1c=
+		eIlcJKVrRq/SEicZ7D5jOrY3/3M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
 		<data>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZMZ7gEHVtdJWG0qOvNVLBe67MjI=
+			p2T+9ZWZ0EsepVe5bBgHoZ+uKkE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hhZfq97QdpWuY3qXiDxDYmaB8r+nlsdqg/AFEQK+gzY=
+			RNU84Ec/7AsBQS0ZHXUY3Irb4ND/kQIDh1qTYa+x25c=
 			</data>
 		</dict>
 		<key>ios-arm64/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -302,11 +302,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pgmkquU5TDQZXVeumLXIlyx8oTQ=
+			On2YWziNoKUOIwRs9vuc+Uc+dyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ECFl6eWm29yccwuB9iT+aOPfMZQ0u6cGPAt++HldNTE=
+			oQTa3pNkVzPUDYGReqLuGMAVHTx1hl9/7oGpRBIWkxY=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
@@ -357,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5t3C1lLbOdPptJgKOXlp3fZDtOU=
+			U9vE00wv/LrCojolv2R51SQh1pk=
 			</data>
 			<key>hash2</key>
 			<data>
-			U19Jmu5vRWmZB6p3GgSN5UACslvCEq4vb1zVjxzNkNw=
+			BLpEPi4T/Q8FR/Q7lCbt3BDbzaiAhKDPvbTzW2DwMkg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -500,22 +500,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6/HpraCwMCQKD4iJkDuT4ve2/jc=
+			EmP4JmJbExRvmzmWAD4WYQ6j1p0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EZew3OoSTPCD9NiPtDvhbLfRpjyAXkdOJj9jCn0B4V4=
+			kspxIc+SaR9GeqgsSIDKGV6nCPXhY6ADju0ULeIxxXo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/TapResearchSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vqcCRU2EU4lojBx7i93Wdwv1WVY=
+			bAF7PybvCwGVo0G0dFi1Wa5CUOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kkU23p19fvtVuH+EyBw479xATx9+V+qJ4a++2hO3Yxs=
+			N2B/060mxLYKgoyGni3QXlrAm4VwyXXPnlhIJIyGuW0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Info.plist</key>
@@ -533,11 +533,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6v6/+6B7orzDciGOgjWzKMVcU1c=
+			eIlcJKVrRq/SEicZ7D5jOrY3/3M=
 			</data>
 			<key>hash2</key>
 			<data>
-			3PzatMu2pIrroOoM95BwfDDNPi8VYiiDqiwcc16rq/o=
+			5uZOMX+af0k08ucswqSETBBdhdl13DHVM5k2f7r7gU8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/TapResearchSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/TapResearchSDK.yml</key>
