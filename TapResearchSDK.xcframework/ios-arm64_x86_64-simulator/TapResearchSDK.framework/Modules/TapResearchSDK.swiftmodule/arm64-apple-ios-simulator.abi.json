@@ -4317,679 +4317,686 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRUserContentController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRUserContentController.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 23,
       "value": "\"TapResearchSDK.TRUserContentController\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 986,
       "length": 66,
       "value": "\"TapResearchSDKDelegate not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1093,
       "length": 106,
       "value": "\"TapResearchSDKDelegate.onTapResearchDidReceiveRewards function not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1242,
       "length": 98,
       "value": "\"TapResearchSDKDelegate was deallocated or is no longer available when attempting to send rewards\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1378,
       "length": 43,
       "value": "\"Unable to parse JSON rewards sent by Orca\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRRewardCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 23,
       "value": "\"TapResearchSDK.TRRewardCallbackHandler\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRReward.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRReward.swift",
       "kind": "StringLiteral",
       "offset": 327,
       "length": 8,
       "value": "\"TapResearchSDK.TRReward\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6174,
       "length": 12,
       "value": "\"error_code\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6204,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6174,
       "length": 12,
       "value": "\"error_code\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
       "kind": "StringLiteral",
       "offset": 6204,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - Internal Target\/TRPlacementCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - Internal Target\/TRPlacementCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 26,
       "value": "\"TapResearchSDK.TRPlacementCallbackHandler\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/UIColor+HexColor.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/UIColor+HexColor.swift",
       "kind": "BooleanLiteral",
       "offset": 518,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 957,
       "length": 82,
       "value": "\"TapResearchContentDelegate not implemented when setting content delegate on show\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1077,
       "length": 117,
       "value": "\"TapResearchContentDelegate.onTapResearchContentShown function not implemented when setting content delegate on show\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 121,
       "value": "\"TapResearchContentDelegate.onTapResearchContentDismissed fucntion not implemented when setting content delegate on show\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1399,
       "length": 111,
       "value": "\"TapResearchContentDelegate was deallocated or is no longer available when attempting to call content callback\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 24,
       "value": "\"TapResearchSDK.TRContentCallbackHandler\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Core\/TRCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Core\/TRCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 409,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 162,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 162,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 162,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 216,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 280,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 280,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 280,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 991,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 2304,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
       "kind": "StringLiteral",
       "offset": 415,
       "length": 6,
       "value": "\"wifi\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 15,
       "value": "\"no connection\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRDeviceHelper.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
       "offset": 229,
       "length": 7,
-      "value": "\"3.2.6\""
+      "value": "\"3.2.7\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 7,
-      "value": "\"3.2.6\""
+      "value": "\"3.3.0\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 830,
       "length": 6,
       "value": "\"prod\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "kind": "Array",
+      "offset": 1200,
+      "length": 161,
+      "value": "[\"com.TapResearch.TestApp-Swift-UIKit\", \"com.tapresearch.taprewards.dev\"]"
+    },
+    {
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1314,
+      "offset": 2242,
       "length": 43,
       "value": "\"https:\/\/sdk-orchestrator.tapresearch.com\/\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1744,
+      "offset": 3110,
       "length": 50,
       "value": "\"https:\/\/api.tapresearch.com\/supply_api\/v4\/events\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2727,
+      "offset": 4421,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2847,
+      "offset": 4541,
       "length": 7,
       "value": "\"react\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2870,
+      "offset": 4564,
       "length": 7,
       "value": "\"unity\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2847,
+      "offset": 4541,
       "length": 7,
       "value": "\"react\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2870,
+      "offset": 4564,
       "length": 7,
       "value": "\"unity\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRPlacement.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRPlacement.swift",
       "kind": "StringLiteral",
       "offset": 317,
       "length": 11,
       "value": "\"TapResearchSDK.TRPlacement\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
       "offset": 447,
       "length": 33,
       "value": "\"A JavaScript exception occurred\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 564,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 798,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 827,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 873,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 1046,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "Dictionary",
       "offset": 1094,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "Dictionary",
       "offset": 1146,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 1387,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
       "offset": 1473,
       "length": 29,
       "value": "\"tapResearchStopNotification\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
       "offset": 2010,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9441,
+      "offset": 9570,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 14,
       "value": "\"TapResearchSDK.TRJSController\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
       "offset": 180,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "Dictionary",
       "offset": 1647,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
       "offset": 2156,
       "length": 18,
       "value": "\"TRNetworkMonitor\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
       "offset": 2265,
       "length": 16,
       "value": "\"TapResearchSDK\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
       "offset": 2338,
       "length": 17,
       "value": "\"TapResearchCode\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
       "offset": 2418,
       "length": 23,
       "value": "\"TapResearchCodeString\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
       "offset": 3317,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
       "offset": 5586,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
       "offset": 12134,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,
       "value": "\"TapResearchSDK.TRError\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 960,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1003,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1049,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 958,
       "length": 66,
       "value": "\"TapResearchSDKDelegate not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 97,
       "value": "\"TapResearchSDKDelegate.onTapResearchDidError function not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1203,
       "length": 96,
       "value": "\"TapResearchSDKDelegate was deallocated or is no longer available when attempting to send error\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 22,
       "value": "\"TapResearchSDK.TRErrorCallbackHandler\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 15,
       "value": "\"TapResearchSDK.TRQQDataPayload\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 5802,
       "length": 12,
       "value": "\"TapResearchSDK.TRQQComplete\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 7420,
       "length": 14,
       "value": "\"TapResearchSDK.TRQQUserAnswer\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "IntegerLiteral",
       "offset": 9106,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 8872,
       "length": 23,
       "value": "\"TapResearchSDK.TRQQDataPayloadQuestion\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Public\/Models\/TRQQDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 11727,
       "length": 27,
       "value": "\"TapResearchSDK.TRQQDataPayloadTargetFilter\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1003,
       "length": 66,
       "value": "\"TapResearchSDKDelegate not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 110,
       "value": "\"TapResearchSDKDelegate.onTapResearchQuickQuestionResponse function not implemented when setting SDK delegate\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1282,
       "length": 98,
       "value": "\"TapResearchSDKDelegate was deallocated or is no longer available when attempting to send rewards\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 43,
       "value": "\"Unable to parse JSON rewards sent by Orca\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
+      "filePath": "\/Users\/jeroen\/orca\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 836,
       "length": 27,
