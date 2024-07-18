@@ -4,6 +4,9 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## v3.2.7
+- Improved internal logging.
+
 ## v3.2.6
 - SDK stability improvements.
 - Additional remote logging to help diagnose and improve SDK.
