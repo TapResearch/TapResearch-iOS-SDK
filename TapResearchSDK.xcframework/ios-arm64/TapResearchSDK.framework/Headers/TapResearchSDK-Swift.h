@@ -411,6 +411,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
++ (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
 + (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag error:(void (^ _Nullable)(NSError * _Nullable))error SWIFT_WARN_UNUSED_RESULT;

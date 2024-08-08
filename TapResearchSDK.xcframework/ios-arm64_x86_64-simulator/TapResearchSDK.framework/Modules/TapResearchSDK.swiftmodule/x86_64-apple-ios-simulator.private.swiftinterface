@@ -42,6 +42,7 @@ import _SwiftConcurrencyShims
   @objc deinit
   @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func isReady() -> Swift.Bool
   @objc final public class func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func canShowContent(forPlacement tag: Swift.String, error: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
   @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
