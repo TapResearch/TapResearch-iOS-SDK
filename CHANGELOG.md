@@ -4,6 +4,12 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## v3.4.0-beta01
+
+> <span style="background-color: #FFFF00"> **_WARNING:_** This is a beta release.</span>
+
+- Added additional reward and Quick Questions callback setters.
+
 ## v3.2.8
 
 - Add `isReady` function.
