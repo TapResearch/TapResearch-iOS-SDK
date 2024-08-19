@@ -6,7 +6,7 @@
 
 ## v3.4.0-beta01
 
-$${\color{red}**_WARNING:_** This is a beta release.}$$
+> <span style="background-color: #FFFF00"> **_WARNING:_** This is a beta release.</span>
 
 - Added additional reward and Quick Questions callback setters.
 
