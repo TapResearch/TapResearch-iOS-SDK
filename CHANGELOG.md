@@ -10,6 +10,10 @@
 
 - Added additional reward and Quick Questions callback setters.
 
+## v3.2.9
+
+- Correction to `isReady` function.
+
 ## v3.2.8
 
 - Add `isReady` function.
