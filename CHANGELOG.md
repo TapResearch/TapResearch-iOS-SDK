@@ -10,6 +10,11 @@
 
 - Added additional reward and Quick Questions callback setters.
 
+## v3.2.10
+
+- Improve internal logging.
+- Prevent issues on re-initialize.
+
 ## v3.2.9
 
 - Correction to `isReady` function.
