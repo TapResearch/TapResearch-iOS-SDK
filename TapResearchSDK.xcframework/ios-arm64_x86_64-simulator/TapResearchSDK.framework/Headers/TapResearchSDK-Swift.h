@@ -393,9 +393,21 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+/// <hr/>
+/// <hr/>
+SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
+@interface TRSurvey : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull surveyIdentifier;
+@property (nonatomic, readonly) NSInteger lengthInMinutes;
+@property (nonatomic, readonly) double rewardAmount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
+@end
+
 @protocol TapResearchSDKDelegate;
 @class NSError;
 @protocol TapResearchContentDelegate;
+@protocol TapResearchSurveysDelegate;
 
 /// <hr/>
 /// <hr/>
@@ -426,6 +438,36 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes clearPreviousAttributes:(BOOL)clearPreviousAttributes SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (void)setSurveysDelegate:(id <TapResearchSurveysDelegate> _Nullable)delegate;
+/// <hr/>
+/// hasSurveys would always return true or false and any error would go to the global error callback
++ (BOOL)hasSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+/// getSurveys would return an optional array of surveys, any error would go to the global error callback
++ (NSArray<TRSurvey *> * _Nonnull)getSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (BOOL)canShowSurveyWithSurveyId:(NSString * _Nonnull)surveyId forPlacementTag:(NSString * _Nonnull)placementTag SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
++ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
++ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
+@end
+
+
+/// <hr/>
+/// <hr/>
+SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchSurveysDelegate_")
+@protocol TapResearchSurveysDelegate
+- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
+@end
+
+
+@interface TapResearch (SWIFT_EXTENSION(TapResearchSDK)) <TapResearchSurveysDelegate>
+/// <hr/>
+- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
 @end
 
 
@@ -450,6 +492,7 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 - (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
 @end
+
 
 
 #endif
@@ -855,9 +898,21 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+/// <hr/>
+/// <hr/>
+SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
+@interface TRSurvey : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull surveyIdentifier;
+@property (nonatomic, readonly) NSInteger lengthInMinutes;
+@property (nonatomic, readonly) double rewardAmount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
+@end
+
 @protocol TapResearchSDKDelegate;
 @class NSError;
 @protocol TapResearchContentDelegate;
+@protocol TapResearchSurveysDelegate;
 
 /// <hr/>
 /// <hr/>
@@ -888,6 +943,36 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes clearPreviousAttributes:(BOOL)clearPreviousAttributes SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (void)setSurveysDelegate:(id <TapResearchSurveysDelegate> _Nullable)delegate;
+/// <hr/>
+/// hasSurveys would always return true or false and any error would go to the global error callback
++ (BOOL)hasSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+/// getSurveys would return an optional array of surveys, any error would go to the global error callback
++ (NSArray<TRSurvey *> * _Nonnull)getSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (BOOL)canShowSurveyWithSurveyId:(NSString * _Nonnull)surveyId forPlacementTag:(NSString * _Nonnull)placementTag SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
++ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
++ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
+@end
+
+
+/// <hr/>
+/// <hr/>
+SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchSurveysDelegate_")
+@protocol TapResearchSurveysDelegate
+- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
+@end
+
+
+@interface TapResearch (SWIFT_EXTENSION(TapResearchSDK)) <TapResearchSurveysDelegate>
+/// <hr/>
+- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
 @end
 
 
@@ -912,6 +997,7 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 - (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
 - (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
 @end
+
 
 
 #endif
