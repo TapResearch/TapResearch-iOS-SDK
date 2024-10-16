@@ -5387,20 +5387,6 @@
       "value": "\"Unable to parse JSON rewards sent by Orca\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 6584,
-      "length": 12,
-      "value": "\"error_code\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Models\/TRError+Extensions.swift",
-      "kind": "StringLiteral",
-      "offset": 6614,
-      "length": 9,
-      "value": "\"message\""
-    },
-    {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/UIColor+HexColor.swift",
       "kind": "BooleanLiteral",
       "offset": 518,
@@ -5580,7 +5566,7 @@
       "kind": "StringLiteral",
       "offset": 229,
       "length": 7,
-      "value": "\"3.4.0\""
+      "value": "\"3.4.1\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
