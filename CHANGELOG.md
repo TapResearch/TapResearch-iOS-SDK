@@ -4,6 +4,10 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## v3.4.1
+
+- Improve error reporting from SDK to app.
+
 ## v3.4.0
 
 - Added Survey Wall Preview feature.
