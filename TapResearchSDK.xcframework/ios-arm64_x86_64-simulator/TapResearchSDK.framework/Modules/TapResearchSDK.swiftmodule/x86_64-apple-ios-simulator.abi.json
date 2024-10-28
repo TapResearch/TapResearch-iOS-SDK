@@ -5566,7 +5566,7 @@
       "kind": "StringLiteral",
       "offset": 229,
       "length": 7,
-      "value": "\"3.4.1\""
+      "value": "\"3.4.2\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
