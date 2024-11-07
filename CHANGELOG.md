@@ -141,6 +141,9 @@
 - Removed the need to store placement objects.
 - Improved error reporting.
 
+## 2.5.14
+- Improve internal logging.
+
 ## 2.5.13
 - Orientation update.
 - Remove deprecated iOS functions usage.
