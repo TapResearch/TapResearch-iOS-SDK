@@ -4,6 +4,9 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## 3.4.3
+- Improve internal logging.
+
 ## v3.4.2
 
 - Improved survey inventory, stability.
@@ -140,6 +143,9 @@
 - Partial screen interstitials and banners.
 - Removed the need to store placement objects.
 - Improved error reporting.
+
+## 2.5.14
+- Improve internal logging.
 
 ## 2.5.13
 - Orientation update.
