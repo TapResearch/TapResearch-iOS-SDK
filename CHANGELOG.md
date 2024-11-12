@@ -4,6 +4,9 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## 3.4.3
+- Improve internal logging.
+
 ## v3.4.2
 
 - Improved survey inventory, stability.
