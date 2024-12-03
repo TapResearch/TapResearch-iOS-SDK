@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TapResearchSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport
@@ -35,6 +35,12 @@ import _SwiftConcurrencyShims
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@objc public protocol TapResearchQuickQuestionDelegate {
+  @objc func onTapResearchQuickQuestionResponse(_ qqPayload: TapResearchSDK.TRQQDataPayload)
+}
+@objc public protocol TapResearchRewardDelegate {
+  @objc func onTapResearchDidReceiveRewards(_ rewards: [TapResearchSDK.TRReward])
+}
 @objc public protocol TapResearchSDKDelegate {
   @objc func onTapResearchDidError(_ error: Foundation.NSError)
   @objc func onTapResearchSdkReady()
@@ -55,6 +61,10 @@ import _SwiftConcurrencyShims
   @objc deinit
   @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: any TapResearchSDK.TapResearchQuickQuestionDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: any TapResearchSDK.TapResearchQuickQuestionDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc final public class func setRewardDelegate(_ delegate: (any TapResearchSDK.TapResearchRewardDelegate)?)
+  @objc final public class func setQuickQuestionDelegate(_ delegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)?)
   @objc final public class func isReady() -> Swift.Bool
   @objc final public class func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc final public class func canShowContent(forPlacement tag: Swift.String, error: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
