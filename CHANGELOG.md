@@ -4,6 +4,9 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## 3.5.1
+- Improve internal logging.
+
 ## 3.5.0
 - Added new callback setters for rewards and Quick Questions.
 - Updated handling of some malformed survey URLs.
