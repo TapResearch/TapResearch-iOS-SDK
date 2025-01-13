@@ -4,6 +4,11 @@
 
 > <span style="background-color: #FFFF00"> **_NOTE:_** A 2.5.13 Legacy SDK update is available as a code-signed build with a PrivacyInfo.xcprivacy file.</span>
 
+## 3.6.0--rc0
+- Preventative fix for possible animation crash.
+- Smooth-out content dismiss animation.
+- Improve internal logging.
+
 ## 3.5.2
 - Fix a surveys refresh callback issue.
 
