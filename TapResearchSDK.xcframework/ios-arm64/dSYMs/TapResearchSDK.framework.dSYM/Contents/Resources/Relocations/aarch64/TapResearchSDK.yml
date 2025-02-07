@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/tmp/iphoneos/Build/Intermediates.noindex/ArchiveIntermediates/TapResearchSDK/InstallationBuildProductsLocation/Library/Frameworks/TapResearchSDK.framework/TapResearchSDK'
 relocations:
-  - { offset: 0x5E166, size: 0x8, addend: 0x0, symName: _TapResearchSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x51930, symSize: 0x0 }
-  - { offset: 0x5E19B, size: 0x8, addend: 0x0, symName: _TapResearchSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x51968, symSize: 0x0 }
+  - { offset: 0x5E166, size: 0x8, addend: 0x0, symName: _TapResearchSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x51AB0, symSize: 0x0 }
+  - { offset: 0x5E19B, size: 0x8, addend: 0x0, symName: _TapResearchSDKVersionNumber, symObjAddr: 0x38, symBinAddr: 0x51AE8, symSize: 0x0 }
   - { offset: 0x5E1F4, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x4 }
   - { offset: 0x5E208, size: 0x8, addend: 0x0, symName: ___swift_memcpy32_8, symObjAddr: 0x4, symBinAddr: 0x8004, symSize: 0xC }
   - { offset: 0x5E21C, size: 0x8, addend: 0x0, symName: '_$sSo6CGRectVwet', symObjAddr: 0x10, symBinAddr: 0x8010, symSize: 0x20 }
@@ -1443,33 +1443,35 @@ relocations:
   - { offset: 0x8CDA2, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK15TRQQDataPayloadC10CodingKeysO8rawValueAESgSS_tcfCTf4nd_n', symObjAddr: 0x69D8, symBinAddr: 0x4CC94, symSize: 0x74 }
   - { offset: 0x8CDD9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK23TRQQDataPayloadQuestionC10CodingKeysO8rawValueAESgSS_tcfCTf4nd_n', symObjAddr: 0x6A4C, symBinAddr: 0x4CD08, symSize: 0x74 }
   - { offset: 0x8CE10, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQDataPayloadTargetFilterC10CodingKeysO8rawValueAESgSS_tcfCTf4nd_n', symObjAddr: 0x6AC0, symBinAddr: 0x4CD7C, symSize: 0x74 }
-  - { offset: 0x8D0BC, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfE', symObjAddr: 0x248, symBinAddr: 0x4CECC, symSize: 0x2C }
-  - { offset: 0x8D0E9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfETo', symObjAddr: 0x2A4, symBinAddr: 0x4CF28, symSize: 0x38 }
-  - { offset: 0x8D118, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCMa', symObjAddr: 0x2DC, symBinAddr: 0x4CF60, symSize: 0x20 }
-  - { offset: 0x8D156, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK21TRInternalQQResponsesVACSeAAWl', symObjAddr: 0x8B4, symBinAddr: 0x4D4E8, symSize: 0x44 }
-  - { offset: 0x8D233, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtFTo', symObjAddr: 0x188, symBinAddr: 0x4CE0C, symSize: 0x68 }
-  - { offset: 0x8D276, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCACycfcTo', symObjAddr: 0x1F0, symBinAddr: 0x4CE74, symSize: 0x58 }
-  - { offset: 0x8D2AB, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfD', symObjAddr: 0x274, symBinAddr: 0x4CEF8, symSize: 0x30 }
-  - { offset: 0x8D3A9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtFTf4dnn_n', symObjAddr: 0x30C, symBinAddr: 0x4CF80, symSize: 0x568 }
-  - { offset: 0x8D8B5, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVMa', symObjAddr: 0x0, symBinAddr: 0x4D52C, symSize: 0x10 }
-  - { offset: 0x8DA85, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs0F3KeyAAWl', symObjAddr: 0x4B0, symBinAddr: 0x4D8B8, symSize: 0x44 }
-  - { offset: 0x8DA99, size: 0x8, addend: 0x0, symName: '_$sSay14TapResearchSDK16TRInternalRewardVGMa', symObjAddr: 0x514, symBinAddr: 0x4D8FC, symSize: 0x54 }
-  - { offset: 0x8DAAD, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK16TRInternalRewardVACSeAAWl', symObjAddr: 0x568, symBinAddr: 0x4D950, symSize: 0x44 }
-  - { offset: 0x8DAC1, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK16TRInternalRewardVACSEAAWl', symObjAddr: 0x610, symBinAddr: 0x4D9F8, symSize: 0x44 }
-  - { offset: 0x8DAD5, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOwst', symObjAddr: 0x6AC, symBinAddr: 0x4DA3C, symSize: 0x8C }
-  - { offset: 0x8DAE9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOMa', symObjAddr: 0x748, symBinAddr: 0x4DAC8, symSize: 0x10 }
-  - { offset: 0x8DAFD, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOSHAASQWb', symObjAddr: 0x758, symBinAddr: 0x4DAD8, symSize: 0x4 }
-  - { offset: 0x8DB11, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFSQAAWl', symObjAddr: 0x75C, symBinAddr: 0x4DADC, symSize: 0x44 }
-  - { offset: 0x8DB25, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAs28CustomDebugStringConvertiblePWb', symObjAddr: 0x7A0, symBinAddr: 0x4DB20, symSize: 0x4 }
-  - { offset: 0x8DB39, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs28CustomDebugStringConvertibleAAWl', symObjAddr: 0x7A4, symBinAddr: 0x4DB24, symSize: 0x44 }
-  - { offset: 0x8DB4D, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAs23CustomStringConvertiblePWb', symObjAddr: 0x7E8, symBinAddr: 0x4DB68, symSize: 0x4 }
-  - { offset: 0x8DB61, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs23CustomStringConvertibleAAWl', symObjAddr: 0x7EC, symBinAddr: 0x4DB6C, symSize: 0x44 }
-  - { offset: 0x8DBA1, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW', symObjAddr: 0x288, symBinAddr: 0x4D6F4, symSize: 0x28 }
-  - { offset: 0x8DBBD, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW', symObjAddr: 0x2B0, symBinAddr: 0x4D71C, symSize: 0x28 }
-  - { offset: 0x8DBDA, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV6encode2toys7Encoder_p_tKF', symObjAddr: 0x10, symBinAddr: 0x4D53C, symSize: 0x10C }
-  - { offset: 0x8DC11, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAsAGP11stringValueSSvgTW', symObjAddr: 0x1C4, symBinAddr: 0x4D648, symSize: 0x18 }
-  - { offset: 0x8DC49, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAsAGP11stringValuexSgSS_tcfCTW', symObjAddr: 0x1DC, symBinAddr: 0x4D660, symSize: 0x94 }
-  - { offset: 0x8DCBE, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVSeAASe4fromxs7Decoder_p_tKcfCTW', symObjAddr: 0x2D8, symBinAddr: 0x4D744, symSize: 0x28 }
-  - { offset: 0x8DCE7, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVSEAASE6encode2toys7Encoder_p_tKFTW', symObjAddr: 0x300, symBinAddr: 0x4D76C, symSize: 0x18 }
-  - { offset: 0x8DCFB, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV4fromACs7Decoder_p_tKcfCTf4nd_n', symObjAddr: 0x318, symBinAddr: 0x4D784, symSize: 0x134 }
+  - { offset: 0x8CF53, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtF6$deferL_yyF', symObjAddr: 0x0, symBinAddr: 0x4CE0C, symSize: 0x18C }
+  - { offset: 0x8D0BC, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfE', symObjAddr: 0x24C, symBinAddr: 0x4D058, symSize: 0x2C }
+  - { offset: 0x8D0E9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfETo', symObjAddr: 0x2A8, symBinAddr: 0x4D0B4, symSize: 0x38 }
+  - { offset: 0x8D118, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCMa', symObjAddr: 0x2E0, symBinAddr: 0x4D0EC, symSize: 0x20 }
+  - { offset: 0x8D156, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK21TRInternalQQResponsesVACSeAAWl', symObjAddr: 0x8B0, symBinAddr: 0x4D66C, symSize: 0x44 }
+  - { offset: 0x8D201, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtF6$deferL_yyF', symObjAddr: 0x0, symBinAddr: 0x4CE0C, symSize: 0x18C }
+  - { offset: 0x8D34B, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtFTo', symObjAddr: 0x18C, symBinAddr: 0x4CF98, symSize: 0x68 }
+  - { offset: 0x8D38E, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCACycfcTo', symObjAddr: 0x1F4, symBinAddr: 0x4D000, symSize: 0x58 }
+  - { offset: 0x8D3C3, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerCfD', symObjAddr: 0x278, symBinAddr: 0x4D084, symSize: 0x30 }
+  - { offset: 0x8D4C1, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK27TRQQResponseCallbackHandlerC21userContentController_10didReceiveySo06WKUserhI0C_So15WKScriptMessageCtFTf4dnn_n', symObjAddr: 0x310, symBinAddr: 0x4D10C, symSize: 0x560 }
+  - { offset: 0x8D9CD, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVMa', symObjAddr: 0x0, symBinAddr: 0x4D6B0, symSize: 0x10 }
+  - { offset: 0x8DB9D, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs0F3KeyAAWl', symObjAddr: 0x4B0, symBinAddr: 0x4DA3C, symSize: 0x44 }
+  - { offset: 0x8DBB1, size: 0x8, addend: 0x0, symName: '_$sSay14TapResearchSDK16TRInternalRewardVGMa', symObjAddr: 0x514, symBinAddr: 0x4DA80, symSize: 0x54 }
+  - { offset: 0x8DBC5, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK16TRInternalRewardVACSeAAWl', symObjAddr: 0x568, symBinAddr: 0x4DAD4, symSize: 0x44 }
+  - { offset: 0x8DBD9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK16TRInternalRewardVACSEAAWl', symObjAddr: 0x610, symBinAddr: 0x4DB7C, symSize: 0x44 }
+  - { offset: 0x8DBED, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOwst', symObjAddr: 0x6AC, symBinAddr: 0x4DBC0, symSize: 0x8C }
+  - { offset: 0x8DC01, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOMa', symObjAddr: 0x748, symBinAddr: 0x4DC4C, symSize: 0x10 }
+  - { offset: 0x8DC15, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOSHAASQWb', symObjAddr: 0x758, symBinAddr: 0x4DC5C, symSize: 0x4 }
+  - { offset: 0x8DC29, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFSQAAWl', symObjAddr: 0x75C, symBinAddr: 0x4DC60, symSize: 0x44 }
+  - { offset: 0x8DC3D, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAs28CustomDebugStringConvertiblePWb', symObjAddr: 0x7A0, symBinAddr: 0x4DCA4, symSize: 0x4 }
+  - { offset: 0x8DC51, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs28CustomDebugStringConvertibleAAWl', symObjAddr: 0x7A4, symBinAddr: 0x4DCA8, symSize: 0x44 }
+  - { offset: 0x8DC65, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAs23CustomStringConvertiblePWb', symObjAddr: 0x7E8, symBinAddr: 0x4DCEC, symSize: 0x4 }
+  - { offset: 0x8DC79, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOAFs23CustomStringConvertibleAAWl', symObjAddr: 0x7EC, symBinAddr: 0x4DCF0, symSize: 0x44 }
+  - { offset: 0x8DCB9, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW', symObjAddr: 0x288, symBinAddr: 0x4D878, symSize: 0x28 }
+  - { offset: 0x8DCD5, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW', symObjAddr: 0x2B0, symBinAddr: 0x4D8A0, symSize: 0x28 }
+  - { offset: 0x8DCF2, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV6encode2toys7Encoder_p_tKF', symObjAddr: 0x10, symBinAddr: 0x4D6C0, symSize: 0x10C }
+  - { offset: 0x8DD29, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAsAGP11stringValueSSvgTW', symObjAddr: 0x1C4, symBinAddr: 0x4D7CC, symSize: 0x18 }
+  - { offset: 0x8DD61, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV10CodingKeys33_7FD4C0EE2A32D08A4CFC2A2E07D770C4LLOs0F3KeyAAsAGP11stringValuexSgSS_tcfCTW', symObjAddr: 0x1DC, symBinAddr: 0x4D7E4, symSize: 0x94 }
+  - { offset: 0x8DDD6, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVSeAASe4fromxs7Decoder_p_tKcfCTW', symObjAddr: 0x2D8, symBinAddr: 0x4D8C8, symSize: 0x28 }
+  - { offset: 0x8DDFF, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsVSEAASE6encode2toys7Encoder_p_tKFTW', symObjAddr: 0x300, symBinAddr: 0x4D8F0, symSize: 0x18 }
+  - { offset: 0x8DE13, size: 0x8, addend: 0x0, symName: '_$s14TapResearchSDK17TRInternalRewardsV4fromACs7Decoder_p_tKcfCTf4nd_n', symObjAddr: 0x318, symBinAddr: 0x4D908, symSize: 0x134 }
 ...
