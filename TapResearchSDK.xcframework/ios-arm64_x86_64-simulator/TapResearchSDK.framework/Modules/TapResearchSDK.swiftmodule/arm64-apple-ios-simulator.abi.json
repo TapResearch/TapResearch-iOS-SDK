@@ -6252,7 +6252,7 @@
       "kind": "StringLiteral",
       "offset": 229,
       "length": 12,
-      "value": "\"3.6.0--rc2\""
+      "value": "\"3.6.0--rc3\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
@@ -6538,8 +6538,8 @@
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRQQResponseCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 1084,
-      "length": 43,
-      "value": "\"Unable to parse JSON rewards sent by Orca\""
+      "length": 64,
+      "value": "\"Unable to parse JSON Quick Questions data payload sent by Orca\""
     }
   ]
 }
