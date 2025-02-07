@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		9polUddSaZYgFk7rl9M43v81kik=
+		x1ko8awBqxwI9+vmwiVzFKe5Zi0=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		In220cPPk9NY7IjgsQwkuol2UpU=
+		h6+ShuhPulWYJZ6HTOomtDJ/ayQ=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4e/dfVe4xEhOocBCp3eqniVX8EM=
+		afGNsHHmNJj8h2azxkP/LdeAcT0=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		1aQuAUZJc1HlLhF0seP2LtZ/0LE=
+		S5XrXcekDnOKEp/Ei9giCK28lDE=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		1aQuAUZJc1HlLhF0seP2LtZ/0LE=
+		S5XrXcekDnOKEp/Ei9giCK28lDE=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WM6YEjK3DhSa7XDyVk2qsXcyUtY=
+		QaL90oUrmcwQnPwsf/vyvixyU44=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4e/dfVe4xEhOocBCp3eqniVX8EM=
+		afGNsHHmNJj8h2azxkP/LdeAcT0=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		QbE67YQAusZIFxRyaDs9MHL0QUE=
+		2vZ1uSNkfGh75F+9TSrGaFuxgcY=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QbE67YQAusZIFxRyaDs9MHL0QUE=
+		2vZ1uSNkfGh75F+9TSrGaFuxgcY=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y13/fFLFsJwzKnGfKMWMz+Bq8ws=
+		zzrsBPTAuRnt2R4k9NYm+Gvd62Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfyumrXcarA6hHd0Oyyb/9Y6eF7U5hlSejGEta9k9nk=
+			uFan2XGg4WzVvdkpOvfd0aNRRDIhcpmB3eDQq7aZ7co=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
@@ -96,14 +96,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			smbjLdpnGDklM02nOyjG3FG1tiAMO9385eheGa9an1Y=
+			l5JmxLWJ121mqHkbe5DPZDg4TDhaStKRmZbnLeTqexY=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQRBpko1spOu3Ay+E1XoV1eV0aXeAYeICvfGgiafyy0=
+			4a4174hSsAStHFJ9meCsrIyODA6OstFV+e/oPw/NB1w=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -117,28 +117,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQRBpko1spOu3Ay+E1XoV1eV0aXeAYeICvfGgiafyy0=
+			4a4174hSsAStHFJ9meCsrIyODA6OstFV+e/oPw/NB1w=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XteF463nztpxGRVqJwsv8bv87rcL/SUIN8IQJgCOxq8=
+			q0m3lxdGKaAjv4+B9WmqgaeyaBTS5JmQUUuyfBqmQlI=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			smbjLdpnGDklM02nOyjG3FG1tiAMO9385eheGa9an1Y=
+			l5JmxLWJ121mqHkbe5DPZDg4TDhaStKRmZbnLeTqexY=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5WUm48rqQsiC0LaUhatxNQMYqbJRcoJg/60j7Umw/JQ=
+			EU4aZg5oO1+osA/pNXw5upyaki3ZP3llxUXlzm9tKXk=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -152,14 +152,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5WUm48rqQsiC0LaUhatxNQMYqbJRcoJg/60j7Umw/JQ=
+			EU4aZg5oO1+osA/pNXw5upyaki3ZP3llxUXlzm9tKXk=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zuTTeWuwHTwVIogEw7d5w1xMgNYPf9EG3ta7CD551ds=
+			wbuxUU1h16Po+C/ZiD5VwLZdubYhpwfWAUAuiavmTJs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

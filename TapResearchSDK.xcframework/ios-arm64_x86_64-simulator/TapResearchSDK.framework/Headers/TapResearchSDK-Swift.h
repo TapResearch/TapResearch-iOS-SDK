@@ -402,11 +402,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
 @property (nonatomic, readonly) NSInteger lengthInMinutes;
 @property (nonatomic, readonly) double rewardAmount;
 @property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
-@property (nonatomic, readonly) BOOL isHotTile;
-@property (nonatomic, readonly) BOOL isSale;
-@property (nonatomic, readonly) double saleMultiplier;
-@property (nonatomic, readonly) double preSaleRewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nullable saleEndDate;
 @end
 
 @protocol TapResearchSDKDelegate;
@@ -484,7 +479,6 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchSurveysDelegate_")
 /// <hr/>
 - (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
 @end
-
 
 
 
@@ -939,11 +933,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
 @property (nonatomic, readonly) NSInteger lengthInMinutes;
 @property (nonatomic, readonly) double rewardAmount;
 @property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
-@property (nonatomic, readonly) BOOL isHotTile;
-@property (nonatomic, readonly) BOOL isSale;
-@property (nonatomic, readonly) double saleMultiplier;
-@property (nonatomic, readonly) double preSaleRewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nullable saleEndDate;
 @end
 
 @protocol TapResearchSDKDelegate;
@@ -1021,7 +1010,6 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchSurveysDelegate_")
 /// <hr/>
 - (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
 @end
-
 
 
 
