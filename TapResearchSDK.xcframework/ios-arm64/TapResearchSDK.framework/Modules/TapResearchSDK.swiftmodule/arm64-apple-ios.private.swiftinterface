@@ -2,10 +2,12 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapResearchSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import AVFAudio
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
 import Foundation
+import LocalAuthentication
 import Network
 import Swift
 import SystemConfiguration
@@ -31,6 +33,11 @@ import _SwiftConcurrencyShims
   @objc final public let lengthInMinutes: Swift.Int
   @objc final public let rewardAmount: Swift.Double
   @objc final public let currencyName: Swift.String
+  @objc final public let isHotTile: Swift.Bool
+  @objc final public let isSale: Swift.Bool
+  @objc final public let saleMultiplier: Swift.Double
+  @objc final public let preSaleRewardAmount: Swift.Double
+  @objc final public let saleEndDate: Swift.String?
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -59,24 +66,24 @@ import _SwiftConcurrencyShims
   @objc public static let TapResearchErrorCode: Swift.String
   @objc public static let TapResearchErrorCodeString: Swift.String
   @objc deinit
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: any TapResearchSDK.TapResearchQuickQuestionDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: any TapResearchSDK.TapResearchQuickQuestionDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func setRewardDelegate(_ delegate: (any TapResearchSDK.TapResearchRewardDelegate)?)
-  @objc final public class func setQuickQuestionDelegate(_ delegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)?)
-  @objc final public class func isReady() -> Swift.Bool
-  @objc final public class func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func canShowContent(forPlacement tag: Swift.String, error: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
-  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func sendUserAttributes(attributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false) -> Foundation.NSError?
-  @objc final public class func setSurveysDelegate(_ delegate: (any TapResearchSDK.TapResearchSurveysDelegate)?)
-  @objc final public class func hasSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
-  @objc final public class func getSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> [TapResearchSDK.TRSurvey]
-  @objc final public class func canShowSurvey(surveyId: Swift.String, forPlacementTag placementTag: Swift.String) -> Swift.Bool
-  @objc final public class func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  @objc final public class func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func setRewardDelegate(_ delegate: (any TapResearchSDK.TapResearchRewardDelegate)?)
+  @objc public static func setQuickQuestionDelegate(_ delegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)?)
+  @objc public static func isReady() -> Swift.Bool
+  @objc public static func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func canShowContent(forPlacement tag: Swift.String, error: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
+  @objc public static func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func sendUserAttributes(attributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false) -> Foundation.NSError?
+  @objc public static func setSurveysDelegate(_ delegate: (any TapResearchSDK.TapResearchSurveysDelegate)?)
+  @objc public static func hasSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
+  @objc public static func getSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> [TapResearchSDK.TRSurvey]
+  @objc public static func canShowSurvey(surveyId: Swift.String, forPlacementTag placementTag: Swift.String) -> Swift.Bool
+  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
 }
 extension TapResearchSDK.TapResearch : TapResearchSDK.TapResearchSurveysDelegate {
   @objc final public func onTapResearchSurveysRefreshed(forPlacement placementTag: Swift.String)
