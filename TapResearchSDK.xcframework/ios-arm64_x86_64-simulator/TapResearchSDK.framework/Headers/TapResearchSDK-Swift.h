@@ -396,11 +396,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
 @property (nonatomic, readonly) NSInteger lengthInMinutes;
 @property (nonatomic, readonly) double rewardAmount;
 @property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
-@property (nonatomic, readonly) BOOL isHotTile;
-@property (nonatomic, readonly) BOOL isSale;
-@property (nonatomic, readonly) double saleMultiplier;
-@property (nonatomic, readonly) double preSaleRewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nullable saleEndDate;
 @end
 
 @protocol TapResearchSDKDelegate;
@@ -422,211 +417,45 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// <hr/>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for error reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
+/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
+/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Set the reward delegate.</h1>
-/// Set the reward handler or clear the reward delegate
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
-/// \param _ delegate An object that implements the TapResearchRewardDelegate callback to receive rewards, or <code>nil</code> to clear it.
-///
+/// <hr/>
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nonnull)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <hr/>
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nonnull)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <hr/>
 + (void)setRewardDelegate:(id <TapResearchRewardDelegate> _Nullable)delegate;
-/// <h1>Set the Quick Question data delegate.</h1>
-/// Set the Quick Question delegate or clear the delegate.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchquickquestiondelegate">Documentation: TapResearchQuickQuestionDelegate</a>
-/// \param _ delegate An object that implements the TapResearchQuickQuestionDelegate callback to receive Quick Question data payloads, or <code>nil</code> to clear it.
-///
+/// <hr/>
 + (void)setQuickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)delegate;
-/// <h1>Check if the SDK is ready.</h1>
-/// Check if the SDK is ready to handle your app’s requests.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#checking-if-the-sdk-is-ready">Documentation: Checking if the SDK is ready</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the SDK is ready or <code>false</code> if not.
-///   </li>
-/// </ul>
+/// <hr/>
 + (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a user identifier.</h1>
-/// Set a unique user identifier.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#setting-the-user-identifier">Documentation: Setting the user identifier</a>
-/// \param userIdentifier A string with a unique user identifier.
-///
-/// \param completion <em>Deprecated</em> An optional completion block to receive any errors that occured while setting the user identifier.
-///
+/// <hr/>
 + (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Can a placement be shown?</h1>
-/// Check if a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the placement can be shown, <code>false</code> if not.`
-///   </li>
-/// </ul>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param error An optional completion block to receive any errors that occured while checking if the placement can be shown.
-///
+/// <hr/>
 + (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag error:(void (^ _Nullable)(NSError * _Nullable))error SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a placement.</h1>
-/// Show a placement.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
+/// <hr/>
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Show a placement.</h1>
-/// Show a placement with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
+/// <hr/>
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Send user attributes.</h1>
-/// Send user attributes for targeting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#user-attributes">Documentation: User Attributes</a>
-/// \param attributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
+/// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes clearPreviousAttributes:(BOOL)clearPreviousAttributes SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a surveys delegate.</h1>
-/// Set the surveys delegate or clear the delegate.
-/// \param delegate An object that implements the TapResearchSurveysDelegate callback to receive survey availability updates, or <code>nil</code> to clear it.
-///
+/// <hr/>
 + (void)setSurveysDelegate:(id <TapResearchSurveysDelegate> _Nullable)delegate;
-/// <h1>Check if a placement has surveys.</h1>
-/// Check if a placement has surveys.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#checking-for-available-surveys">Documentation: Checking for available surveys</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the placement has surveys <code>true</code> or <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string to check.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while checking the placement for surveys.
-///
+/// <hr/>
+/// hasSurveys would always return true or false and any error would go to the global error callback
 + (BOOL)hasSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Get a placement’s surveys.</h1>
-/// Get a placment’s surveys as an array of <code>TRSurvey</code> objects.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#getting-available-surveys">Documentation: Getting available surveys</a>
-/// <ul>
-///   <li>
-///     Returns An array of <code>TRSurvey</code> objects, the array will be empty if there are none.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while getting surveys.
-///
+/// <hr/>
+/// getSurveys would return an optional array of surveys, any error would go to the global error callback
 + (NSArray<TRSurvey *> * _Nonnull)getSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Can a survey be shown?</h1>
-/// Check if a survey for a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#check-that-a-survey-can-be-shown">Documentation: Check that a survey can be shown</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the survey can be shown, <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param surveyId A survey identifier string.
-///
-/// \param forPlacementTag placementTag A placement tag string.
-///
+/// <hr/>
 + (BOOL)canShowSurveyWithSurveyId:(NSString * _Nonnull)surveyId forPlacementTag:(NSString * _Nonnull)placementTag SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a survey.</h1>
-/// Show a survey.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
 + (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
-/// <h1>Show a survey.</h1>
-/// Show a survey with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
 + (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
 @end
 
@@ -1081,11 +910,6 @@ SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
 @property (nonatomic, readonly) NSInteger lengthInMinutes;
 @property (nonatomic, readonly) double rewardAmount;
 @property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
-@property (nonatomic, readonly) BOOL isHotTile;
-@property (nonatomic, readonly) BOOL isSale;
-@property (nonatomic, readonly) double saleMultiplier;
-@property (nonatomic, readonly) double preSaleRewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nullable saleEndDate;
 @end
 
 @protocol TapResearchSDKDelegate;
@@ -1107,211 +931,45 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// <hr/>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for error reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
+/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
+/// <hr/>
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Set the reward delegate.</h1>
-/// Set the reward handler or clear the reward delegate
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
-/// \param _ delegate An object that implements the TapResearchRewardDelegate callback to receive rewards, or <code>nil</code> to clear it.
-///
+/// <hr/>
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nonnull)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <hr/>
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nonnull)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <hr/>
 + (void)setRewardDelegate:(id <TapResearchRewardDelegate> _Nullable)delegate;
-/// <h1>Set the Quick Question data delegate.</h1>
-/// Set the Quick Question delegate or clear the delegate.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchquickquestiondelegate">Documentation: TapResearchQuickQuestionDelegate</a>
-/// \param _ delegate An object that implements the TapResearchQuickQuestionDelegate callback to receive Quick Question data payloads, or <code>nil</code> to clear it.
-///
+/// <hr/>
 + (void)setQuickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)delegate;
-/// <h1>Check if the SDK is ready.</h1>
-/// Check if the SDK is ready to handle your app’s requests.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#checking-if-the-sdk-is-ready">Documentation: Checking if the SDK is ready</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the SDK is ready or <code>false</code> if not.
-///   </li>
-/// </ul>
+/// <hr/>
 + (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a user identifier.</h1>
-/// Set a unique user identifier.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#setting-the-user-identifier">Documentation: Setting the user identifier</a>
-/// \param userIdentifier A string with a unique user identifier.
-///
-/// \param completion <em>Deprecated</em> An optional completion block to receive any errors that occured while setting the user identifier.
-///
+/// <hr/>
 + (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Can a placement be shown?</h1>
-/// Check if a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the placement can be shown, <code>false</code> if not.`
-///   </li>
-/// </ul>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param error An optional completion block to receive any errors that occured while checking if the placement can be shown.
-///
+/// <hr/>
 + (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag error:(void (^ _Nullable)(NSError * _Nullable))error SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a placement.</h1>
-/// Show a placement.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
+/// <hr/>
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Show a placement.</h1>
-/// Show a placement with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
+/// <hr/>
 + (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Send user attributes.</h1>
-/// Send user attributes for targeting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#user-attributes">Documentation: User Attributes</a>
-/// \param attributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
+/// <hr/>
 + (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes clearPreviousAttributes:(BOOL)clearPreviousAttributes SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a surveys delegate.</h1>
-/// Set the surveys delegate or clear the delegate.
-/// \param delegate An object that implements the TapResearchSurveysDelegate callback to receive survey availability updates, or <code>nil</code> to clear it.
-///
+/// <hr/>
 + (void)setSurveysDelegate:(id <TapResearchSurveysDelegate> _Nullable)delegate;
-/// <h1>Check if a placement has surveys.</h1>
-/// Check if a placement has surveys.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#checking-for-available-surveys">Documentation: Checking for available surveys</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the placement has surveys <code>true</code> or <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string to check.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while checking the placement for surveys.
-///
+/// <hr/>
+/// hasSurveys would always return true or false and any error would go to the global error callback
 + (BOOL)hasSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Get a placement’s surveys.</h1>
-/// Get a placment’s surveys as an array of <code>TRSurvey</code> objects.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#getting-available-surveys">Documentation: Getting available surveys</a>
-/// <ul>
-///   <li>
-///     Returns An array of <code>TRSurvey</code> objects, the array will be empty if there are none.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while getting surveys.
-///
+/// <hr/>
+/// getSurveys would return an optional array of surveys, any error would go to the global error callback
 + (NSArray<TRSurvey *> * _Nonnull)getSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Can a survey be shown?</h1>
-/// Check if a survey for a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#check-that-a-survey-can-be-shown">Documentation: Check that a survey can be shown</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the survey can be shown, <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param surveyId A survey identifier string.
-///
-/// \param forPlacementTag placementTag A placement tag string.
-///
+/// <hr/>
 + (BOOL)canShowSurveyWithSurveyId:(NSString * _Nonnull)surveyId forPlacementTag:(NSString * _Nonnull)placementTag SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a survey.</h1>
-/// Show a survey.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
 + (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
-/// <h1>Show a survey.</h1>
-/// Show a survey with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
+/// <hr/>
+/// any error would go to the global error callback or to a passed-in block
 + (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
 @end
 
