@@ -283,7 +283,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
+
+#import <TapResearchSDK/TapResearchSDK.h>
 
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -305,374 +308,256 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSURLSession;
 @class NSString;
+SWIFT_CLASS("_TtC14TapResearchSDK9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Constants * _Nonnull shared;)
++ (Constants * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, strong) NSURLSession * _Null_unspecified urlSession;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRBaseURL;)
++ (NSString * _Nonnull)kTRBaseURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRVersion;)
++ (NSString * _Nonnull)kTRVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatform;)
++ (NSString * _Nonnull)kTRPlatform SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAPIVersion;)
++ (NSString * _Nonnull)kTRAPIVersion SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRErrorDomain;)
++ (NSString * _Nonnull)kTRErrorDomain SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)idfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostVersions;)
++ (NSString * _Nonnull)kTRPostVersions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetOffers;)
++ (NSString * _Nonnull)kTRGetOffers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostPlayers;)
++ (NSString * _Nonnull)kTRPostPlayers SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostSurveyURL;)
++ (NSString * _Nonnull)kTRPostSurveyURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRGetCampaignCompletes;)
++ (NSString * _Nonnull)kTRGetCampaignCompletes SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostRewardsRedeemed;)
++ (NSString * _Nonnull)kTRPostRewardsRedeemed SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostAppImpressions;)
++ (NSString * _Nonnull)kTRPostAppImpressions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPostInterstitialEvents;)
++ (NSString * _Nonnull)kTRPostInterstitialEvents SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kNetworkTimeoutSeconds;)
++ (NSTimeInterval)kNetworkTimeoutSeconds SWIFT_WARN_UNUSED_RESULT;
++ (void)setUrlResponseMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
++ (void)setUrlPathMocks:(NSArray<NSDictionary *> * _Nonnull)dictionaries;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCPIdentifier;)
++ (NSString * _Nonnull)kTRCPIdentifier SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCryptoKey;)
++ (NSString * _Nonnull)kTRCryptoKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRShouldSleepHeader;)
++ (NSString * _Nonnull)kTRShouldSleepHeader SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageOfferEntryKey;)
++ (NSString * _Nonnull)kTRMessageOfferEntryKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageNoOfferKey;)
++ (NSString * _Nonnull)kTRMessageNoOfferKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageAbandonKey;)
++ (NSString * _Nonnull)kTRMessageAbandonKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonButtonTextKey;)
++ (NSString * _Nonnull)kTRAbandonButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCloseButtonTextKey;)
++ (NSString * _Nonnull)kTRCloseButtonTextKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertTitleKey;)
++ (NSString * _Nonnull)kTRAbandonAlertTitleKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertContinueKey;)
++ (NSString * _Nonnull)kTRAbandonAlertContinueKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAbandonAlertCancelKey;)
++ (NSString * _Nonnull)kTRAbandonAlertCancelKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRMessageSDKVersionNoLongerSupported;)
++ (NSString * _Nonnull)kTRMessageSDKVersionNoLongerSupported SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDisplayDimensions;)
++ (NSString * _Nonnull)kTRDisplayDimensions SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROrientationKey;)
++ (NSString * _Nonnull)kTROrientationKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenDensityKey;)
++ (NSString * _Nonnull)kTRScreenDensityKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRScreenPixelSizeKey;)
++ (NSString * _Nonnull)kTRScreenPixelSizeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRConnectionTypeKey;)
++ (NSString * _Nonnull)kTRConnectionTypeKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRCarrierKey;)
++ (NSString * _Nonnull)kTRCarrierKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlatformKey;)
++ (NSString * _Nonnull)kTRPlatformKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTROsVersionKey;)
++ (NSString * _Nonnull)kTROsVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDeviceNameKey;)
++ (NSString * _Nonnull)kTRDeviceNameKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTVersionKey;)
++ (NSString * _Nonnull)kTVersionKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRAppIdKey;)
++ (NSString * _Nonnull)kTRAppIdKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRTriggeredAtKey;)
++ (NSString * _Nonnull)kTRTriggeredAtKey SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRPlayerEarnedRewardNotification;)
++ (NSString * _Nonnull)kTRPlayerEarnedRewardNotification SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionMonitoringInterval;)
++ (NSInteger)kTRSessionMonitoringInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRSessionLoginThreshold;)
++ (NSInteger)kTRSessionLoginThreshold SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger kTRRequestInterval;)
++ (NSInteger)kTRRequestInterval SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kValueNotAvailableString;)
++ (NSString * _Nonnull)kValueNotAvailableString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kTRDefaultIdfa;)
++ (NSString * _Nonnull)kTRDefaultIdfa SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultFastPassPollingTime;)
++ (double)kTRDefaultFastPassPollingTime SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kTRDefaultStandardPollingTime;)
++ (double)kTRDefaultStandardPollingTime SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
++ (NSString * _Nonnull)carrierString SWIFT_WARN_UNUSED_RESULT;
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK12TRQQComplete")
-@interface TRQQComplete : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull complete_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull completed_at;
++ (NSString * _Nonnull)connectionType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDevelopment = 0,
+  EnvironmentYavin = 1,
+  EnvironmentJedha = 2,
+  EnvironmentProduction = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, HTTPParamsDataType, open) {
+  HTTPParamsDataTypeNone = 0,
+  HTTPParamsDataTypeJson = 1,
+  HTTPParamsDataTypeQuery = 2,
+};
+
+SWIFT_CLASS("_TtC14TapResearchSDK8LogEvent")
+@interface LogEvent : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class TRQQDataPayloadQuestion;
-@class TRQQDataPayloadTargetFilter;
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK15TRQQDataPayload")
-@interface TRQQDataPayload : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull survey_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull app_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull api_token;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sdk_version;
-@property (nonatomic, readonly, copy) NSString * _Nonnull platform;
-@property (nonatomic, readonly, copy) NSString * _Nonnull placement_tag;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_locale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull seen_at;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadQuestion *> * _Nonnull questions;
-@property (nonatomic, readonly, copy) NSArray<TRQQDataPayloadTargetFilter *> * _Nullable target_audience;
-@property (nonatomic, readonly, strong) TRQQComplete * _Nullable complete;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+typedef SWIFT_ENUM(NSInteger, LogEventType, open) {
+  LogEventTypeCrash = 0,
+  LogEventTypeUser = 1,
+  LogEventTypeWebFailedPreload = 4,
+  LogEventTypeWebFailedload = 5,
+  LogEventTypeTimestamp = 7,
+};
+
+enum PlatformType : NSInteger;
+enum LogLevel : NSInteger;
+enum LogType : NSInteger;
+@class TRWebEvent;
+SWIFT_CLASS("_TtC14TapResearchSDK9LogHelper")
+@interface LogHelper : NSObject
++ (void)configureWithPlatform:(enum PlatformType)platform appId:(NSString * _Nonnull)appId logLevel:(enum LogLevel)logLevel apiToken:(NSString * _Nonnull)apiToken additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)setLogLevelTo:(NSInteger)logLevel;
++ (void)log:(enum LogLevel)level eventType:(enum LogEventType)eventType category:(enum LogType)category message:(NSString * _Nonnull)message additionalHeaders:(NSDictionary<NSString *, NSString *> * _Nullable)additionalHeaders;
++ (void)logWeb:(enum LogLevel)level eventType:(enum LogEventType)eventType webEvent:(TRWebEvent * _Nonnull)webEvent;
++ (void)logSDKStartupTimesWithSdkInitTimestamp:(int64_t)sdkInitTimestamp versionsTimestamp:(int64_t)versionsTimestamp devicePlayersTimestamp:(int64_t)devicePlayersTimestamp placementTimes:(NSDictionary<NSString *, NSObject *> * _Nonnull)placementTimes;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TRQQUserAnswer;
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK23TRQQDataPayloadQuestion")
-@interface TRQQDataPayloadQuestion : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_identifier;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull question_type;
-@property (nonatomic) NSInteger rating_scale_size;
-@property (nonatomic, readonly, strong) TRQQUserAnswer * _Nullable user_answer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
+  LogLevelHalt = -1,
+  LogLevelNone = 0,
+  LogLevelDebug = 1,
+  LogLevelInfo = 2,
+  LogLevelWarning = 3,
+  LogLevelError = 4,
+};
 
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK27TRQQDataPayloadTargetFilter")
-@interface TRQQDataPayloadTargetFilter : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_attribute_name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_operator;
-@property (nonatomic, readonly, copy) NSString * _Nonnull filter_value;
-@property (nonatomic, readonly, copy) NSString * _Nonnull user_value;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+typedef SWIFT_ENUM(NSInteger, LogType, open) {
+  LogTypeGeneral = 0,
+  LogTypeNetwork = 1,
+  LogTypeLifecycle = 2,
+  LogTypeWeb = 3,
+};
 
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK14TRQQUserAnswer")
-@interface TRQQUserAnswer : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull value;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull identifiers;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+typedef SWIFT_ENUM(NSInteger, PlatformType, open) {
+  PlatformTypeIos = 0,
+  PlatformTypeTvOS = 1,
+};
 
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK8TRReward")
-@interface TRReward : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable transactionIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementTag;
-@property (nonatomic, readonly, copy) NSString * _Nullable placementIdentifier;
-@property (nonatomic, readonly, copy) NSString * _Nullable currencyName;
-@property (nonatomic, readonly, copy) NSString * _Nullable payoutEvent;
-@property (nonatomic, readonly) NSInteger rewardAmount;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK8TRSurvey")
-@interface TRSurvey : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull surveyIdentifier;
-@property (nonatomic, readonly) NSInteger lengthInMinutes;
-@property (nonatomic, readonly) double rewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nonnull currencyName;
-@property (nonatomic, readonly) BOOL isHotTile;
-@property (nonatomic, readonly) BOOL isSale;
-@property (nonatomic, readonly) double saleMultiplier;
-@property (nonatomic, readonly) double preSaleRewardAmount;
-@property (nonatomic, readonly, copy) NSString * _Nullable saleEndDate;
-@end
-
-@protocol TapResearchSDKDelegate;
+@class TRPlacement;
+@class TROffer;
+@protocol TapResearchEventDelegate;
+@protocol TapResearchSurveyDelegate;
+@class TRPlacementCustomParameterList;
 @class NSError;
-@protocol TapResearchRewardDelegate;
-@protocol TapResearchQuickQuestionDelegate;
-@protocol TapResearchContentDelegate;
-@protocol TapResearchSurveysDelegate;
 /// <hr/>
 /// <hr/>
-SWIFT_CLASS("_TtC14TapResearchSDK11TapResearch")
-@interface TapResearch : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorDomain;)
-+ (NSString * _Nonnull)TapResearchErrorDomain SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCode;)
-+ (NSString * _Nonnull)TapResearchErrorCode SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull TapResearchErrorCodeString;)
-+ (NSString * _Nonnull)TapResearchErrorCodeString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC14TapResearchSDK16TREventPresenter")
+@interface TREventPresenter : NSObject
 /// <hr/>
++ (NSError * _Nullable)displayEvent:(TRPlacement * _Nonnull)placement offer:(TROffer * _Nonnull)offer eventId:(NSString * _Nullable)eventId playerIdentifier:(NSString * _Nonnull)playerIdentifier displayDelegate:(id <TapResearchEventDelegate> _Nullable)displayDelegate surveyDelegate:(id <TapResearchSurveyDelegate> _Nullable)surveyDelegate closeButtonLocation:(TRDisplayEventExitButtonLocation)closeButtonLocation transitionStyle:(TRDisplayEventTransitionType)transitionStyle customParameters:(TRPlacementCustomParameterList * _Nonnull)customParameters SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK8TRLogger")
+@interface TRLogger : NSObject
++ (void)setLogLevelTo:(enum LogLevel)logLevel;
++ (void)setEnvironmentTo:(enum Environment)environment;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+SWIFT_CLASS("_TtC14TapResearchSDK22TRNavigationController")
+@interface TRNavigationController : UINavigationController
+@property (nonatomic, readonly) UIInterfaceOrientation preferredInterfaceOrientationForPresentation;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSData;
+@class NSURLRequest;
+/// <hr/>
+/// <hr/>
+SWIFT_CLASS("_TtC14TapResearchSDK17TRRequestProvider")
+@interface TRRequestProvider : NSObject
+/// <hr/>
++ (BOOL)shouldMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSData * _Nullable)urlMockResponseFor:(NSString * _Nonnull)realPath SWIFT_WARN_UNUSED_RESULT;
+/// <hr/>
++ (NSURLRequest * _Nullable)requestWithMethod:(NSString * _Nonnull)method url:(NSString * _Nonnull)url headers:(NSDictionary<NSString *, NSString *> * _Nullable)headers paramsType:(enum HTTPParamsDataType)paramsType params:(NSDictionary<NSString *, id> * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class TRPlayer;
+@class TRAppSession;
+@class TRReward;
+SWIFT_CLASS("_TtC14TapResearchSDK7TRStore")
+@interface TRStore : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRPlayer * _Nullable player;)
++ (TRPlayer * _Nullable)player SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlayer:(TRPlayer * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) TRAppSession * _Nullable appSession;)
++ (TRAppSession * _Nullable)appSession SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppSession:(TRAppSession * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isServerToServer;)
++ (BOOL)isServerToServer SWIFT_WARN_UNUSED_RESULT;
++ (void)setIsServerToServer:(BOOL)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<TRReward *> * _Nullable rewards;)
++ (NSArray<TRReward *> * _Nullable)rewards SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewards:(NSArray<TRReward *> * _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable userIdentifier;)
++ (NSString * _Nullable)userIdentifier SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserIdentifier:(NSString * _Nullable)newValue;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK10TRWebEvent")
+@interface TRWebEvent : NSObject
+- (nonnull instancetype)initWithError:(NSError * _Nonnull)error startingUrlString:(NSString * _Nonnull)startingUrlString webSourceUrl:(NSString * _Nullable)webSourceUrl cpIdentifier:(NSString * _Nullable)cpIdentifier tabIndex:(NSInteger)tabIndex isProvisional:(BOOL)isProvisional OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for error reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and a delegate for error and ready reporting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Initialize the SDK.</h1>
-/// Initialize the TapResearch SDK with API token, a user identifier, user attributes and delegates for error and ready reporting, rewards and Quick Question data.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
-/// \param apiToken Your app’s API token.
-///
-/// \param userIdentifier The user identifier for the user of the app, this is required and must be unique per user.
-///
-/// \param userAttributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-/// \param sdkDelegate An object that implements the TapResearchSDKDelegate’s required callback functions for erorr reporting and receiving sdk ready status.
-///
-/// \param rewardDelegate An object that implementes the TapResearchRewardDelegate callback to receive rewards.
-///
-/// \param quickQuestionDelegate An objcet thatimplements the TapResearchQuickQuestionDelegate callback to receive a Quick Question data respose payload.
-///
-/// \param completion An optional completion block to receive any errors that occured during initialization.
-///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Set the reward delegate.</h1>
-/// Set the reward handler or clear the reward delegate
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
-/// \param _ delegate An object that implements the TapResearchRewardDelegate callback to receive rewards, or <code>nil</code> to clear it.
-///
-+ (void)setRewardDelegate:(id <TapResearchRewardDelegate> _Nullable)delegate;
-/// <h1>Set the Quick Question data delegate.</h1>
-/// Set the Quick Question delegate or clear the delegate.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchquickquestiondelegate">Documentation: TapResearchQuickQuestionDelegate</a>
-/// \param _ delegate An object that implements the TapResearchQuickQuestionDelegate callback to receive Quick Question data payloads, or <code>nil</code> to clear it.
-///
-+ (void)setQuickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)delegate;
-/// <h1>Check if the SDK is ready.</h1>
-/// Check if the SDK is ready to handle your app’s requests.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#checking-if-the-sdk-is-ready">Documentation: Checking if the SDK is ready</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the SDK is ready or <code>false</code> if not.
-///   </li>
-/// </ul>
-+ (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a user identifier.</h1>
-/// Set a unique user identifier.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#setting-the-user-identifier">Documentation: Setting the user identifier</a>
-/// \param userIdentifier A string with a unique user identifier.
-///
-/// \param completion <em>Deprecated</em> An optional completion block to receive any errors that occured while setting the user identifier.
-///
-+ (void)setUserIdentifier:(NSString * _Nonnull)userIdentifier completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Can a placement be shown?</h1>
-/// Check if a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the placement can be shown, <code>false</code> if not.`
-///   </li>
-/// </ul>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param error An optional completion block to receive any errors that occured while checking if the placement can be shown.
-///
-+ (BOOL)canShowContentForPlacement:(NSString * _Nonnull)tag error:(void (^ _Nullable)(NSError * _Nullable))error SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a placement.</h1>
-/// Show a placement.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Show a placement.</h1>
-/// Show a placement with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#displaying-a-placement">Documentation: Displaying a placement</a>
-/// \param forPlacement tag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param completion An optional completion block to receive any errors that occured while showing the placement.
-///
-+ (void)showContentForPlacement:(NSString * _Nonnull)tag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters completion:(void (^ _Nullable)(NSError * _Nullable))completion;
-/// <h1>Send user attributes.</h1>
-/// Send user attributes for targeting.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#user-attributes">Documentation: User Attributes</a>
-/// \param attributes A dictionary with extra attributes for this user.
-///
-/// \param clearPreviousAttributes Replace (true) existing attributes with the userAttributes dictionary or update (false) them.
-///
-+ (NSError * _Nullable)sendUserAttributesWithAttributes:(NSDictionary * _Nonnull)attributes clearPreviousAttributes:(BOOL)clearPreviousAttributes SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Set a surveys delegate.</h1>
-/// Set the surveys delegate or clear the delegate.
-/// \param delegate An object that implements the TapResearchSurveysDelegate callback to receive survey availability updates, or <code>nil</code> to clear it.
-///
-+ (void)setSurveysDelegate:(id <TapResearchSurveysDelegate> _Nullable)delegate;
-/// <h1>Check if a placement has surveys.</h1>
-/// Check if a placement has surveys.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#checking-for-available-surveys">Documentation: Checking for available surveys</a>
-/// <ul>
-///   <li>
-///     Returns A boolean <code>true</code> indicating the placement has surveys <code>true</code> or <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string to check.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while checking the placement for surveys.
-///
-+ (BOOL)hasSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Get a placement’s surveys.</h1>
-/// Get a placment’s surveys as an array of <code>TRSurvey</code> objects.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#getting-available-surveys">Documentation: Getting available surveys</a>
-/// <ul>
-///   <li>
-///     Returns An array of <code>TRSurvey</code> objects, the array will be empty if there are none.
-///   </li>
-/// </ul>
-/// \param for placementTag A placement tag string.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while getting surveys.
-///
-+ (NSArray<TRSurvey *> * _Nonnull)getSurveysFor:(NSString * _Nonnull)placementTag errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Can a survey be shown?</h1>
-/// Check if a survey for a placement can be shown.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#check-that-a-survey-can-be-shown">Documentation: Check that a survey can be shown</a>
-/// <ul>
-///   <li>
-///     Returns A boolean, <code>true</code> if the survey can be shown, <code>false</code> if not.
-///   </li>
-/// </ul>
-/// \param surveyId A survey identifier string.
-///
-/// \param forPlacementTag placementTag A placement tag string.
-///
-+ (BOOL)canShowSurveyWithSurveyId:(NSString * _Nonnull)surveyId forPlacementTag:(NSString * _Nonnull)placementTag SWIFT_WARN_UNUSED_RESULT;
-/// <h1>Show a survey.</h1>
-/// Show a survey.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
-+ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
-/// <h1>Show a survey.</h1>
-/// Show a survey with custom parameters.
-/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/survey-wall-preview/ios-surveys#showing-a-survey">Documentation: Displaying a survey</a>
-/// \param surveyId A survey identifier string.
-///
-/// \param placementTag A placement tag string.
-///
-/// \param delegate An object that implements TapResearchContentDelegate callbacks so that the SDK can notify the app of when content was shown and dismissed.
-///
-/// \param customParameters A dictionary with additional parameters, see <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#passing-custom-parameters">Documentation: Passing custom porameters</a>
-///
-/// \param errorHandler An optional completion block to receive any errors that occured while showing the survey.
-///
-+ (void)showSurveyWithSurveyId:(NSString * _Nonnull)surveyId placementTag:(NSString * _Nonnull)placementTag delegate:(id <TapResearchContentDelegate> _Nonnull)delegate customParameters:(NSDictionary * _Nonnull)customParameters errorHandler:(void (^ _Nullable)(NSError * _Nullable))errorHandler;
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchSurveysDelegate_")
-@protocol TapResearchSurveysDelegate
-- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
-@end
-
-@interface TapResearch (SWIFT_EXTENSION(TapResearchSDK)) <TapResearchSurveysDelegate>
-/// <hr/>
-- (void)onTapResearchSurveysRefreshedForPlacement:(NSString * _Nonnull)placementTag;
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK26TapResearchContentDelegate_")
-@protocol TapResearchContentDelegate
-- (void)onTapResearchContentShownForPlacement:(NSString * _Nonnull)placement;
-- (void)onTapResearchContentDismissedForPlacement:(NSString * _Nonnull)placement;
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK32TapResearchQuickQuestionDelegate_")
-@protocol TapResearchQuickQuestionDelegate
-- (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK25TapResearchRewardDelegate_")
-@protocol TapResearchRewardDelegate
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-@end
-
-/// <hr/>
-/// <hr/>
-SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
-@protocol TapResearchSDKDelegate
-- (void)onTapResearchDidError:(NSError * _Nonnull)error;
-- (void)onTapResearchSdkReady;
-@optional
-- (void)onTapResearchDidReceiveRewards:(NSArray<TRReward *> * _Nonnull)rewards;
-- (void)onTapResearchQuickQuestionResponse:(TRQQDataPayload * _Nonnull)qqPayload;
 @end
 
 #endif
@@ -685,5 +570,5 @@ SWIFT_PROTOCOL("_TtP14TapResearchSDK22TapResearchSDKDelegate_")
 #endif
 
 #else
-//#error unsupported Swift architecture
+#error unsupported Swift architecture
 #endif
