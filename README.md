@@ -1,7 +1,7 @@
 # TapResearch-iOS-SDK
 TapResearch iOS SDK v3.6.0--rc9
 
-For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
+For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios).
 
 ## Setup
 
@@ -36,8 +36,8 @@ Add the pod info to the app's Podfile
 
 ## Other platforms:
 
-[TapResearch Android SDK integration guide](https://www.tapresearch.com/docs/android-integration-guide)
+[TapResearch Android SDK](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/android)
 
-[TapResearch Unity SDK integration guide](https://www.tapresearch.com/docs/unity-integration-guide)
+[TapResearch Unity SDK](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/unity)  
 
-[TapResearch JavaScript SDK integration guide](https://www.tapresearch.com/docs/javascript-integration-guide)
+[TapResearch React Native SDK integration guide](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/react-native)
