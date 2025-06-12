@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TapResearchSDK-Swift.h</key>
 		<data>
-		mDERgDE7+lr7jGMsJkk5OFRFp44=
+		m1sQAEx7kT6x6TDzqDacbYgWI+o=
 		</data>
 		<key>Headers/TapResearchSDK.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		whiYePtRGPjLLpTbPZDTWboZGoQ=
+		bC14YgBcZMfKcNKS319dkA52m6k=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		z4aOAKdJEWJaXE4zkLIxcSPqkrc=
+		ZWVDXoYyMoNrRaGyuXb7C1CvfCA=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZD42Q9vFT9GwCgEMHi5W6cP6xLc=
+		PDF0jQfBqTODv7oKCOIpaN2nFBw=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		udWy7t2NOTQi6YrErK3R3NppaKc=
+		lBcOVIRyrByuKkaal6DSsaS7t58=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZD42Q9vFT9GwCgEMHi5W6cP6xLc=
+		PDF0jQfBqTODv7oKCOIpaN2nFBw=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DkfyXqinMjj1biIoew5tvSojYAM=
+		rIKhPiSuZCVEteR/B6vXmqC1gu0=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		z4aOAKdJEWJaXE4zkLIxcSPqkrc=
+		ZWVDXoYyMoNrRaGyuXb7C1CvfCA=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		06jg/FqO+dSHiRpf0f3IHYeGVyk=
+		dsLNv5eljkL+kJKz9pivK181Ats=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bPtxNUV3J4Gra/lHAUDMN4hAe2M=
+		fdWuT0mcmIf4GKqz/MPYegMZHTo=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		06jg/FqO+dSHiRpf0f3IHYeGVyk=
+		dsLNv5eljkL+kJKz9pivK181Ats=
 		</data>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Uhq7xvfMRBO4R3AKEDQnb+TX6u8=
+		BEScw4HvGMc/APib4u87iN6UU7M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3H2ndVEwl/LMKOpigbMJZ/4HYTXa4/Vy4a25u85pWtI=
+			LF39XeZsvUBay3yv1miZtw9nHVYNglAv4fn28OKfS/c=
 			</data>
 		</dict>
 		<key>Headers/TapResearchSDK.h</key>
@@ -96,70 +96,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hyQwbAeB6/d/yW8fx4PwA85ouuMfz3b75vU76s/dXVE=
+			xtOUsh5fVRUHcm2VXm0ZF4V/smkrbdLgwXXuJvEcxWQ=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oManOAjeLsUpsgBrUSGbXd2Sj9QuxZVUXd/b2MafCmw=
+			m5QC9efiz6I7OYVuEH+/dqGIb8JIgtUJD8HuFsUJNs0=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4rTjQUKjh+tC+d0kPXsH19z7Elt+wxzYzxbzYlbgFeM=
+			MnyOLacI7886yPHyvyN71FjdeqOl54OKSp1u4tAt0dg=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oManOAjeLsUpsgBrUSGbXd2Sj9QuxZVUXd/b2MafCmw=
+			m5QC9efiz6I7OYVuEH+/dqGIb8JIgtUJD8HuFsUJNs0=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HIPpvGKuZDsWuHDXITsRqlPoV/JWdBoqEo58IgKOkgE=
+			y3sGA0sCIbWm7wyKTZ0kuAQNZh0sUOgm0qOSeCcZBFg=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hyQwbAeB6/d/yW8fx4PwA85ouuMfz3b75vU76s/dXVE=
+			xtOUsh5fVRUHcm2VXm0ZF4V/smkrbdLgwXXuJvEcxWQ=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4/4g8C8TYRZ+fsDQRB5MFOj39pmRFYKU8L5OXF1h0SY=
+			Xmh6pon/oy9rji6uDPxD+Jh/pk0NjRbHhGYorHf9fV4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oi3NSoEkOgGc52BW4vQl5+gI3bdYL0rgp5JCtHhANpc=
+			lxlBDxDED9fZfXwiYMQ5bmRTmMPv5PuzD3+liqGJpKI=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4/4g8C8TYRZ+fsDQRB5MFOj39pmRFYKU8L5OXF1h0SY=
+			Xmh6pon/oy9rji6uDPxD+Jh/pk0NjRbHhGYorHf9fV4=
 			</data>
 		</dict>
 		<key>Modules/TapResearchSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z4aPWeEa1hyxHnqDPIWlOPKXcMMkcSEZAfX0QWiYyqc=
+			gRopRUuJVfkM1IW06s7N5xPgUlpp+PAdXy6047xlWas=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
