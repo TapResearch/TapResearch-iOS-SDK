@@ -1,7 +1,7 @@
 # TapResearch-iOS-SDK
-TapResearch iOS SDK v3.6.0
+TapResearch iOS SDK v3.6.1
 
-For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios).
+For additional information, please see the [TapResearch iOS SDK integration guide](https://supply-docs.tapresearch.com/docs/ios-integration/).
 
 ## Setup
 
@@ -16,7 +16,7 @@ Add the following URL in the Xcode Swift Package Manager:
 https://github.com/TapResearch/TapResearch-iOS-SDK
 
 * Set Dependency Rule to "Exact Version"
-* Set the version value to 3.6.0
+* Set the version value to 3.6.1
 * Set "Add to Project" to your project 
 * Click "Add Package"
 
@@ -26,7 +26,7 @@ In the resulting "Choose Package Product for TapResearch-iOS-SDK" select the Tap
 
 Add the pod info to the app's Podfile
  ```ruby
- pod 'TapResearch', 3.6.0'
+ pod 'TapResearch', 3.6.1'
  ```
 
  Then run the following command:
@@ -36,8 +36,8 @@ Add the pod info to the app's Podfile
 
 ## Other platforms:
 
-[TapResearch Android SDK](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/android)
+[TapResearch Android SDK integration guide](https://www.tapresearch.com/docs/android-integration-guide)
 
-[TapResearch Unity SDK](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/unity)  
+[TapResearch Unity SDK integration guide](https://www.tapresearch.com/docs/unity-integration-guide)
 
-[TapResearch React Native SDK integration guide](https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/react-native)
+[TapResearch JavaScript SDK integration guide](https://www.tapresearch.com/docs/javascript-integration-guide)
