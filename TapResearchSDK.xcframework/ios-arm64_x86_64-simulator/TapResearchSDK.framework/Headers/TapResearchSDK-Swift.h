@@ -449,7 +449,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <h1>Initialize the SDK.</h1>
 /// Initialize the TapResearch SDK with API token, a user identifier and delegates for error and ready reporting, rewards and Quick Question data.
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
@@ -485,7 +485,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <h1>Set the reward delegate.</h1>
 /// Set the reward handler or clear the reward delegate
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
@@ -1134,7 +1134,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <h1>Initialize the SDK.</h1>
 /// Initialize the TapResearch SDK with API token, a user identifier and delegates for error and ready reporting, rewards and Quick Question data.
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#initialization">Documentation: Initialization</a>
@@ -1170,7 +1170,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
-+ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
++ (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nonnull)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 /// <h1>Set the reward delegate.</h1>
 /// Set the reward handler or clear the reward delegate
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
