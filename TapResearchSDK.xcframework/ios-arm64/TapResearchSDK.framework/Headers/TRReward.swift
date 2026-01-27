@@ -19,7 +19,7 @@ import Foundation
 	@objc public let rewardAmount          : Int
 
 	///---------------------------------------------------------------------------------------------
-	init( transactionIdentifier: String?, placementTag: String?, placementIdentifier: String?, currencyName: String?, payoutEvent: String?, rewardAmount: Int) {
+	internal init( transactionIdentifier: String?, placementTag: String?, placementIdentifier: String?, currencyName: String?, payoutEvent: String?, rewardAmount: Int) {
 
 		self.transactionIdentifier = transactionIdentifier
 		self.placementTag          = placementTag
