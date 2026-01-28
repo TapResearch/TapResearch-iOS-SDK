@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapResearchSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFAudio
 import AdSupport
 import AppTrackingTransparency
@@ -31,6 +31,23 @@ import _SwiftConcurrencyShims
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers @objc final public class TRBonusBarProgress : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let isActive: Swift.Bool
+  @objc final public let currentCompletes: Swift.Int
+  @objc final public let bonusWindowEndAt: Swift.String?
+  @objc final public let bonusTiers: [TapResearchSDK.TRBonusTier]?
+  @objc final public let error: Foundation.NSError?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @objc final public class TRBonusTier : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let tierNumber: Swift.Int
+  @objc final public let completesNeeded: Swift.Int
+  @objc final public let rewardAmount: Swift.Int
+  @objc final public let status: Swift.String?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
 @_hasMissingDesignatedInitializers @objc final public class TRGrantBoostResponse : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let boostTag: Swift.String
   @objc final public let success: Swift.Bool
@@ -38,7 +55,7 @@ import _SwiftConcurrencyShims
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
 }
-@objc final public class TRPlacementDetails : ObjectiveC.NSObject, Swift.Codable {
+@_hasMissingDesignatedInitializers @objc final public class TRPlacementDetails : ObjectiveC.NSObject, Swift.Encodable {
   @objc final public let name: Swift.String
   @objc final public let contentType: Swift.String
   @objc final public let currencyName: Swift.String
@@ -48,9 +65,9 @@ import _SwiftConcurrencyShims
   @objc final public let saleMultiplier: Swift.Double
   @objc final public let saleDisplayName: Swift.String?
   @objc final public let saleTag: Swift.String?
+  @objc final public let bonusBarProgress: TapResearchSDK.TRBonusBarProgress?
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 @objc final public class TRSurvey : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let surveyIdentifier: Swift.String
