@@ -9020,7 +9020,7 @@
       "kind": "StringLiteral",
       "offset": 777,
       "length": 12,
-      "value": "\"3.7.2--rc1\""
+      "value": "\"3.7.2--rc2\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
