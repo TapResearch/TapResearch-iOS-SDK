@@ -7,5 +7,4 @@ framework module TapResearchSDK {
 
 module TapResearchSDK.Swift {
   header "TapResearchSDK-Swift.h"
-  requires objc
 }

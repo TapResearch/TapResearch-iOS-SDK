@@ -1,14 +1,13 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapResearchSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TapResearchSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AVFAudio
 import AdSupport
 import AppTrackingTransparency
 import CoreTelephony
 import Foundation
 import LocalAuthentication
-import MobileCoreServices
 import Network
 import Swift
 import SystemConfiguration
@@ -16,7 +15,7 @@ import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import UserNotificationsUI
-import WebKit
+@preconcurrency import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -107,70 +106,38 @@ import _SwiftConcurrencyShims
   @objc func onTapResearchSurveysRefreshed(forPlacement placementTag: Swift.String)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class TapResearch : ObjectiveC.NSObject {
+  @objc public static let PlacementTagKey: Swift.String
+  @objc public static let ErrorKey: Swift.String
+  @objc public static let TapResearchDidError: Foundation.Notification.Name
+  @objc public static let TapResearchSDKReady: Foundation.Notification.Name
+  @objc public static let TapResearchContentShown: Foundation.Notification.Name
+  @objc public static let TapResearchContentDismissed: Foundation.Notification.Name
   @objc public static let TapResearchErrorDomain: Swift.String
   @objc public static let TapResearchErrorCode: Swift.String
   @objc public static let TapResearchErrorCodeString: Swift.String
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: any TapResearchSDK.TapResearchSDKDelegate, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc public static func setRewardDelegate(_ delegate: (any TapResearchSDK.TapResearchRewardDelegate)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setQuickQuestionDelegate(_ delegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)?)
-  #endif
   @objc public static func isReady() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setUserIdentifier(_ userIdentifier: Swift.String, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func canShowContent(forPlacement tag: Swift.String, error: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func showContent(forPlacement tag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func showContent(forPlacement tag: Swift.String, delegate: (any TapResearchSDK.TapResearchContentDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func showContent(forPlacement tag: Swift.String, delegate: (any TapResearchSDK.TapResearchContentDelegate)? = nil, customParameters: [Swift.AnyHashable : Any], completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc public static func sendUserAttributes(attributes: [Swift.AnyHashable : Any], clearPreviousAttributes: Swift.Bool = false) -> Foundation.NSError?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setSurveysDelegate(_ delegate: (any TapResearchSDK.TapResearchSurveysDelegate)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func hasSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getSurveys(for placementTag: Swift.String, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil) -> [TapResearchSDK.TRSurvey]
-  #endif
   @objc public static func canShowSurvey(surveyId: Swift.String, forPlacementTag placementTag: Swift.String) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: any TapResearchSDK.TapResearchContentDelegate, customParameters: [Swift.AnyHashable : Any], errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: (any TapResearchSDK.TapResearchContentDelegate)? = nil, errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func showSurvey(surveyId: Swift.String, placementTag: Swift.String, delegate: (any TapResearchSDK.TapResearchContentDelegate)? = nil, customParameters: [Swift.AnyHashable : Any], errorHandler: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc public static func grantBoost(_ tag: Swift.String, delegate: any TapResearchSDK.TapResearchGrantBoostResponseDelegate, errorHandler: @escaping (Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func getPlacementDetails(_ tag: Swift.String, errorHandler: @escaping (Foundation.NSError?) -> Swift.Void) -> TapResearchSDK.TRPlacementDetails?
-  #endif
   @objc public static func handleNotificationPresentation(_ notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func handleNotification(didReceive response: UserNotifications.UNNotificationResponse, contentDelegate: (any TapResearchSDK.TapResearchContentDelegate)?) -> Swift.Bool
-  #endif
 }
 extension TapResearchSDK.TapResearch : TapResearchSDK.TapResearchSurveysDelegate {
   @objc final public func onTapResearchSurveysRefreshed(forPlacement placementTag: Swift.String)
