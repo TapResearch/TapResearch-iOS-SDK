@@ -2950,20 +2950,10 @@
       },
       {
         "kind": "Import",
-        "name": "MobileCoreServices",
-        "printedName": "MobileCoreServices",
-        "declKind": "Import",
-        "moduleName": "TapResearchSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UniformTypeIdentifiers",
         "printedName": "UniformTypeIdentifiers",
         "declKind": "Import",
-        "moduleName": "TapResearchSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "TapResearchSDK"
       },
       {
         "kind": "Import",
@@ -3707,6 +3697,13 @@
         "moduleName": "TapResearchSDK"
       },
       {
+        "kind": "Import",
+        "name": "UserNotificationsUI",
+        "printedName": "UserNotificationsUI",
+        "declKind": "Import",
+        "moduleName": "TapResearchSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TapResearchQuickQuestionDelegate",
         "printedName": "TapResearchQuickQuestionDelegate",
@@ -4232,6 +4229,330 @@
         "children": [
           {
             "kind": "Var",
+            "name": "PlacementTagKey",
+            "printedName": "PlacementTagKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)PlacementTagKey",
+            "mangledName": "$s14TapResearchSDK0aB0C15PlacementTagKeySSvpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)PlacementTagKey",
+                "mangledName": "$s14TapResearchSDK0aB0C15PlacementTagKeySSvgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ErrorKey",
+            "printedName": "ErrorKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)ErrorKey",
+            "mangledName": "$s14TapResearchSDK0aB0C8ErrorKeySSvpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)ErrorKey",
+                "mangledName": "$s14TapResearchSDK0aB0C8ErrorKeySSvgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TapResearchDidError",
+            "printedName": "TapResearchDidError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)TapResearchDidError",
+            "mangledName": "$s14TapResearchSDK0aB0C0aB8DidErrorSo18NSNotificationNameavpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)TapResearchDidError",
+                "mangledName": "$s14TapResearchSDK0aB0C0aB8DidErrorSo18NSNotificationNameavgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TapResearchSDKReady",
+            "printedName": "TapResearchSDKReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)TapResearchSDKReady",
+            "mangledName": "$s14TapResearchSDK0aB0C0aB8SDKReadySo18NSNotificationNameavpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)TapResearchSDKReady",
+                "mangledName": "$s14TapResearchSDK0aB0C0aB8SDKReadySo18NSNotificationNameavgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TapResearchContentShown",
+            "printedName": "TapResearchContentShown",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)TapResearchContentShown",
+            "mangledName": "$s14TapResearchSDK0aB0C0aB12ContentShownSo18NSNotificationNameavpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)TapResearchContentShown",
+                "mangledName": "$s14TapResearchSDK0aB0C0aB12ContentShownSo18NSNotificationNameavgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "TapResearchContentDismissed",
+            "printedName": "TapResearchContentDismissed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cpy)TapResearchContentDismissed",
+            "mangledName": "$s14TapResearchSDK0aB0C0aB16ContentDismissedSo18NSNotificationNameavpZ",
+            "moduleName": "TapResearchSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)TapResearchContentDismissed",
+                "mangledName": "$s14TapResearchSDK0aB0C0aB16ContentDismissedSo18NSNotificationNameavgZ",
+                "moduleName": "TapResearchSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "TapResearchErrorDomain",
             "printedName": "TapResearchErrorDomain",
             "children": [
@@ -4414,9 +4735,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchSDKDelegate",
-                "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchSDKDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchSDKDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4456,7 +4786,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)initializeWithAPIToken:userIdentifier:sdkDelegate:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier11sdkDelegate10completionySS_SSAA0aB11SDKDelegate_pySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier11sdkDelegate10completionySS_SSAA0aB11SDKDelegate_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "initializeWithAPIToken:userIdentifier:sdkDelegate:completion:",
@@ -4518,9 +4848,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchSDKDelegate",
-                "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchSDKDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchSDKDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4560,7 +4899,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)initializeWithAPIToken:userIdentifier:userAttributes:clearPreviousAttributes:sdkDelegate:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier0G10Attributes013clearPreviousI011sdkDelegate10completionySS_SSSDySSypGSbAA0aB11SDKDelegate_pySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier0G10Attributes013clearPreviousI011sdkDelegate10completionySS_SSSDySSypGSbAA0aB11SDKDelegate_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "initializeWithAPIToken:userIdentifier:userAttributes:clearPreviousAttributes:sdkDelegate:completion:",
@@ -4596,9 +4935,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchSDKDelegate",
-                "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchSDKDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchSDKDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4659,7 +5007,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)initializeWithAPIToken:userIdentifier:sdkDelegate:rewardDelegate:quickQuestionDelegate:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier11sdkDelegate06rewardJ0013quickQuestionJ010completionySS_SSAA0aB11SDKDelegate_pAA0ab6RewardJ0_pAA0ab5QuickmJ0_pSgySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier11sdkDelegate06rewardJ0013quickQuestionJ010completionySS_SSAA0aB11SDKDelegate_pSgAA0ab6RewardJ0_pAA0ab5QuickmJ0_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "initializeWithAPIToken:userIdentifier:sdkDelegate:rewardDelegate:quickQuestionDelegate:completion:",
@@ -4721,9 +5069,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchSDKDelegate",
-                "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchSDKDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchSDKDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchSDKDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchSDKDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -4784,7 +5141,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)initializeWithAPIToken:userIdentifier:userAttributes:clearPreviousAttributes:sdkDelegate:rewardDelegate:quickQuestionDelegate:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier0G10Attributes013clearPreviousI011sdkDelegate06rewardM0013quickQuestionM010completionySS_SSSDySSypGSbAA0aB11SDKDelegate_pAA0ab6RewardM0_pAA0ab5QuickpM0_pSgySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10initialize12withAPIToken14userIdentifier0G10Attributes013clearPreviousI011sdkDelegate06rewardM0013quickQuestionM010completionySS_SSSDySSypGSbAA0aB11SDKDelegate_pSgAA0ab6RewardM0_pAA0ab5QuickpM0_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "initializeWithAPIToken:userIdentifier:userAttributes:clearPreviousAttributes:sdkDelegate:rewardDelegate:quickQuestionDelegate:completion:",
@@ -5047,9 +5404,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchContentDelegate",
-                "printedName": "any TapResearchSDK.TapResearchContentDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchContentDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchContentDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchContentDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5089,7 +5455,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)showContentForPlacement:delegate:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C11showContent12forPlacement8delegate10completionySS_AA0abE8Delegate_pySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C11showContent12forPlacement8delegate10completionySS_AA0abE8Delegate_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "showContentForPlacement:delegate:completion:",
@@ -5119,9 +5485,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchContentDelegate",
-                "printedName": "any TapResearchSDK.TapResearchContentDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchContentDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchContentDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchContentDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5180,7 +5555,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)showContentForPlacement:delegate:customParameters:completion:",
-            "mangledName": "$s14TapResearchSDK0aB0C11showContent12forPlacement8delegate16customParameters10completionySS_AA0abE8Delegate_pSDys11AnyHashableVypGySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C11showContent12forPlacement8delegate16customParameters10completionySS_AA0abE8Delegate_pSgSDys11AnyHashableVypGySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "showContentForPlacement:delegate:customParameters:completion:",
@@ -5494,9 +5869,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchContentDelegate",
-                "printedName": "any TapResearchSDK.TapResearchContentDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchContentDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchContentDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchContentDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5536,7 +5920,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)showSurveyWithSurveyId:placementTag:delegate:errorHandler:",
-            "mangledName": "$s14TapResearchSDK0aB0C10showSurvey8surveyId12placementTag8delegate12errorHandlerySS_SSAA0aB15ContentDelegate_pySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10showSurvey8surveyId12placementTag8delegate12errorHandlerySS_SSAA0aB15ContentDelegate_pSgySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "showSurveyWithSurveyId:placementTag:delegate:errorHandler:",
@@ -5572,9 +5956,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "TapResearchContentDelegate",
-                "printedName": "any TapResearchSDK.TapResearchContentDelegate",
-                "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                "name": "Optional",
+                "printedName": "(any TapResearchSDK.TapResearchContentDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TapResearchContentDelegate",
+                    "printedName": "any TapResearchSDK.TapResearchContentDelegate",
+                    "usr": "c:@M@TapResearchSDK@objc(pl)TapResearchContentDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -5633,7 +6026,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@TapResearchSDK@objc(cs)TapResearch(cm)showSurveyWithSurveyId:placementTag:delegate:customParameters:errorHandler:",
-            "mangledName": "$s14TapResearchSDK0aB0C10showSurvey8surveyId12placementTag8delegate16customParameters12errorHandlerySS_SSAA0aB15ContentDelegate_pSDys11AnyHashableVypGySo7NSErrorCSgcSgtFZ",
+            "mangledName": "$s14TapResearchSDK0aB0C10showSurvey8surveyId12placementTag8delegate16customParameters12errorHandlerySS_SSAA0aB15ContentDelegate_pSgSDys11AnyHashableVypGySo7NSErrorCSgcSgtFZ",
             "moduleName": "TapResearchSDK",
             "static": true,
             "objc_name": "showSurveyWithSurveyId:placementTag:delegate:customParameters:errorHandler:",
@@ -8757,34 +9150,6 @@
       "value": "\"TRSurveysCallbackHandler\""
     },
     {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 956,
-      "length": 82,
-      "value": "\"TapResearchContentDelegate not implemented when setting content delegate on show\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1076,
-      "length": 117,
-      "value": "\"TapResearchContentDelegate.onTapResearchContentShown function not implemented when setting content delegate on show\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1235,
-      "length": 121,
-      "value": "\"TapResearchContentDelegate.onTapResearchContentDismissed fucntion not implemented when setting content delegate on show\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRDisplayCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1398,
-      "length": 111,
-      "value": "\"TapResearchContentDelegate was deallocated or is no longer available when attempting to call content callback\""
-    },
-    {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Core\/TRCallbackHandler.swift",
       "kind": "StringLiteral",
       "offset": 409,
@@ -8857,133 +9222,133 @@
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 1025,
+      "offset": 1084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 2190,
+      "offset": 2249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4799,
+      "offset": 4858,
       "length": 13,
       "value": "\"orca_revive\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4837,
+      "offset": 4896,
       "length": 26,
       "value": "\"can_show_content_failure\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4892,
+      "offset": 4951,
       "length": 22,
       "value": "\"show_content_failure\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4943,
+      "offset": 5002,
       "length": 22,
       "value": "\"show_surveys_failure\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 4994,
+      "offset": 5053,
       "length": 21,
       "value": "\"local_notifications\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5100,
+      "offset": 5159,
       "length": 16,
       "value": "\"revive_attempt\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5140,
+      "offset": 5199,
       "length": 16,
       "value": "\"revive_failure\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5180,
+      "offset": 5239,
       "length": 16,
       "value": "\"revive_success\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5220,
+      "offset": 5279,
       "length": 9,
       "value": "\"no_orca\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5253,
+      "offset": 5312,
       "length": 15,
       "value": "\"sdk_not_ready\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5292,
+      "offset": 5351,
       "length": 14,
       "value": "\"no_placement\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5389,
       "length": 12,
       "value": "\"no_surveys\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "StringLiteral",
-      "offset": 5372,
+      "offset": 5431,
       "length": 22,
       "value": "\"notification_clicked\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "Dictionary",
-      "offset": 7055,
+      "offset": 6735,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 7108,
+      "offset": 6788,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "FloatLiteral",
-      "offset": 7203,
+      "offset": 6883,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/TRLogger.swift",
       "kind": "FloatLiteral",
-      "offset": 7325,
+      "offset": 7005,
       "length": 3,
       "value": "0.1"
     },
@@ -9019,321 +9384,188 @@
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
       "offset": 777,
-      "length": 12,
-      "value": "\"3.7.4--rc0\""
+      "length": 15,
+      "value": "\"3.8.0--beta03\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 837,
       "length": 7,
-      "value": "\"3.6.0\""
+      "value": "\"3.8.0\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 1403,
+      "offset": 1716,
       "length": 6,
       "value": "\"prod\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "Array",
-      "offset": 1773,
+      "offset": 2086,
       "length": 229,
       "value": "[\"com.TapResearch.TestApp-Swift-UIKit\", \"com.tapresearch.taprewards.dev\", \"com.TapResearch.TR-Game-Demo\"]"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 2897,
+      "offset": 3210,
       "length": 43,
       "value": "\"https:\/\/sdk-orchestrator.tapresearch.com\/\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "Dictionary",
-      "offset": 8570,
+      "offset": 8982,
       "length": 1987,
       "value": "[(\"device_identifier\", \"X-Device-Identifier\"), (\"api_token\", \"X-Api-Token\"), (\"user_identifier\", \"X-User-Identifier\"), (\"sdk_platform\", \"X-SDK-Platform\"), (\"sdk_version\", \"X-SDK-Version\"), (\"dev_platform\", \"X-Dev-Platform\"), (\"dev_version\", \"X-Dev-Version\"), (\"os_version_string\", \"X-OS-Version\"), (\"connection_type\", \"X-Connection-Type\"), (\"carrier\", \"X-Carrier\"), (\"device_name\", \"X-Device-Name\"), (\"vendor_identifier\", \"X-Vendor-Identifier\"), (\"screen_scale_string\", \"X-Screen-Scale\"), (\"screen_pixel_size_string\", \"X-Pixel-Size\"), (\"display_dimensions\", \"X-Display-Dimensions\"), (\"locale\", \"X-User-Locale\"), (\"app_in_foreground\", \"X-App-In-Foreground\"), (\"orientation\", \"X-Orientation\"), (\"device_brand\", \"X-Device-Brand\"), (\"battery_level\", \"X-Battery-Level\"), (\"is_battery_charging\", \"X-Is-Battery-Charging\"), (\"is_low_power_mode\", \"X-Is-Low-Power-Mode\"), (\"thermal_state\", \"X-Thermal-State\"), (\"is_headphones_connected\", \"X-Is-Headphones-Connected\"), (\"is_pin_or_fingerprint_set\", \"X-Is-Pin-Or-Fingerprint-Set\"), (\"device_security_type\", \"X-Device-Security-Type\"), (\"is_simulator\", \"X-Is-Simulator\"), (\"isMacCatalystApp\", \"X-Is-Mac-Catalyst-App\"), (\"isiOSAppOnMac\", \"X-Is-iOS-App-On-Mac\"), (\"num_processors\", \"X-Num-Processors\"), (\"total_memory\", \"X-Total-Memory\"), (\"used_memory\", \"X-Used-Memory\"), (\"app_bundle_name\", \"X-App-Bundle-Name\"), (\"app_bundle_identifier\", \"X-App-Bundle-Identifier\"), (\"app_version\", \"X-App-Version\"), (\"app_short_version\", \"X-App-Short-Version\")]"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 10646,
+      "offset": 11058,
       "length": 50,
       "value": "\"https:\/\/api.tapresearch.com\/supply_api\/v4\/events\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 11957,
+      "offset": 12285,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 12372,
+      "offset": 12306,
+      "length": 7,
+      "value": "\"react\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 12329,
+      "length": 7,
+      "value": "\"unity\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 12353,
+      "length": 8,
+      "value": "\"love2d\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 12379,
+      "length": 9,
+      "value": "\"flutter\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
+      "kind": "StringLiteral",
+      "offset": 13067,
       "length": 23,
       "value": "\"TapResearchLoveBridge\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12413,
-      "length": 61,
-      "value": "\"[TapResearchSDK-Internal] Did not find Love2D bridge class.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 12486,
+      "offset": 13183,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 12505,
-      "length": 56,
-      "value": "\"[TapResearchSDK-Internal] Found Love2D bridge class...\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12683,
+      "offset": 13382,
       "length": 15,
       "value": "\"bridgeVersion\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13129,
-      "length": 67,
-      "value": "\"[TapResearchSDK-Internal] Found Love2D bridge version: \""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13195,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13259,
-      "length": 63,
-      "value": "\"[TapResearchSDK-Internal] Did not find Love2D bridge version.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13355,
-      "length": 35,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13381,
-      "length": 1,
-      "value": "\"-Unknown\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 13462,
+      "offset": 14161,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 13711,
+      "offset": 14410,
       "length": 20,
       "value": "\"UnityAppController\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13756,
-      "length": 66,
-      "value": "\"[TapResearchSDK-Internal] Did not find UnityAppController class.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 13834,
+      "offset": 14536,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 13852,
-      "length": 48,
-      "value": "\"[TapResearchSDK-Internal] Found Unity class...\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14001,
+      "offset": 14705,
       "length": 27,
       "value": "\"TapResearchSDKUnityNative\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14046,
-      "length": 60,
-      "value": "\"[TapResearchSDK-Internal] Did not find Unity bridge class.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 14118,
+      "offset": 14824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 14136,
-      "length": 55,
-      "value": "\"[TapResearchSDK-Internal] Found Unity bridge class...\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14313,
+      "offset": 15021,
       "length": 16,
       "value": "\"packageVersion\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14760,
-      "length": 66,
-      "value": "\"[TapResearchSDK-Internal] Found Unity bridge version: \""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14825,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14889,
-      "length": 62,
-      "value": "\"[TapResearchSDK-Internal] Did not find Unity bridge version.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14984,
-      "length": 35,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 15010,
-      "length": 1,
-      "value": "\"-Unknown\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 15090,
+      "offset": 15798,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 16187,
+      "offset": 16886,
       "length": 23,
       "value": "\"FlutterViewController\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 16226,
+      "offset": 16925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 16242,
-      "length": 44,
-      "value": "\"[TapResearchSDK-Internal] Found Flutter...\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 16433,
+      "offset": 17125,
       "length": 26,
       "value": "\"TapresearchFlutterPlugin\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 16472,
-      "length": 57,
-      "value": "\"[TapResearchSDK-Internal] Found Flutter bridge class...\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 16571,
+      "offset": 17265,
       "length": 16,
       "value": "\"packageVersion\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17048,
-      "length": 35,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17074,
-      "length": 1,
-      "value": "\"-Unknown\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17111,
-      "length": 62,
-      "value": "\"[TapResearchSDK-Internal] Did not find Flutter bridge class.\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17206,
-      "length": 35,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17232,
-      "length": 1,
-      "value": "\"-Unknown\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 17256,
+      "offset": 18260,
       "length": 4,
       "value": "true"
     },
@@ -9459,77 +9691,119 @@
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController+Notifications.swift",
       "kind": "BooleanLiteral",
-      "offset": 11585,
+      "offset": 13230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 281,
+      "offset": 308,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
-      "offset": 3715,
+      "offset": 3743,
       "length": 18,
       "value": "\"TRNetworkMonitor\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
-      "offset": 3824,
+      "offset": 4038,
+      "length": 15,
+      "value": "\"placement_tag\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4241,
+      "length": 7,
+      "value": "\"error\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4709,
+      "length": 21,
+      "value": "\"TapResearchDidError\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 5082,
+      "length": 21,
+      "value": "\"TapResearchSDKReady\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 5533,
+      "length": 25,
+      "value": "\"TapResearchContentShown\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 6000,
+      "length": 29,
+      "value": "\"TapResearchContentDismissed\""
+    },
+    {
+      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
+      "kind": "StringLiteral",
+      "offset": 6120,
       "length": 16,
       "value": "\"TapResearchSDK\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
-      "offset": 3897,
+      "offset": 6193,
       "length": 17,
       "value": "\"TapResearchCode\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "StringLiteral",
-      "offset": 3977,
+      "offset": 6273,
       "length": 23,
       "value": "\"TapResearchCodeString\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 5148,
+      "offset": 8114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 12041,
+      "offset": 14958,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 16955,
+      "offset": 19812,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 27748,
+      "offset": 30442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/TapResearch.swift",
       "kind": "BooleanLiteral",
-      "offset": 43107,
+      "offset": 45616,
       "length": 5,
       "value": "false"
     },
@@ -9595,27 +9869,6 @@
       "offset": 14654,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 958,
-      "length": 66,
-      "value": "\"TapResearchSDKDelegate not implemented when setting SDK delegate\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1063,
-      "length": 97,
-      "value": "\"TapResearchSDKDelegate.onTapResearchDidError function not implemented when setting SDK delegate\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/User Content Handlers\/Delegates - App Target\/TRErrorCallbackHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1203,
-      "length": 96,
-      "value": "\"TapResearchSDKDelegate was deallocated or is no longer available when attempting to send error\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRNavigationController.swift",
