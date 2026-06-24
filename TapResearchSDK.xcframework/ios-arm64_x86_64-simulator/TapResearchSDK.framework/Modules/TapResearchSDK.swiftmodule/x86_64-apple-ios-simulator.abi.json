@@ -9385,7 +9385,7 @@
       "kind": "StringLiteral",
       "offset": 777,
       "length": 15,
-      "value": "\"3.8.0--beta03\""
+      "value": "\"3.8.0--beta04\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
@@ -9418,156 +9418,23 @@
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "Dictionary",
-      "offset": 8982,
+      "offset": 8978,
       "length": 1987,
       "value": "[(\"device_identifier\", \"X-Device-Identifier\"), (\"api_token\", \"X-Api-Token\"), (\"user_identifier\", \"X-User-Identifier\"), (\"sdk_platform\", \"X-SDK-Platform\"), (\"sdk_version\", \"X-SDK-Version\"), (\"dev_platform\", \"X-Dev-Platform\"), (\"dev_version\", \"X-Dev-Version\"), (\"os_version_string\", \"X-OS-Version\"), (\"connection_type\", \"X-Connection-Type\"), (\"carrier\", \"X-Carrier\"), (\"device_name\", \"X-Device-Name\"), (\"vendor_identifier\", \"X-Vendor-Identifier\"), (\"screen_scale_string\", \"X-Screen-Scale\"), (\"screen_pixel_size_string\", \"X-Pixel-Size\"), (\"display_dimensions\", \"X-Display-Dimensions\"), (\"locale\", \"X-User-Locale\"), (\"app_in_foreground\", \"X-App-In-Foreground\"), (\"orientation\", \"X-Orientation\"), (\"device_brand\", \"X-Device-Brand\"), (\"battery_level\", \"X-Battery-Level\"), (\"is_battery_charging\", \"X-Is-Battery-Charging\"), (\"is_low_power_mode\", \"X-Is-Low-Power-Mode\"), (\"thermal_state\", \"X-Thermal-State\"), (\"is_headphones_connected\", \"X-Is-Headphones-Connected\"), (\"is_pin_or_fingerprint_set\", \"X-Is-Pin-Or-Fingerprint-Set\"), (\"device_security_type\", \"X-Device-Security-Type\"), (\"is_simulator\", \"X-Is-Simulator\"), (\"isMacCatalystApp\", \"X-Is-Mac-Catalyst-App\"), (\"isiOSAppOnMac\", \"X-Is-iOS-App-On-Mac\"), (\"num_processors\", \"X-Num-Processors\"), (\"total_memory\", \"X-Total-Memory\"), (\"used_memory\", \"X-Used-Memory\"), (\"app_bundle_name\", \"X-App-Bundle-Name\"), (\"app_bundle_identifier\", \"X-App-Bundle-Identifier\"), (\"app_version\", \"X-App-Version\"), (\"app_short_version\", \"X-App-Short-Version\")]"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 11058,
+      "offset": 11054,
       "length": 50,
       "value": "\"https:\/\/api.tapresearch.com\/supply_api\/v4\/events\""
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
       "kind": "StringLiteral",
-      "offset": 12285,
+      "offset": 12361,
       "length": 5,
       "value": "\"ios\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12306,
-      "length": 7,
-      "value": "\"react\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12329,
-      "length": 7,
-      "value": "\"unity\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12353,
-      "length": 8,
-      "value": "\"love2d\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 12379,
-      "length": 9,
-      "value": "\"flutter\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13067,
-      "length": 23,
-      "value": "\"TapResearchLoveBridge\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 13183,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 13382,
-      "length": 15,
-      "value": "\"bridgeVersion\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14161,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14410,
-      "length": 20,
-      "value": "\"UnityAppController\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14536,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 14705,
-      "length": 27,
-      "value": "\"TapResearchSDKUnityNative\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14824,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 15021,
-      "length": 16,
-      "value": "\"packageVersion\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15798,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 16886,
-      "length": 23,
-      "value": "\"FlutterViewController\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16925,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17125,
-      "length": 26,
-      "value": "\"TapresearchFlutterPlugin\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "StringLiteral",
-      "offset": 17265,
-      "length": 16,
-      "value": "\"packageVersion\""
-    },
-    {
-      "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/Config.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18260,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/Display\/TRWaitingViewController.swift",
@@ -9684,7 +9551,7 @@
     {
       "filePath": "\/Users\/jeroen\/ios-sdk-internal\/TapResearchSDK\/TapResearchSDK\/Private\/JS Bridge\/Controllers\/TRJSController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11482,
+      "offset": 11494,
       "length": 5,
       "value": "false"
     },
