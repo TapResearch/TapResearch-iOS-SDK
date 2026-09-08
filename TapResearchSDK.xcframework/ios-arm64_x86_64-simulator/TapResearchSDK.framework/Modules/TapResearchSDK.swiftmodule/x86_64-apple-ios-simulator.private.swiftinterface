@@ -68,6 +68,57 @@ import _SwiftConcurrencyShims
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
 }
+extension TapResearchSDK.TRProfileAnswer {
+  @objc dynamic public class func answer(questionId: Swift.Int, zipCode: Swift.String) -> TapResearchSDK.TRProfileAnswer
+  @objc dynamic public class func answer(questionId: Swift.Int, answer: Swift.String) -> TapResearchSDK.TRProfileAnswer
+  @objc dynamic public class func answer(questionId: Swift.Int, date: Swift.String) -> TapResearchSDK.TRProfileAnswer
+  @objc dynamic public class func answer(questionId: Swift.Int, answers: [Swift.String]) -> TapResearchSDK.TRProfileAnswer
+}
+@objc public class TRProfileResponse : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let countryCode: Swift.String
+  @objc final public let locale: Swift.String
+  @objc final public let isProfiled: Swift.Bool
+  @objc final public let qualifications: [TapResearchSDK.TRProfileQuestion]
+  @objc final public let result: TapResearchSDK.TRProfileAnswerResult?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class TRProfileQuestion : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let questionId: Swift.Int
+  @objc final public let questionText: Swift.String
+  @objc final public let enTranslation: Swift.String
+  @objc final public let questionSubtext: Swift.String?
+  @objc final public let answerType: Swift.String
+  @objc final public let qualificationAnswers: [TapResearchSDK.TRProfileAnswerOption]
+  @objc final public let previousError: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class TRProfileAnswerOption : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let optionText: Swift.String
+  @objc final public let enTranslation: Swift.String
+  @objc final public let preCode: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class TRProfileAnswerResultError : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let questionId: Swift.Int
+  @objc final public let error: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class TRProfileAnswerResult : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let accepted: Swift.Int
+  @objc final public let invalid: Swift.Int
+  @objc final public let errors: [TapResearchSDK.TRProfileAnswerResultError]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc final public class TRSurvey : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let surveyIdentifier: Swift.String
   @objc final public let lengthInMinutes: Swift.Int
@@ -120,6 +171,12 @@ import _SwiftConcurrencyShims
   @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
   @objc public static func initialize(withAPIToken apiToken: Swift.String, userIdentifier: Swift.String, userAttributes: [Swift.String : Any], clearPreviousAttributes: Swift.Bool = false, sdkDelegate: (any TapResearchSDK.TapResearchSDKDelegate)? = nil, rewardDelegate: any TapResearchSDK.TapResearchRewardDelegate, quickQuestionDelegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)? = nil, completion: ((Foundation.NSError?) -> Swift.Void)? = nil)
+  @objc public static func getProfilingQualifications(apiToken: Swift.String? = nil, userIdentifier: Swift.String, countryCode: Swift.String, completion: @escaping (TapResearchSDK.TRProfileResponse?, Foundation.NSError?) -> Swift.Void)
+  @available(iOS 15.0, *)
+  public static func getProfilingQualificationsAsync(apiToken: Swift.String? = nil, userIdentifier: Swift.String, countryCode: Swift.String) async throws -> TapResearchSDK.TRProfileResponse
+  @objc public static func sendProfilingAnswers(apiToken: Swift.String? = nil, userIdentifier: Swift.String, answers: [TapResearchSDK.TRProfileAnswer], countryCode: Swift.String, completion: @escaping (TapResearchSDK.TRProfileResponse?, Foundation.NSError?) -> Swift.Void)
+  @available(iOS 15.0, *)
+  public static func sendProfilingAnswersAsync(apiToken: Swift.String? = nil, userIdentifier: Swift.String, answers: [TapResearchSDK.TRProfileAnswer], countryCode: Swift.String) async throws -> TapResearchSDK.TRProfileResponse
   @objc public static func setRewardDelegate(_ delegate: (any TapResearchSDK.TapResearchRewardDelegate)?)
   @objc public static func setQuickQuestionDelegate(_ delegate: (any TapResearchSDK.TapResearchQuickQuestionDelegate)?)
   @objc public static func isReady() -> Swift.Bool
@@ -146,6 +203,11 @@ extension Foundation.NSError : @retroactive Swift.Encodable {
 }
 extension Foundation.NSError {
   public func encode(to encoder: any Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class TRProfileAnswer : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc final public class TRQQDataPayload : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let survey_identifier: Swift.String

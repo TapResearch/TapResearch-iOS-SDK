@@ -428,6 +428,60 @@ SWIFT_CLASS("_TtC14TapResearchSDK18TRPlacementDetails")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC14TapResearchSDK15TRProfileAnswer")
+@interface TRProfileAnswer : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@interface TRProfileAnswer (SWIFT_EXTENSION(TapResearchSDK))
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId zipCode:(NSString * _Nonnull)zipCode SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId answer:(NSString * _Nonnull)answer SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId date:(NSString * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId answers:(NSArray<NSString *> * _Nonnull)answers SWIFT_WARN_UNUSED_RESULT;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK21TRProfileAnswerOption")
+@interface TRProfileAnswerOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull optionText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull enTranslation;
+@property (nonatomic, readonly, copy) NSString * _Nonnull preCode;
+@end
+
+@class TRProfileAnswerResultError;
+SWIFT_CLASS("_TtC14TapResearchSDK21TRProfileAnswerResult")
+@interface TRProfileAnswerResult : NSObject
+@property (nonatomic, readonly) NSInteger accepted;
+@property (nonatomic, readonly) NSInteger invalid;
+@property (nonatomic, readonly, copy) NSArray<TRProfileAnswerResultError *> * _Nonnull errors;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK26TRProfileAnswerResultError")
+@interface TRProfileAnswerResultError : NSObject
+@property (nonatomic, readonly) NSInteger questionId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull error;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK17TRProfileQuestion")
+@interface TRProfileQuestion : NSObject
+@property (nonatomic, readonly) NSInteger questionId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull questionText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull enTranslation;
+@property (nonatomic, readonly, copy) NSString * _Nullable questionSubtext;
+@property (nonatomic, readonly, copy) NSString * _Nonnull answerType;
+@property (nonatomic, readonly, copy) NSArray<TRProfileAnswerOption *> * _Nonnull qualificationAnswers;
+@property (nonatomic, readonly, copy) NSString * _Nullable previousError;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK17TRProfileResponse")
+@interface TRProfileResponse : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull countryCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull locale;
+@property (nonatomic, readonly) BOOL isProfiled;
+@property (nonatomic, readonly, copy) NSArray<TRProfileQuestion *> * _Nonnull qualifications;
+@property (nonatomic, readonly, strong) TRProfileAnswerResult * _Nullable result;
+@end
+
 /// <hr/>
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK12TRQQComplete")
@@ -638,6 +692,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nullable)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <h1>Get profiling qualifications (questions).</h1>
+/// When called prior to SDK initialization will require API token and user identifier. This function does not initialize the SDK.
+/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
+/// \param apiToken An optional API token, required when the SDK has not yet been initialized, this API token should be the same used to initialize the SDK.
+///
+/// \param userIdentifier An optional unique user identifier, required when the SDK has not yet been initialized otherwise will use currently set user identifier.
+///
+/// \param completion A block that will receive the qualifications or an error.
+///
++ (void)getProfilingQualificationsWithApiToken:(NSString * _Nullable)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier countryCode:(NSString * _Nonnull)countryCode completion:(void (^ _Nonnull)(TRProfileResponse * _Nullable, NSError * _Nullable))completion;
+/// <h1>Get profiling qualifications (questions).</h1>
+/// When called prior to SDK initialization will require API token and user identifier. This function does not initialize the SDK.
+/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
+/// \param apiToken An optional API token, required when the SDK has not yet been initialized, this API token should be the same used to initialize the SDK.
+///
+/// \param userIdentifier An optional unique user identifier, required when the SDK has not yet been initialized otherwise will use currently set user identifier.
+///
+/// \param answers An Array of <code>TRProfileAnswer</code> objects.
+///
+/// \param completion A block that will receive the qualifications or an error.
+///
++ (void)sendProfilingAnswersWithApiToken:(NSString * _Nullable)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier answers:(NSArray<TRProfileAnswer *> * _Nonnull)answers countryCode:(NSString * _Nonnull)countryCode completion:(void (^ _Nonnull)(TRProfileResponse * _Nullable, NSError * _Nullable))completion;
 /// <h1>Set the reward delegate.</h1>
 /// Set the reward handler or clear the reward delegate
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
@@ -1319,6 +1395,60 @@ SWIFT_CLASS("_TtC14TapResearchSDK18TRPlacementDetails")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC14TapResearchSDK15TRProfileAnswer")
+@interface TRProfileAnswer : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@interface TRProfileAnswer (SWIFT_EXTENSION(TapResearchSDK))
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId zipCode:(NSString * _Nonnull)zipCode SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId answer:(NSString * _Nonnull)answer SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId date:(NSString * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
++ (TRProfileAnswer * _Nonnull)answerWithQuestionId:(NSInteger)questionId answers:(NSArray<NSString *> * _Nonnull)answers SWIFT_WARN_UNUSED_RESULT;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK21TRProfileAnswerOption")
+@interface TRProfileAnswerOption : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull optionText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull enTranslation;
+@property (nonatomic, readonly, copy) NSString * _Nonnull preCode;
+@end
+
+@class TRProfileAnswerResultError;
+SWIFT_CLASS("_TtC14TapResearchSDK21TRProfileAnswerResult")
+@interface TRProfileAnswerResult : NSObject
+@property (nonatomic, readonly) NSInteger accepted;
+@property (nonatomic, readonly) NSInteger invalid;
+@property (nonatomic, readonly, copy) NSArray<TRProfileAnswerResultError *> * _Nonnull errors;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK26TRProfileAnswerResultError")
+@interface TRProfileAnswerResultError : NSObject
+@property (nonatomic, readonly) NSInteger questionId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull error;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK17TRProfileQuestion")
+@interface TRProfileQuestion : NSObject
+@property (nonatomic, readonly) NSInteger questionId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull questionText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull enTranslation;
+@property (nonatomic, readonly, copy) NSString * _Nullable questionSubtext;
+@property (nonatomic, readonly, copy) NSString * _Nonnull answerType;
+@property (nonatomic, readonly, copy) NSArray<TRProfileAnswerOption *> * _Nonnull qualificationAnswers;
+@property (nonatomic, readonly, copy) NSString * _Nullable previousError;
+@end
+
+SWIFT_CLASS("_TtC14TapResearchSDK17TRProfileResponse")
+@interface TRProfileResponse : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull countryCode;
+@property (nonatomic, readonly, copy) NSString * _Nonnull locale;
+@property (nonatomic, readonly) BOOL isProfiled;
+@property (nonatomic, readonly, copy) NSArray<TRProfileQuestion *> * _Nonnull qualifications;
+@property (nonatomic, readonly, strong) TRProfileAnswerResult * _Nullable result;
+@end
+
 /// <hr/>
 /// <hr/>
 SWIFT_CLASS("_TtC14TapResearchSDK12TRQQComplete")
@@ -1529,6 +1659,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// \param completion An optional completion block to receive any errors that occured during initialization.
 ///
 + (void)initializeWithAPIToken:(NSString * _Nonnull)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier userAttributes:(NSDictionary<NSString *, id> * _Nonnull)userAttributes clearPreviousAttributes:(BOOL)clearPreviousAttributes sdkDelegate:(id <TapResearchSDKDelegate> _Nullable)sdkDelegate rewardDelegate:(id <TapResearchRewardDelegate> _Nonnull)rewardDelegate quickQuestionDelegate:(id <TapResearchQuickQuestionDelegate> _Nullable)quickQuestionDelegate completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// <h1>Get profiling qualifications (questions).</h1>
+/// When called prior to SDK initialization will require API token and user identifier. This function does not initialize the SDK.
+/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
+/// \param apiToken An optional API token, required when the SDK has not yet been initialized, this API token should be the same used to initialize the SDK.
+///
+/// \param userIdentifier An optional unique user identifier, required when the SDK has not yet been initialized otherwise will use currently set user identifier.
+///
+/// \param completion A block that will receive the qualifications or an error.
+///
++ (void)getProfilingQualificationsWithApiToken:(NSString * _Nullable)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier countryCode:(NSString * _Nonnull)countryCode completion:(void (^ _Nonnull)(TRProfileResponse * _Nullable, NSError * _Nullable))completion;
+/// <h1>Get profiling qualifications (questions).</h1>
+/// When called prior to SDK initialization will require API token and user identifier. This function does not initialize the SDK.
+/// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
+/// \param apiToken An optional API token, required when the SDK has not yet been initialized, this API token should be the same used to initialize the SDK.
+///
+/// \param userIdentifier An optional unique user identifier, required when the SDK has not yet been initialized otherwise will use currently set user identifier.
+///
+/// \param answers An Array of <code>TRProfileAnswer</code> objects.
+///
+/// \param completion A block that will receive the qualifications or an error.
+///
++ (void)sendProfilingAnswersWithApiToken:(NSString * _Nullable)apiToken userIdentifier:(NSString * _Nonnull)userIdentifier answers:(NSArray<TRProfileAnswer *> * _Nonnull)answers countryCode:(NSString * _Nonnull)countryCode completion:(void (^ _Nonnull)(TRProfileResponse * _Nullable, NSError * _Nullable))completion;
 /// <h1>Set the reward delegate.</h1>
 /// Set the reward handler or clear the reward delegate
 /// See <a href="https://supply-docs.tapresearch.com/docs/3.x/basic-integration/sdk-integration/ios#tapresearchrewarddelegate">Documentation: TapResearchRewardDelegate</a>
