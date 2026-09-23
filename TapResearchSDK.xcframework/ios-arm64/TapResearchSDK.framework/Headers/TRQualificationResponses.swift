@@ -9,6 +9,19 @@ import Foundation
 
 //MARK: - Profile answers
 
+@objc public class TRProfileAnswer: NSObject, Codable {
+
+	private let questionId: Int
+	private let values: [String]
+
+	internal init(questionId: Int, values: [String]) {
+
+		self.questionId = questionId
+		self.values = values
+	}
+
+}
+
 extension TRProfileAnswer {
 
 	@objc public class func answer(questionId: Int, zipCode: String) -> TRProfileAnswer {
